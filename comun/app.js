@@ -234,7 +234,7 @@ scrim.addEventListener("click",()=>{closeDrawer();closeIndex();});
 document.addEventListener("keydown",e=>{
   if(e.key==="Escape"){ if(drawer.classList.contains("open"))closeDrawer(); else closeIndex(); }
   if(drawer.classList.contains("open")&&(e.key==="ArrowRight"||e.key==="ArrowLeft")&&!e.target.closest("video,select,input")){
-    const b=body.querySelector(`[data-go].navbtn[aria-label^="${e.key==="ArrowRight"?"Siguiente":"Anterior"}"]`); if(b) b.click(); }
+    const b=body.querySelector(`.navbtn.icon[data-go]:${e.key==="ArrowRight"?"last-of-type":"first-of-type"}`); if(b) b.click(); }
 });
 
 /* Índice lateral */
