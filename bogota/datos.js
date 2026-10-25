@@ -3,7 +3,7 @@
    (y una copia pequeña en fotos/mini/) y complete XTRA, HAB y PLACES con el mismo id. */
 const LUGAR = {
   nombre: "Bogotá", corto: "Bogotá",
-  region: "la Sabana", hero: "fotos/rubra.jpg"
+  region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
  "bubulcusSS": "fotos/bubulcusSS.jpg",
