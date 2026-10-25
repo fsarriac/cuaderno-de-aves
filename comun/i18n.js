@@ -10,7 +10,9 @@ var I18N={"ui": {"Abre en xeno-canto las mejores grabaciones de la especie; puls
   function toggle(){
     if(document.querySelector(".lang-sw")) return;
     var st=document.createElement("style");
-    st.textContent=".lang-sw{position:absolute;z-index:30;top:calc(14px + env(safe-area-inset-top,0px));left:max(16px,env(safe-area-inset-left,0px));display:flex;background:rgba(6,14,10,.55);border-radius:999px;padding:3px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}"+
+    st.textContent=".topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--night,#0A1712);padding:calc(10px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px))}"+
+      ".topbar .volver{position:static!important;flex:none}"+
+      ".lang-sw{display:flex;flex:none;background:rgba(6,14,10,.55);border-radius:999px;padding:3px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}"+
       ".lang-sw button{font:500 12px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.06em;color:#EEF3EC;background:none;border:0;border-radius:999px;padding:6px 10px;cursor:pointer;opacity:.7}"+
       ".lang-sw button[aria-pressed=true]{background:#EEF3EC;color:#0B1712;opacity:1}";
     document.head.appendChild(st);
@@ -19,7 +21,10 @@ var I18N={"ui": {"Abre en xeno-canto las mejores grabaciones de la especie; puls
     d.addEventListener("click",function(e){var b=e.target.closest("[data-l]"); if(!b||b.dataset.l===lang) return;
       try{localStorage.setItem("lang",b.dataset.l);}catch(err){}
       var u=new URL(location.href); u.searchParams.delete("lang"); location.replace(u.toString());});
-    document.body.appendChild(d);
+    /* Barra superior propia: idioma a la izquierda, volver a la derecha; nada queda encima del contenido */
+    var bar=document.createElement("div"); bar.className="topbar"; bar.appendChild(d);
+    var v=document.querySelector(".volver"); if(v) bar.appendChild(v);
+    document.body.insertBefore(bar,document.body.firstChild);
   }
   if(document.body) toggle(); else document.addEventListener("DOMContentLoaded",toggle);
   if(lang!=="en") return;
