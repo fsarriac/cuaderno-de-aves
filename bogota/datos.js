@@ -6,6 +6,11 @@ const LUGAR = {
   region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
+ "rupornisPresa": "fotos/rupornisPresa.jpg",
+ "olivaceaF2": "fotos/olivaceaF2.jpg",
+ "olivaceaF3": "fotos/olivaceaF3.jpg",
+ "gilvus4": "fotos/gilvus4.jpg",
+
  "bubulcusSS": "fotos/bubulcusSS.jpg",
  "gallinula": "fotos/gallinula.jpg",
  "gallinula2": "fotos/gallinula2.jpg",
@@ -124,7 +129,7 @@ const BIRDS = [
   photos:[{img:IMG.olivaceaM, date:"", place:SS, ind:"Macho en plumaje reproductivo"},
     {img:IMG.olivaceaM2, date:"", place:SS, ind:"Macho de frente, en lo alto del árbol"},
     {img:IMG.olivacea, date:"23 oct 2026 · 15:50", place:SS, ind:"Hembra o inmaduro, plumaje no reproductivo",
-    exif:{Cámara:"Sony RX10 IV", Focal:"220 mm (600 eq.)", Apertura:"f/4.0", Obturación:"1/160 s", ISO:"800"}}],
+    exif:{Cámara:"Sony RX10 IV", Focal:"220 mm (600 eq.)", Apertura:"f/4.0", Obturación:"1/160 s", ISO:"800"}},{img:IMG.olivaceaF2, date:"", place:SS, ind:"Hembra discutiendo con un azulejo por el puesto en el comedero"},{img:IMG.olivaceaF3, date:"", place:SS, ind:"Hembra junto a un azulejo, con el ala negruzca y el cuerpo verde oliva"}],
   desc:"Pariente de los cardenales, no de las tangaras. El macho reproductor es rojo escarlata con alas y cola negras: verlo así en la Sabana es un regalo, porque suele mudar a ese plumaje justo antes de volver al norte. El resto del año, y en hembras y jóvenes, es verde oliva y amarillo, con las alas oscuras que lo separan de la piranga roja hembra.",
   diet:"Insectos en el dosel (avispas, abejas, escarabajos, orugas). En invernada suma frutos, por eso llega a comederos con papaya y banano.",
   habitat:"Cría en bosques caducifolios maduros del este de Norteamérica. Inverna en bosques andinos, bordes y jardines arbolados, entre unos 300 y 2.800 m.",
@@ -362,7 +367,7 @@ const BIRDS = [
 {
   id:"mimus-gilvus", common:"Sinsonte tropical", alt:"Sinsonte común · Tropical Mockingbird",
   sci:"Mimus gilvus", family:"Mimidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.gilvus3, date:"", place:SS, ind:"Adulto sobre el muro de ladrillo"},{img:IMG.gilvus, date:"", place:SS, ind:"Adulto"},{img:IMG.gilvus2, date:"", place:SS, ind:"Con un fruto en el pico, sobre el tejado"}],
+  photos:[{img:IMG.gilvus3, date:"", place:SS, ind:"Adulto sobre el muro de ladrillo"},{img:IMG.gilvus, date:"", place:SS, ind:"Adulto"},{img:IMG.gilvus2, date:"", place:SS, ind:"Con un fruto en el pico, sobre el tejado"},{img:IMG.gilvus4, date:"", place:SS, ind:"Adulto entre las hojas, con el antifaz oscuro y la cola larga"}],
   desc:"Gris claro por encima y blancuzco por debajo, con antifaz oscuro y cola larga de puntas blancas que abre al posarse. Canta desde perchas altas, con frases variadas y repetidas.",
   diet:"Omnívoro: insectos, arañas, frutos y semillas. Busca alimento en el suelo y en arbustos.",
   habitat:"Áreas abiertas, potreros con árboles, cercas vivas, jardines y zonas urbanas, del nivel del mar hasta la Sabana.",
@@ -425,9 +430,9 @@ const BIRDS = [
 {
   id:"rupornis-magnirostris", common:"Gavilán caminero", alt:"Busardo caminero · Roadside Hawk",
   sci:"Rupornis magnirostris", family:"Accipitridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.rupornis, date:"", place:SS, ind:"Adulto posado en el yarumo sembrado en la hacienda"}],
+  photos:[{img:IMG.rupornisPresa, date:"", place:SS, ind:"Con un pájaro recién cazado en las garras, abriendo las alas para cubrir la presa"},{img:IMG.rupornis, date:"", place:SS, ind:"Adulto posado en el yarumo sembrado en la hacienda"}],
   desc:"Gavilán pequeño y gris, con el pecho y el vientre barrados de gris y canela, ojos amarillo pálido y patas y base del pico amarillo anaranjado. Es el gavilán más común de Colombia.",
-  diet:"Lagartijas, ratones, insectos grandes, ranas y, ocasionalmente, pájaros pequeños.",
+  diet:"Lagartijas, ratones, insectos grandes, ranas y pájaros pequeños. En San Simón lo fotografiamos con un pájaro recién cazado: al comer abre las alas y la cola sobre la presa, un gesto llamado «mantear» con el que la esconde de otros depredadores.",
   habitat:"Bordes de bosque, potreros con árboles, cercas vivas y bordes de carretera, desde el nivel del mar hasta unos 2.800 m.",
   migration:null
 },
