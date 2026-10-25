@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aves de Pijiño</title>
+<meta name="description" content="Las aves de la Ciénaga de Pijiño, en el Magdalena: garzas, martines pescadores, rapaces y aves de humedal.">
+<meta property="og:title" content="Aves de San Simón">
+<meta property="og:image" content="fotos/pandion.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="stylesheet" href="../comun/estilos.css">
+<style>.ig-link{display:inline-flex;align-items:center;gap:7px;color:inherit;text-decoration:none;font-weight:500}.ig-link:hover{text-decoration:underline}.ig-ico{width:17px;height:17px;flex:none}.creditos{max-width:1200px;margin:48px auto 0;padding:22px 16px 90px;border-top:1px solid rgba(127,127,127,.25);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;font-size:14px;opacity:.85}.creditos .aviso{flex:0 0 100%;font-size:12.5px;line-height:1.5;opacity:.85;margin:4px 0 0}.autor .ig-link{margin-top:12px;color:#F2C14E;font-size:15px}</style>
+</head>
+<body>
+<a href="../" class="volver">← Todos los lugares</a>
+<section class="hero">
+  <div class="hero-grid">
+    <div class="wrap hero-text" style="margin:0;max-width:none">
+      <div>
+        <p class="eyebrow">Magdalena · Depresión Momposina · 9.33° N 74.45° O</p>
+        <h1 style="margin-top:22px">Aves de la<strong>Ciénaga de <em>Pijiño</em></strong></h1>
+        <p class="lede" style="margin-top:22px">Una ciénaga de la Depresión Momposina, donde el agua sube y baja con las lluvias. Garzas, martines pescadores, rapaces y aves que caminan sobre las plantas flotantes.</p>
+      </div>
+      <div class="stats">
+        <div><b id="nSp">—</b><span>Especies en el cuaderno</span></div>
+        <div><b id="nMig">—</b><span>Migratorias</span></div>
+        <div><b>~30</b><span>m s. n. m.</span></div>
+      </div>
+    </div>
+    <div class="hero-photo"><img id="heroImg" alt="Águila pescadora con un pescado en la Ciénaga de Pijiño"><span class="caption">Águila pescadora · <i>Pandion haliaetus</i></span></div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-block:44px 8px">
+  <div class="flex flex-wrap items-end justify-between gap-4" style="margin-bottom:18px">
+    <div>
+      <p class="eyebrow">Calendario de visitantes</p>
+      <h2 class="display" style="font-size:clamp(26px,3.4vw,34px);line-height:1.1;font-weight:600;margin-top:6px">¿Cuándo llegan los migratorios?</h2>
+    </div>
+    <p class="note" style="max-width:42ch">Meses en que cada especie está en la ciénaga. El recuadro marca el mes actual.</p>
+  </div>
+  <div style="overflow-x:auto;padding-bottom:6px"><div class="cal" id="cal"></div></div>
+</section>
+
+<nav class="wrap" aria-label="Filtros" style="padding-block:28px 22px;position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg)">
+  <div class="flex flex-wrap items-center gap-2" style="border-top:1px solid var(--line);padding-top:16px">
+    <button class="chip idxbtn" id="idxOpen" aria-label="Abrir índice de especies"><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h12M2 12h8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>Índice</button>
+    <button class="chip" data-f="all" aria-pressed="true">Todas <small id="cAll"></small></button>
+    <button class="chip" data-f="mig" aria-pressed="false">Migratorias <small id="cMig"></small></button>
+    <button class="chip" data-f="res" aria-pressed="false">Residentes <small id="cRes"></small></button>
+    <button class="chip" data-f="dom" aria-pressed="false">Domésticas y asilvestradas <small id="cDom"></small></button>
+    <span style="width:1px;height:22px;background:var(--line);margin:0 6px"></span>
+    <label for="famSel" class="sr-only">Familia</label>
+    <select id="famSel" class="fam"><option value="">Todas las familias</option></select>
+    <span id="count" class="mono ml-auto" style="font-size:12px;color:var(--muted)"></span>
+  </div>
+  <div class="places" role="group" aria-label="Dónde verlas">
+    <span class="eyebrow" style="flex:none">Dónde verlas</span>
+    <button class="chip pchip" data-p="" aria-pressed="true">Toda la ciénaga</button>
+    <button class="chip pchip" data-p="comedero" aria-pressed="false"><span class="pdot" style="background:var(--gold)"></span>Comederos</button>
+    <button class="chip pchip" data-p="prado" aria-pressed="false"><span class="pdot" style="background:var(--moss)"></span>Prados y potreros</button>
+    <button class="chip pchip" data-p="arboles" aria-pressed="false"><span class="pdot" style="background:#7A9A3A"></span>Árboles y cercas</button>
+    <button class="chip pchip" data-p="humedal" aria-pressed="false"><span class="pdot" style="background:var(--resident)"></span>Ciénaga y orillas</button>
+    <button class="chip pchip" data-p="cielo" aria-pressed="false"><span class="pdot" style="background:#8FA9C4"></span>Cielo y techos</button>
+  </div>
+</nav>
+
+<main class="wrap" style="padding-block:0 64px">
+  <div id="grid"></div>
+  <p id="empty" class="note" hidden style="padding:40px 0">No hay especies con esa combinación de filtros.</p>
+  <p class="note" style="margin-top:40px;max-width:72ch">Fotografías tomadas en la Ciénaga de Pijiño. Las especies con la etiqueta «por confirmar» o «tentativa» explican en su ficha qué falta para asegurar la identificación. Los colores de cada ficha resumen el plumaje de la especie. Estado de conservación según la Lista Roja de la UICN; la tendencia de población se muestra solo en las especies donde está documentada.</p>
+</main>
+
+<div id="scrim" class="scrim"></div>
+<aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle" aria-hidden="true">
+  <div class="dbody" id="dBody"></div>
+</aside>
+<aside id="index" class="drawer left" role="dialog" aria-modal="true" aria-label="Índice de especies" aria-hidden="true">
+  <div class="idxhead"><div><p class="eyebrow">Índice</p><p class="display" style="font-size:24px;font-weight:600;line-height:1.1">Aves de San Simón</p></div>
+    <button class="navbtn icon" id="idxClose" aria-label="Cerrar índice"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
+  <div class="dbody" id="idxBody"></div>
+</aside>
+<button id="toTop" class="totop" hidden aria-label="Volver al inicio"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 10l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Inicio</button>
+<script src="../comun/mapa.js"></script>
+<script src="datos.js"></script>
+<script src="../comun/otros.js"></script>
+<script src="../comun/app.js"></script>
+<footer class="creditos"><span>Fotos: Fernando Sarria</span><a class="ig-link" href="https://www.instagram.com/de_pajareo_por_colombia/" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.6"/></svg><span>@de_pajareo_por_colombia</span></a><p class="aviso">El contenido no fotográfico fue desarrollado con ayuda de Claude y puede tener imprecisiones. Recibo comentarios y correcciones por Instagram.</p></footer>
+</body>
+</html>
