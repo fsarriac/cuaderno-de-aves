@@ -6,7 +6,7 @@ const LUGAR = {
   nombre: "Cartagena y alrededores", corto: "Cartagena y alrededores",
   region: "la región de Cartagena", hero: "fotos/pelecanusIR.jpg"
 };
-const IMG = {}; for (const k of ["chrysomus","chrysomus2","jacana","rostrhamus","milvago","dendro","dendro2","leistes","theristicus","buteogallus","buteogallus2","thula","quiscalus","crotophaga","furnarius","bubulcus","brotogeris","brotogeris2","leucophaeus","leucophaeus2","araMG","caracara","melanerpesMG2","melanerpesMG3","melanerpesMG4","brotogerisMG","brotogerisMG2","quiscalusMG","quiscalusMG2","quiscalusMG3","myiozetetes","melancholicus","nannopterum","nannopterum2","pelecanus","thalasseus","cocoi","cocoi2","cocoi3","cocoi4","cocoi5","cocoi6","alba","alba2","alba3","albaMG","eudocimus","pitangus","pitangus2","pitangus3","pitangus4","pelecanus2","pelecanus3","milvago2","milvagoAR","eupsittula","eupsittula2","ara","quiscalus2","quiscalus3","pelecanusIR","pelecanusIR2","pelecanusIR3","quiscalusF","sicalisMG","pelecanusZ","pelecanusZ2","melanerpesMG","pelecanusPicada","cathartesMG","fregataJuv","fregata","fregata2","quiscalusIR","thalasseusIR","thalasseusMG","leucophaeus","melanerpesMG2","melanerpesMG3","melanerpesMG4","brotogerisMG","brotogerisMG2","quiscalusMG","quiscalusMG2","quiscalusMG3","myiozetetes","melancholicus","thalasseusMG","milvagoAR","albaMG","eudocimus","leucophaeus2","araMG","caracara"]) IMG[k]="fotos/"+k+".jpg";
+const IMG = {}; for (const k of ["chrysomus","chrysomus2","jacana","rostrhamus","milvago","dendro","dendro2","leistes","theristicus","buteogallus","buteogallus2","thula","quiscalus","crotophaga","furnarius","bubulcus","brotogeris","brotogeris2","leucophaeus","leucophaeus2","araMG","caracara","melanerpesMG2","melanerpesMG3","melanerpesMG4","brotogerisMG","brotogerisMG2","quiscalusMG","quiscalusMG2","quiscalusMG3","myiozetetes","melancholicus","nannopterum","nannopterum2","pelecanus","thalasseus","cocoi","cocoi2","cocoi3","cocoi4","cocoi5","cocoi6","alba","alba2","alba3","albaMG","eudocimus","pitangus","pitangus2","pitangus3","pitangus4","pelecanus2","pelecanus3","milvago2","milvagoAR","eupsittula","eupsittula2","ara","quiscalus2","quiscalus3","pelecanusIR","pelecanusIR2","pelecanusIR3","quiscalusF","sicalisMG","pelecanusZ","pelecanusZ2","melanerpesMG","pelecanusPicada","cathartesMG","fregataJuv","fregata","fregata2","quiscalusIR","thalasseusIR","thalasseusMG","leucophaeus","melanerpesMG2","melanerpesMG3","melanerpesMG4","brotogerisMG","brotogerisMG2","quiscalusMG","quiscalusMG2","quiscalusMG3","myiozetetes","melancholicus","thalasseusMG","milvagoAR","albaMG","eudocimus","leucophaeus2","araMG","caracara","albaCD","cocoiVuelo","nannopterum3"]) IMG[k]="fotos/"+k+".jpg";
 const AR = "Arjona, Bolívar";
 const CD = "Canal del Dique, Bolívar";
 const MG = "Paseo peatonal de Manga, Cartagena";
@@ -117,7 +117,7 @@ const BIRDS = [
 {
   id:"ardea-cocoi", common:"Garzón azul", alt:"Garza cuca · Cocoi Heron",
   sci:"Ardea cocoi", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.cocoi, date:"", place:CD, ind:"Adulto pescando en la orilla"},{img:IMG.cocoi2, date:"", place:CD, ind:"Entre los mangles, con el pico abierto"},{img:IMG.cocoi3, date:"", place:CD, ind:"En vuelo sobre el canal"},{img:IMG.cocoi4, date:"", place:CD, ind:"Vigilando desde lo alto de un arbusto"},{img:IMG.cocoi5, date:"", place:CD, ind:"Vuelo rasante sobre el agua"},{img:IMG.cocoi6, date:"", place:CD, ind:"De pie en el agua, al acecho"}],
+  photos:[{img:IMG.cocoi, date:"", place:CD, ind:"Adulto pescando en la orilla"},{img:IMG.cocoi2, date:"", place:CD, ind:"Entre los mangles, con el pico abierto"},{img:IMG.cocoi3, date:"", place:CD, ind:"En vuelo sobre el canal"},{img:IMG.cocoi4, date:"", place:CD, ind:"Vigilando desde lo alto de un arbusto"},{img:IMG.cocoi5, date:"", place:CD, ind:"Vuelo rasante sobre el agua"},{img:IMG.cocoiVuelo, date:"", place:CD, ind:"En vuelo alto, con el cuello recogido y las alas blancas y negras"},{img:IMG.cocoi6, date:"", place:CD, ind:"De pie en el agua, al acecho"}],
   desc:"La garza más grande de Suramérica, de casi 1,3 m de alto. Cuello blanco, corona negra, dorso gris azulado, pico amarillo y largo. En vuelo recoge el cuello en forma de S y bate las alas despacio.",
   diet:"Peces grandes, que atrapa de un picotazo rápido después de esperar inmóvil; también cangrejos, ranas y culebras de agua.",
   habitat:"Ríos anchos, canales, ciénagas y manglares de tierras bajas.",
@@ -126,7 +126,7 @@ const BIRDS = [
 {
   id:"ardea-alba", common:"Garza real", alt:"Garceta grande · Great Egret",
   sci:"Ardea alba", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.alba2, date:"", place:CD, ind:"En vuelo, con las patas negras extendidas"},{img:IMG.alba, date:"", place:CD, ind:"En la orilla, junto a un maizal"},{img:IMG.alba3, date:"", place:CD, ind:"Volando bajo sobre el canal"},{img:IMG.albaMG, date:"", place:MG, ind:"En vuelo sobre la bahía, con el cuello recogido y las patas negras estiradas"}],
+  photos:[{img:IMG.alba2, date:"", place:CD, ind:"En vuelo, con las patas negras extendidas"},{img:IMG.alba, date:"", place:CD, ind:"En la orilla, junto a un maizal"},{img:IMG.alba3, date:"", place:CD, ind:"Volando bajo sobre el canal"},{img:IMG.albaCD, date:"", place:CD, ind:"Al acecho en la orilla, contra un muro de eneas"},{img:IMG.albaMG, date:"", place:MG, ind:"En vuelo sobre la bahía, con el cuello recogido y las patas negras estiradas"}],
   desc:"Garza blanca grande, de pico amarillo y patas negras, mucho más grande que la garza patiamarilla y la garcita del ganado. En época de cría le crecen plumas largas y finas en la espalda; por ellas casi desaparece hacia 1900, cuando se usaban en los sombreros de moda.",
   diet:"Peces, ranas, cangrejos e insectos grandes; caza caminando despacio o esperando inmóvil.",
   habitat:"Ciénagas, ríos, manglares, arrozales y potreros inundados.",
@@ -135,7 +135,7 @@ const BIRDS = [
 {
   id:"nannopterum-brasilianum", common:"Pato cuervo", alt:"Cormorán neotropical · Neotropic Cormorant",
   sci:"Nannopterum brasilianum", family:"Phalacrocoracidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.nannopterum, date:"", place:CD, ind:"Tres posados en ramas secas sobre el agua"},{img:IMG.nannopterum2, date:"", place:CD, ind:"En vuelo"}],
+  photos:[{img:IMG.nannopterum, date:"", place:CD, ind:"Tres posados en ramas secas sobre el agua"},{img:IMG.nannopterum2, date:"", place:CD, ind:"En vuelo"},{img:IMG.nannopterum3, date:"", place:CD, ind:"Grupo en la copa de un árbol: uno seca las alas abiertas al sol y otro despega"}],
   desc:"Negro, de cuello largo, cola larga y pico ganchudo con piel amarilla en la base. Sus plumas no son del todo impermeables: eso le ayuda a hundirse al bucear, pero después tiene que posarse con las alas abiertas para secarlas al sol.",
   diet:"Peces que persigue buceando, impulsándose con las patas palmeadas.",
   habitat:"Ciénagas, ríos, lagunas, manglares y costas.",
