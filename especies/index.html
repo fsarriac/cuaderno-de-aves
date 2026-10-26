@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../comun/estilos.css">
 <style>
 body{background:var(--bg);color:var(--ink);font-family:var(--body);margin:0}
-.ex-top{background:var(--night);color:var(--night-ink);padding:calc(10px + env(safe-area-inset-top,0px)) 16px 34px}
+.ex-top{background:var(--night);color:var(--night-ink);padding:4px 16px 34px}
 .ex-bar{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto}
 .ex-bar a{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:#EEF3EC;background:rgba(238,243,236,.08);padding:7px 12px;border-radius:999px;text-decoration:none}
 .ex-head{max-width:1200px;margin:26px auto 0}
@@ -33,7 +33,7 @@ main.ex{max-width:1200px;margin:0 auto;padding:10px 16px 100px}
 .grp .tax{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--muted);margin-top:4px}
 .grp .tax i{font-style:italic}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin-top:14px}
-.tile{background:var(--surface);border:0;border-radius:8px;overflow:hidden;padding:0;text-align:left;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.tile{text-decoration:none;background:var(--surface);border:0;border-radius:8px;overflow:hidden;padding:0;text-align:left;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
 .tile:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .tile .ph{aspect-ratio:4/3;background:var(--line);position:relative;overflow:hidden}
 .tile .ph img{width:100%;height:100%;object-fit:cover;display:block}
@@ -85,75 +85,69 @@ main.ex{max-width:1200px;margin:0 auto;padding:10px 16px 100px}
 </style>
 </head>
 <body>
+<a href="../" class="volver">← Todos los lugares</a>
 <header class="ex-top">
-  <div class="ex-bar"><a href="../">← Todos los lugares</a><span></span></div>
   <div class="ex-head">
-    <p class="eyebrow" style="color:#C9D6CC">Cuaderno de aves · Colombia</p>
-    <h1>Explorar por <em>especies</em></h1>
+    <p class="eyebrow" style="color:#C9D6CC" id="eb">Cuaderno de aves · Colombia</p>
+    <h1 id="h1">Explorar por <em>especies</em></h1>
     <p class="lede" id="lede"></p>
   </div>
 </header>
 <div class="ex-tools"><div class="in">
-  <div class="ex-search"><input id="q" type="search" placeholder="Buscar: colibrí, Piranga, heron…" autocomplete="off" aria-label="Buscar especie"><span class="ex-count" id="count"></span></div>
-  <div class="ex-row" id="places" role="group" aria-label="Lugar"></div>
+  <div class="ex-search"><input id="q" type="search" autocomplete="off"><span class="ex-count" id="count"></span></div>
+  <div class="ex-row" id="places" role="group"></div>
 </div></div>
 <main class="ex" id="main"></main>
-<div class="scrim2" id="scrim"></div>
-<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-hidden="true"></aside>
+<script src="../comun/i18n.js"></script>
 <script src="datos.js"></script>
 <script>
 const $=s=>document.querySelector(s);
-const SHORT={bogota:"Bogotá",cartagena:"Cartagena",pijino:"Pijiño",barichara:"Barichara",cafetera:"Z. Cafetera",boyaca:"Boyacá"};
-const IUCN={LC:"Preocupación menor",NT:"Casi amenazada",VU:"Vulnerable",EN:"En peligro",CR:"En peligro crítico"};
+const EN=window.LANG==="en";
+const T=EN?{lede:n=>`The ${n} wild species in the notebook in one place, grouped the way biologists order them but with everyday names. Each one opens its full profile, with all its photos and the places where I've seen it.`,
+  ph:"Search: hummingbird, Piranga, garza…",place:"Place",all:"All",n:n=>`${n} species`,sp:n=>n===1?"1 species":`${n} species`,
+  order:"Order",fam:"Family",fams:"Families",back:"← All groups",none:"No species match your search.",noneHere:"No species from this group in the selected place.",
+  mig:"Migratory",dom:"Domestic",feral:"Feral",h1:'Browse by <em>species</em>',eb:"Bird notebook · Colombia",title:"Browse by species · Bird notebook"}
+ :{lede:n=>`Las ${n} especies silvestres del cuaderno en un solo lugar, agrupadas como las ordenan los biólogos pero con nombres de todos los días. Cada una abre su ficha completa, con todas sus fotos y los lugares donde la he visto.`,
+  ph:"Buscar: colibrí, Piranga, heron…",place:"Lugar",all:"Todos",n:n=>`${n} especies`,sp:n=>n===1?"1 especie":`${n} especies`,
+  order:"Orden",fam:"Familia",fams:"Familias",back:"← Todos los grupos",none:"No hay especies que coincidan con la búsqueda.",noneHere:"Ninguna especie de este grupo en el lugar elegido.",
+  mig:"Migratoria",dom:"Doméstica",feral:"Asilvestrada",h1:'Explorar por <em>especies</em>',eb:"Cuaderno de aves · Colombia",title:"Explorar por especies · Cuaderno de aves"};
+const SHORT=EN?{bogota:"Bogotá",cartagena:"Cartagena",pijino:"Pijiño",barichara:"Barichara",cafetera:"Coffee Reg.",boyaca:"Boyacá"}:{bogota:"Bogotá",cartagena:"Cartagena",pijino:"Pijiño",barichara:"Barichara",cafetera:"Z. Cafetera",boyaca:"Boyacá"};
+const LNAME=EN?{cartagena:"Cartagena and surroundings",cafetera:"Coffee Region",pijino:"Ciénaga de Pijiño"}:{};
+const gname=g=>EN?g.en:g.n, cname=s=>(EN&&s.en)||s.common;
+document.title=T.title;$("#h1").innerHTML=T.h1;$("#eb").textContent=T.eb;$("#q").placeholder=T.ph;$("#q").setAttribute("aria-label",T.ph);
 let PLACE="",Q="";
-const wild=ESPECIES.filter(s=>!s.dom);
-$("#lede").textContent=`Las ${wild.length} especies silvestres del cuaderno en un solo lugar, agrupadas como las ordenan los biólogos pero con nombres de todos los días. Cada especie tiene una sola ficha con todas sus fotos y los lugares donde la he visto.`;
+$("#lede").textContent=T.lede(ESPECIES.filter(s=>!s.dom).length);
 const norm=s=>(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
-$("#places").innerHTML='<span class="lbl">Lugar</span><button class="chip" data-p="" aria-pressed="true">Todos</button>'+LUGARES.map(([l,n])=>`<button class="chip" data-p="${l}" aria-pressed="false">${n}</button>`).join("");
+$("#places").innerHTML=`<span class="lbl">${T.place}</span><button class="chip" data-p="" aria-pressed="true">${T.all}</button>`+LUGARES.map(([l,n])=>`<button class="chip" data-p="${l}" aria-pressed="false">${LNAME[l]||n}</button>`).join("");
 $("#places").addEventListener("click",e=>{const c=e.target.closest("[data-p]");if(!c)return;PLACE=c.dataset.p;$("#places").querySelectorAll("[data-p]").forEach(x=>x.setAttribute("aria-pressed",x===c));render();});
 $("#q").addEventListener("input",e=>{Q=norm(e.target.value.trim());render();});
 let GI=null;
 function readHash(){const m=location.hash.match(/^#g(\d+)$/);GI=m?+m[1]:null;}
-const tile=s=>`<button class="tile" data-k="${s.k}"><div class="ph"><img src="${s.photos[0].mini}" alt="" loading="lazy">${s.dom?`<span class="badge dom">${s.feral?"Asilvestrada":"Doméstica"}</span>`:s.mig?`<span class="badge mig">Migratoria</span>`:""}</div><div class="tx"><b>${s.common}</b><i>${s.sci}</i><div class="pl">${s.where.map(w=>`<span>${SHORT[w.l]}</span>`).join("")}</div></div></button>`;
-const tax=(g,arr)=>{const f=[...new Set(arr.map(s=>s.family))];return `<p class="tax">Orden ${g.o} · Familia${f.length>1?"s":""} <i>${f.join(", ")}</i></p>`;};
-/* Foto de portada de cada grupo: la especie silvestre con más fotos */
+/* La ficha completa vive en la página del lugar: se abre allí, en el lugar elegido o en el primero donde se vio */
+const href=s=>{const w=(PLACE&&s.where.find(x=>x.l===PLACE))||s.where[0];return `../${w.l}/#ave=${w.id}`;};
+const tile=s=>`<a class="tile" href="${href(s)}"><div class="ph"><img src="${s.photos[0].mini}" alt="" loading="lazy">${s.dom?`<span class="badge dom">${s.feral?T.feral:T.dom}</span>`:s.mig?`<span class="badge mig">${T.mig}</span>`:""}</div><div class="tx"><b>${cname(s)}</b><i>${s.sci}</i><div class="pl">${s.where.map(w=>`<span>${SHORT[w.l]}</span>`).join("")}</div></div></a>`;
+const tax=(g,arr)=>{const f=[...new Set(arr.map(s=>s.family))];return `<p class="tax">${T.order} ${g.o} · ${f.length>1?T.fams:T.fam} <i>${f.join(", ")}</i></p>`;};
 const cover=arr=>{const w=arr.filter(s=>!s.dom);const c=(w.length?w:arr).slice().sort((a,b)=>b.photos.length-a.photos.length)[0];return c.photos[0].img;};
 function render(){
-  const vis=ESPECIES.filter(s=>(!PLACE||s.where.some(w=>w.l===PLACE))&&(!Q||norm(s.common+" "+s.alt+" "+s.sci+" "+s.family+" "+(GRUPOS[s.g]||{}).n).includes(Q)));
-  $("#count").textContent=`${vis.filter(s=>!s.dom).length} especies`;
+  const vis=ESPECIES.filter(s=>(!PLACE||s.where.some(w=>w.l===PLACE))&&(!Q||norm([s.common,s.alt,s.en,s.enAlt,s.sci,s.family,GRUPOS[s.g].n,GRUPOS[s.g].en].join(" ")).includes(Q)));
+  $("#count").textContent=T.n(vis.filter(s=>!s.dom).length);
   let h="";
-  if(Q){ /* búsqueda: resultados de todos los grupos */
+  if(Q){
     GRUPOS.forEach((g,i)=>{const arr=vis.filter(s=>s.g===i);if(!arr.length)return;
-      h+=`<section class="grp"><h2>${g.n}</h2>${tax(g,arr)}<div class="tiles">${arr.map(tile).join("")}</div></section>`;});
-    h=h||'<p class="empty">No hay especies que coincidan con la búsqueda.</p>';
-  } else if(GI!==null && GRUPOS[GI]){ /* un grupo */
+      h+=`<section class="grp"><h2>${gname(g)}</h2>${tax(g,arr)}<div class="tiles">${arr.map(tile).join("")}</div></section>`;});
+    h=h||`<p class="empty">${T.none}</p>`;
+  } else if(GI!==null && GRUPOS[GI]){
     const g=GRUPOS[GI], arr=vis.filter(s=>s.g===GI);
-    h=`<section class="grp"><a class="backg" href="#">← Todos los grupos</a><h2 style="margin-top:14px">${g.n}</h2>${arr.length?tax(g,arr):""}<div class="tiles">${arr.map(tile).join("")}</div>${arr.length?"":'<p class="empty">Ninguna especie de este grupo en el lugar elegido.</p>'}</section>`;
-  } else { /* portada de grupos */
+    h=`<section class="grp"><a class="backg" href="#">${T.back}</a><h2 style="margin-top:14px">${gname(g)}</h2>${arr.length?tax(g,arr):""}<div class="tiles">${arr.map(tile).join("")}</div>${arr.length?"":`<p class="empty">${T.noneHere}</p>`}</section>`;
+  } else {
     h='<div class="gcards">'+GRUPOS.map((g,i)=>{const arr=vis.filter(s=>s.g===i);if(!arr.length)return "";const n=arr.filter(s=>!s.dom).length||arr.length;
-      return `<a class="gcard" href="#g${i}"><img src="${(!PLACE&&PORTADAS[i])||cover(arr)}" alt="" loading="lazy"><span class="gt"><b>${g.n}</b><small>${n} especie${n>1?"s":""}</small></span></a>`;}).join("")+'</div>';
+      return `<a class="gcard" href="#g${i}"><img src="${(!PLACE&&PORTADAS[i])||cover(arr)}" alt="" loading="lazy"><span class="gt"><b>${gname(g)}</b><small>${T.sp(n)}</small></span></a>`;}).join("")+'</div>';
   }
   $("#main").innerHTML=h;
 }
 readHash();render();
 addEventListener("hashchange",()=>{readHash();render();scrollTo({top:document.querySelector(".ex-tools").offsetTop,behavior:"auto"});});
-$("#main").addEventListener("click",e=>{const t=e.target.closest(".tile");if(t)open(t.dataset.k);});
-function media(s,i){const p=s.photos[i];return `<div class="media"><img src="${p.img}" alt="${s.common}"></div><p class="cap">${p.ind||""} · ${p.place}</p>`;}
-function open(k){
-  const s=ESPECIES.find(x=>x.k===k);
-  const thumbs=s.photos.length>1?`<div class="thumbs">${s.photos.map((p,i)=>`<button data-i="${i}" aria-selected="${i===0}"><img src="${p.mini}" alt="" loading="lazy"></button>`).join("")}</div>`:"";
-  $("#sheet").innerHTML=`<button class="close" id="close">← Volver</button><div id="m">${media(s,0)}</div>${thumbs}
-    <div class="body"><p class="fam">${GRUPOS[s.g].n} · ${s.family}</p><h2>${s.common}</h2><p class="sci">${s.sci}</p><p class="alt">${s.alt||""}</p>
-    <div class="tags"><span>${IUCN[s.iucn]||s.iucn}</span><span>${s.dom?(s.feral?"Asilvestrada":"Doméstica"):s.mig?"Migratoria":"Residente"}</span>${s.conf!=="alta"?"<span>ID por confirmar</span>":""}<span>${s.photos.length} foto${s.photos.length>1?"s":""}</span></div>
-    <h3>Cómo es</h3><p>${s.desc}</p><h3>Qué come</h3><p>${s.diet}</p><h3>Hábitat</h3><p>${s.habitat}</p>
-    <h3>Dónde la he visto</h3><div class="where">${s.where.map(w=>`<div><a href="../${w.l}/">${w.nom}</a><p style="margin-top:4px">${w.donde}</p></div>`).join("")}</div></div>`;
-  $("#sheet").querySelectorAll(".thumbs button").forEach(b=>b.addEventListener("click",()=>{$("#m").innerHTML=media(s,+b.dataset.i);$("#sheet").querySelectorAll(".thumbs button").forEach(x=>x.setAttribute("aria-selected",x===b));}));
-  $("#close").addEventListener("click",close);
-  $("#sheet").scrollTop=0;$("#sheet").classList.add("open");$("#scrim").classList.add("open");$("#sheet").setAttribute("aria-hidden","false");document.documentElement.style.overflow="hidden";
-}
-function close(){$("#sheet").classList.remove("open");$("#scrim").classList.remove("open");$("#sheet").setAttribute("aria-hidden","true");document.documentElement.style.overflow="";}
-$("#scrim").addEventListener("click",close);
-document.addEventListener("keydown",e=>{if(e.key==="Escape")close();});
 </script>
+<script src="../comun/lugares.js"></script>
 </body>
 </html>

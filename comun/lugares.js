@@ -11,7 +11,7 @@
   ".drawer.open~.lnav,html[style*='overflow: hidden'] .lnav{display:none}";
   document.head.appendChild(st);
   var n=document.createElement("nav"); n.className="lnav"; n.setAttribute("aria-label","Lugares");
-  var items='<li><a class="home" href="../">← Todos los lugares</a></li>'+L.map(function(x){var cur=here.indexOf(x[0])===0;return '<li><a href="../'+x[0]+'/"'+(cur?' aria-current="page"':'')+'>'+x[1]+'</a></li>';}).join("");
+  var items='<li><a class="home" href="../">← Todos los lugares</a></li><li><a href="../especies/"'+(here.indexOf("especies")===0?' aria-current="page"':'')+' style="border-bottom:1px solid rgba(238,243,236,.15);border-radius:0">Explorar por especies</a></li>'+L.map(function(x){var cur=here.indexOf(x[0])===0;return '<li><a href="../'+x[0]+'/"'+(cur?' aria-current="page"':'')+'>'+x[1]+'</a></li>';}).join("");
   n.innerHTML='<ul id="lnavList" hidden>'+items+'</ul><button type="button" aria-expanded="false" aria-controls="lnavList"><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M8 15s5-4.6 5-8.5A5 5 0 0 0 3 6.5C3 10.4 8 15 8 15z" stroke="currentColor" stroke-width="1.7"/><circle cx="8" cy="6.5" r="1.8" fill="currentColor"/></svg><span>Lugares</span></button>';
   var b=n.querySelector("button"), u=n.querySelector("ul");
   b.addEventListener("click",function(e){e.stopPropagation();u.hidden=!u.hidden;b.setAttribute("aria-expanded",!u.hidden);});
