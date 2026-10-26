@@ -45,6 +45,17 @@ main.ex{max-width:1200px;margin:0 auto;padding:10px 16px 100px}
 .tile .pl{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
 .tile .pl span{font-family:var(--mono);font-size:10px;color:var(--resident);background:rgba(44,122,123,.1);padding:2px 6px;border-radius:4px}
 .empty{padding:40px 0;color:var(--muted)}
+.gcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;padding-top:22px}
+.gcard{position:relative;display:block;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:var(--line);color:#fff;text-decoration:none;transition:transform .25s,box-shadow .25s}
+.gcard:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.gcard img{width:100%;height:100%;object-fit:cover;display:block}
+.gcard::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,14,10,.85) 0%,rgba(6,14,10,.2) 45%,rgba(6,14,10,0) 65%)}
+.gcard .gt{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;display:grid;gap:2px}
+.gcard b{font-family:var(--display);font-size:22px;font-weight:600;line-height:1.1}
+.gcard small{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#E8D9A8}
+.backg{font-family:var(--mono);font-size:12px;color:var(--resident);text-decoration:none;font-weight:500}
+@media (max-width:640px){.gcards{grid-template-columns:1fr 1fr;gap:10px}.gcard b{font-size:17px}}
+
 /* Ficha */
 .scrim2{position:fixed;inset:0;background:rgba(6,14,10,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}
 .scrim2.open{opacity:1;pointer-events:auto}
@@ -85,7 +96,6 @@ main.ex{max-width:1200px;margin:0 auto;padding:10px 16px 100px}
 <div class="ex-tools"><div class="in">
   <div class="ex-search"><input id="q" type="search" placeholder="Buscar: colibrí, Piranga, heron…" autocomplete="off" aria-label="Buscar especie"><span class="ex-count" id="count"></span></div>
   <div class="ex-row" id="places" role="group" aria-label="Lugar"></div>
-  <div class="ex-row" id="jump" aria-label="Ir a un grupo"></div>
 </div></div>
 <main class="ex" id="main"></main>
 <div class="scrim2" id="scrim"></div>
@@ -102,19 +112,31 @@ const norm=s=>(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 $("#places").innerHTML='<span class="lbl">Lugar</span><button class="chip" data-p="" aria-pressed="true">Todos</button>'+LUGARES.map(([l,n])=>`<button class="chip" data-p="${l}" aria-pressed="false">${n}</button>`).join("");
 $("#places").addEventListener("click",e=>{const c=e.target.closest("[data-p]");if(!c)return;PLACE=c.dataset.p;$("#places").querySelectorAll("[data-p]").forEach(x=>x.setAttribute("aria-pressed",x===c));render();});
 $("#q").addEventListener("input",e=>{Q=norm(e.target.value.trim());render();});
+let GI=null;
+function readHash(){const m=location.hash.match(/^#g(\d+)$/);GI=m?+m[1]:null;}
+const tile=s=>`<button class="tile" data-k="${s.k}"><div class="ph"><img src="${s.photos[0].mini}" alt="" loading="lazy">${s.dom?`<span class="badge dom">${s.feral?"Asilvestrada":"Doméstica"}</span>`:s.mig?`<span class="badge mig">Migratoria</span>`:""}</div><div class="tx"><b>${s.common}</b><i>${s.sci}</i><div class="pl">${s.where.map(w=>`<span>${SHORT[w.l]}</span>`).join("")}</div></div></button>`;
+const tax=(g,arr)=>{const f=[...new Set(arr.map(s=>s.family))];return `<p class="tax">Orden ${g.o} · Familia${f.length>1?"s":""} <i>${f.join(", ")}</i></p>`;};
+/* Foto de portada de cada grupo: la especie silvestre con más fotos */
+const cover=arr=>{const w=arr.filter(s=>!s.dom);const c=(w.length?w:arr).slice().sort((a,b)=>b.photos.length-a.photos.length)[0];return c.photos[0].img;};
 function render(){
   const vis=ESPECIES.filter(s=>(!PLACE||s.where.some(w=>w.l===PLACE))&&(!Q||norm(s.common+" "+s.alt+" "+s.sci+" "+s.family+" "+(GRUPOS[s.g]||{}).n).includes(Q)));
   $("#count").textContent=`${vis.filter(s=>!s.dom).length} especies`;
-  let h="",jump="";
-  GRUPOS.forEach((g,i)=>{const arr=vis.filter(s=>s.g===i);if(!arr.length)return;
-    jump+=`<a class="chip" href="#g${i}">${g.n} <small>${arr.length}</small></a>`;
-    const fams=[...new Set(arr.map(s=>s.family))];
-    h+=`<section class="grp" id="g${i}"><h2>${g.n}</h2><p class="tax">Orden ${g.o} · Familia${fams.length>1?"s":""} <i>${fams.join(", ")}</i></p><div class="tiles">`+
-      arr.map(s=>`<button class="tile" data-k="${s.k}"><div class="ph"><img src="${s.photos[0].mini}" alt="" loading="lazy">${s.dom?`<span class="badge dom">${s.feral?"Asilvestrada":"Doméstica"}</span>`:s.mig?`<span class="badge mig">Migratoria</span>`:""}</div><div class="tx"><b>${s.common}</b><i>${s.sci}</i><div class="pl">${s.where.map(w=>`<span>${SHORT[w.l]}</span>`).join("")}</div></div></button>`).join("")+`</div></section>`;});
-  $("#main").innerHTML=h||'<p class="empty">No hay especies que coincidan con la búsqueda.</p>';
-  $("#jump").innerHTML='<span class="lbl">Grupos</span>'+jump;
+  let h="";
+  if(Q){ /* búsqueda: resultados de todos los grupos */
+    GRUPOS.forEach((g,i)=>{const arr=vis.filter(s=>s.g===i);if(!arr.length)return;
+      h+=`<section class="grp"><h2>${g.n}</h2>${tax(g,arr)}<div class="tiles">${arr.map(tile).join("")}</div></section>`;});
+    h=h||'<p class="empty">No hay especies que coincidan con la búsqueda.</p>';
+  } else if(GI!==null && GRUPOS[GI]){ /* un grupo */
+    const g=GRUPOS[GI], arr=vis.filter(s=>s.g===GI);
+    h=`<section class="grp"><a class="backg" href="#">← Todos los grupos</a><h2 style="margin-top:14px">${g.n}</h2>${arr.length?tax(g,arr):""}<div class="tiles">${arr.map(tile).join("")}</div>${arr.length?"":'<p class="empty">Ninguna especie de este grupo en el lugar elegido.</p>'}</section>`;
+  } else { /* portada de grupos */
+    h='<div class="gcards">'+GRUPOS.map((g,i)=>{const arr=vis.filter(s=>s.g===i);if(!arr.length)return "";const n=arr.filter(s=>!s.dom).length||arr.length;
+      return `<a class="gcard" href="#g${i}"><img src="${cover(arr)}" alt="" loading="lazy"><span class="gt"><b>${g.n}</b><small>${n} especie${n>1?"s":""}</small></span></a>`;}).join("")+'</div>';
+  }
+  $("#main").innerHTML=h;
 }
-render();
+readHash();render();
+addEventListener("hashchange",()=>{readHash();render();scrollTo({top:document.querySelector(".ex-tools").offsetTop,behavior:"auto"});});
 $("#main").addEventListener("click",e=>{const t=e.target.closest(".tile");if(t)open(t.dataset.k);});
 function media(s,i){const p=s.photos[i];return `<div class="media"><img src="${p.img}" alt="${s.common}"></div><p class="cap">${p.ind||""} · ${p.place}</p>`;}
 function open(k){
