@@ -86,7 +86,7 @@ main.ex{max-width:1200px;margin:0 auto;padding:10px 16px 100px}
 </head>
 <body>
 <header class="ex-top">
-  <div class="ex-bar"><a href="../">← Todos los lugares</a><span class="proto">Prototipo</span></div>
+  <div class="ex-bar"><a href="../">← Todos los lugares</a><span></span></div>
   <div class="ex-head">
     <p class="eyebrow" style="color:#C9D6CC">Cuaderno de aves · Colombia</p>
     <h1>Explorar por <em>especies</em></h1>
@@ -131,7 +131,7 @@ function render(){
     h=`<section class="grp"><a class="backg" href="#">← Todos los grupos</a><h2 style="margin-top:14px">${g.n}</h2>${arr.length?tax(g,arr):""}<div class="tiles">${arr.map(tile).join("")}</div>${arr.length?"":'<p class="empty">Ninguna especie de este grupo en el lugar elegido.</p>'}</section>`;
   } else { /* portada de grupos */
     h='<div class="gcards">'+GRUPOS.map((g,i)=>{const arr=vis.filter(s=>s.g===i);if(!arr.length)return "";const n=arr.filter(s=>!s.dom).length||arr.length;
-      return `<a class="gcard" href="#g${i}"><img src="${cover(arr)}" alt="" loading="lazy"><span class="gt"><b>${g.n}</b><small>${n} especie${n>1?"s":""}</small></span></a>`;}).join("")+'</div>';
+      return `<a class="gcard" href="#g${i}"><img src="${(!PLACE&&PORTADAS[i])||cover(arr)}" alt="" loading="lazy"><span class="gt"><b>${g.n}</b><small>${n} especie${n>1?"s":""}</small></span></a>`;}).join("")+'</div>';
   }
   $("#main").innerHTML=h;
 }

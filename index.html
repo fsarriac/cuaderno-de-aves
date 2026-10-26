@@ -64,6 +64,13 @@
   .prox-img{display:grid;place-items:center;background:radial-gradient(120% 90% at 30% 20%,#1F3A2E,#0B1712)!important}
   .prox-q{font-family:var(--display);font-style:italic;font-size:34px;line-height:1.05;color:#F2C14E;text-align:center}
   .prox-link{text-decoration:none}.prox-link:hover{text-decoration:underline}
+  .porespecies{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;margin-top:18px;padding:14px;border-radius:12px;background:var(--night);color:var(--night-ink);text-decoration:none;transition:transform .25s,box-shadow .25s}
+  .porespecies:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .pe-img{display:flex}.pe-img img{width:74px;height:74px;object-fit:cover;border-radius:50%;border:3px solid var(--night);margin-left:-18px}.pe-img img:first-child{margin-left:0}
+  .pe-tx{display:grid;gap:3px}.pe-tx small{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#C9D6CC}
+  .pe-tx b{font-family:var(--display);font-size:26px;font-weight:600;line-height:1.1}.pe-tx span{font-size:14px;color:var(--night-muted);max-width:62ch}
+  .pe-go{font-size:26px;color:#FF7A5C;padding-right:8px}
+  @media (max-width:640px){.porespecies{grid-template-columns:1fr;gap:10px}.pe-img img{width:56px;height:56px}.pe-go{display:none}}
   .lugar .n{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--piranga);margin-top:6px}
   .pronto .n{color:var(--muted)}
   .badge{position:absolute;left:12px;top:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(6,14,10,.62);color:#fff;backdrop-filter:blur(6px)}
@@ -111,7 +118,12 @@
 </section>
 <main class="wrap">
   <p class="eyebrow" style="padding-top:44px">Explora el cuaderno</p>
-  <h2 class="display" style="font-size:clamp(30px,4vw,44px);line-height:1.05;font-weight:600;margin-top:6px">Lugares</h2>
+  <a class="porespecies" style="margin-top:12px" href="especies/">
+    <span class="pe-img"><img src="bogota/fotos/mini/coruscansM1.jpg" alt=""><img src="cafetera/fotos/mini/anisognathus.jpg" alt=""><img src="pijino/fotos/mini/pandion.jpg" alt=""></span>
+    <span class="pe-tx"><small>Otra forma de recorrer el cuaderno</small><b>Explorar por especies</b><span>Colibríes, rapaces, garzas, tangaras… todas las aves agrupadas, con una sola ficha por especie y los lugares donde la he visto.</span></span>
+    <span class="pe-go" aria-hidden="true">→</span>
+  </a>
+  <h2 class="display" style="font-size:clamp(30px,4vw,44px);line-height:1.05;font-weight:600;margin-top:34px">Lugares</h2>
   <div class="lugares">
     <a class="lugar" href="bogota/">
       <div class="img"><img src="bogota/fotos/mini/coruscansM1.jpg" alt="Colibrí chillón en Monserrate, Bogotá"></div>
