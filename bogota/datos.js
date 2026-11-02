@@ -6,6 +6,7 @@ const LUGAR = {
   region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
+ "rallus": "fotos/rallus.jpg",
  "troglodytesPF": "fotos/troglodytesPF.jpg",
  "troglodytesPF2": "fotos/troglodytesPF2.jpg",
  "icterusPF": "fotos/icterusPF.jpg",
@@ -483,6 +484,16 @@ const BIRDS = [
   migration:null
 },
 {
+  id:"rallus-semiplumbeus", common:"Tingua bogotana", alt:"Rascón bogotano · Bogota Rail",
+  sci:"Rallus semiplumbeus", family:"Rallidae", iucn:"EN", conf:"alta",
+  photos:[{img:IMG.rallus, date:"", place:PF, ind:"Entre los juncos secos: pico largo y rojo, pecho gris y dorso pardo rayado"}],
+  desc:"Tingua mediana y esbelta, de pico largo, recto y rojo con la punta negra. Tiene la cara y el pecho gris pizarra, la garganta blancuzca, el dorso pardo rayado de negro y los flancos barrados de blanco y negro. Es endémica de Colombia: solo vive en los humedales de la cordillera Oriental, sobre todo en la Sabana de Bogotá y el altiplano de Ubaté.",
+  diet:"Insectos acuáticos, larvas, lombrices, caracoles, renacuajos y pequeños peces que busca metiendo el pico en el barro y entre la vegetación.",
+  habitat:"Juncales, eneas y orillas pantanosas de humedales y lagunas del altiplano, entre unos 2.500 y 4.000 m.",
+  tip:"Está en peligro de extinción: casi todos los humedales de la Sabana se han rellenado, drenado o contaminado. Cada humedal que se conserva, con sus juncales, es un refugio para ella. No soltar perros ni gatos cerca de los humedales también la protege.",
+  migration:null
+},
+{
   id:"porphyriops-melanops", common:"Tingua moteada", alt:"Polla de agua moteada · Spot-flanked Gallinule",
   sci:"Porphyriops melanops", family:"Rallidae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.porphyriops, date:"", place:PF, ind:"De frente entre los juncos, con el pico verde lima"},{img:IMG.porphyriops2, date:"", place:PF, ind:"Nadando, con los flancos moteados de blanco"},{img:IMG.porphyriops3, date:"", place:PF, ind:"De perfil, con el ojo rojo"},{img:IMG.porphyriops4, date:"", place:PF, ind:"Caminando sobre el buchón de agua"}],
@@ -663,6 +674,7 @@ const BIRDS = [
 }];
 
 const XTRA={
+ "rallus-semiplumbeus":{sw:[["#6E7A86","Pecho"],["#6A5240","Dorso"],["#D8322A","Pico"],["#F4F4F0","Barras"]]},
  "porphyriops-melanops":{sw:[["#7A808A","Cabeza"],["#7A3A22","Dorso"],["#C8E07A","Pico"],["#F4F4F0","Gotas"]]},
  "podilymbus-podiceps":{sw:[["#6E5A44","Cuerpo"],["#D8D4C8","Pico"],["#1E1A16","Anillo"]]},
  "serpophaga-cinerea":{sw:[["#B8BCC0","Cuerpo"],["#1E1E22","Corona"],["#2A2A2E","Alas"]]},
@@ -715,6 +727,7 @@ const XTRA={
 
 /* Hábitos y dónde verlo en la hacienda */
 const HAB={
+ "rallus-semiplumbeus":["Muy esquiva: camina despacio entre los juncos y casi nunca sale a campo abierto. Se delata por su llamada, una serie de chillidos agudos parecidos a un relincho.","Bordes de los juncales de la laguna, en silencio y con paciencia; las primeras horas de la mañana son las mejores."],
  "porphyriops-melanops":["Tímida: camina entre el buchón y los juncos y se esconde al menor ruido. Nada moviendo la cabeza adelante y atrás.","Orillas de la laguna del parque con juncos y buchón, en las mañanas tranquilas."],
  "podilymbus-podiceps":["Se sumerge de repente y reaparece lejos; cuando se siente en peligro se hunde despacio hasta dejar solo la cabeza fuera del agua.","Aguas abiertas de la laguna, cerca de los juncales."],
  "serpophaga-cinerea":["Muy activo: salta entre tallos y piedras moviendo la cola, y hace vuelos cortos sobre el agua para atrapar insectos.","Juncos y orillas de la laguna."],
@@ -766,6 +779,7 @@ const HAB={
 };
 
 const PLACES={
+ "rallus-semiplumbeus":["humedal"],
  "porphyriops-melanops":["humedal"],"podilymbus-podiceps":["humedal"],"serpophaga-cinerea":["humedal"],"chrysomus-icterocephalus":["humedal"],
  "butorides-striata":["humedal"],"nyctanassa-violacea":["humedal"],"tringa-flavipes":["humedal"],"geranoaetus-albicaudatus":["cielo"],
  "bubulcus-ibis":["prado"],
