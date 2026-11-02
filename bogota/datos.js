@@ -494,7 +494,7 @@ const BIRDS = [
   migration:null
 },
 {
-  id:"porphyriops-melanops", common:"Tingua moteada", alt:"Polla de agua moteada · Spot-flanked Gallinule",
+  id:"porphyriops-melanops", common:"Tingua moteada", alt:"Gallineta moteada · Polla sabanera · Spot-flanked Gallinule",
   sci:"Porphyriops melanops", family:"Rallidae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.porphyriops, date:"", place:PF, ind:"De frente entre los juncos, con el pico verde lima"},{img:IMG.porphyriops2, date:"", place:PF, ind:"Nadando, con los flancos moteados de blanco"},{img:IMG.porphyriops3, date:"", place:PF, ind:"De perfil, con el ojo rojo"},{img:IMG.porphyriops4, date:"", place:PF, ind:"Caminando sobre el buchón de agua"}],
   desc:"Tingua pequeña de cabeza y pecho gris pizarra, corona negra, dorso castaño y flancos negros con gotas blancas. El pico es verde lima y el ojo rojo. En la Sabana vive una raza propia, bogotensis, que solo existe en los humedales del altiplano.",
