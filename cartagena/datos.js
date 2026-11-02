@@ -126,7 +126,7 @@ const BIRDS = [
 {
   id:"ardea-alba", common:"Garza real", alt:"Garceta grande · Great Egret",
   sci:"Ardea alba", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.alba2, date:"", place:CD, ind:"En vuelo, con las patas negras extendidas"},{img:IMG.alba, date:"", place:CD, ind:"En la orilla, junto a un maizal"},{img:IMG.alba3, date:"", place:CD, ind:"Volando bajo sobre el canal"},{img:IMG.albaCD, date:"", place:CD, ind:"Al acecho en la orilla, contra un muro de eneas"},{img:IMG.albaMG, date:"", place:MG, ind:"En vuelo sobre la bahía, con el cuello recogido y las patas negras estiradas"}],
+  photos:[{img:IMG.albaCD, date:"", place:CD, ind:"Al acecho en la orilla, contra un muro de eneas"},{img:IMG.alba2, date:"", place:CD, ind:"En vuelo, con las patas negras extendidas"},{img:IMG.alba, date:"", place:CD, ind:"En la orilla, junto a un maizal"},{img:IMG.alba3, date:"", place:CD, ind:"Volando bajo sobre el canal"},{img:IMG.albaMG, date:"", place:MG, ind:"En vuelo sobre la bahía, con el cuello recogido y las patas negras estiradas"}],
   desc:"Garza blanca grande, de pico amarillo y patas negras, mucho más grande que la garza patiamarilla y la garcita del ganado. En época de cría le crecen plumas largas y finas en la espalda; por ellas casi desaparece hacia 1900, cuando se usaban en los sombreros de moda.",
   diet:"Peces, ranas, cangrejos e insectos grandes; caza caminando despacio o esperando inmóvil.",
   habitat:"Ciénagas, ríos, manglares, arrozales y potreros inundados.",

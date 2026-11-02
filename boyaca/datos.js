@@ -29,7 +29,7 @@ const BIRDS=[
 {
   id:"psarocolius-angustifrons", common:"Mochilero pardo", alt:"Oropéndola dorsirrojiza · Russet-backed Oropendola",
   sci:"Psarocolius angustifrons", family:"Icteridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.angustifrons,date:"",place:VT,ind:"Entre las ramas de un naranjo"},{img:IMG.angustifrons2,date:"",place:VT,ind:"Con la cola levantada"},{img:IMG.angustifrons3,date:"",place:VT,ind:"Comiendo papaya madura"}],
+  photos:[{img:IMG.angustifrons2,date:"",place:VT,ind:"Con la cola levantada"},{img:IMG.angustifrons,date:"",place:VT,ind:"Entre las ramas de un naranjo"},{img:IMG.angustifrons3,date:"",place:VT,ind:"Comiendo papaya madura"}],
   desc:"Grande, pardo castaño con la cabeza oliva, un pico grande y pálido y la cola amarillo intenso que muestra al volar. Teje nidos colgantes en forma de mochila, de hasta un metro de largo, en colonias sobre árboles altos.",
   diet:"Frutos (papaya, naranjas, guamos), néctar, insectos y pequeños animales.",
   habitat:"Bordes de bosque, cafetales con sombrío, huertos y árboles aislados en potreros.",
@@ -84,7 +84,7 @@ const BIRDS=[
 {
   id:"butorides-striata", common:"Garcita rayada", alt:"Garcita estriada · Striated Heron",
   sci:"Butorides striata", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.butorides,date:"",place:VT,ind:"Acechando en la orilla"},{img:IMG.butorides2,date:"",place:VT,ind:"Caminando agachada entre piedras"}],
+  photos:[{img:IMG.butorides2,date:"",place:VT,ind:"Caminando agachada entre piedras"},{img:IMG.butorides,date:"",place:VT,ind:"Acechando en la orilla"}],
   desc:"Garza pequeña y rechoncha, de patas amarillas cortas, corona negra y plumaje gris rayado. Camina agachada y se queda inmóvil antes de lanzar el picotazo.",
   diet:"Peces pequeños, ranas, cangrejos e insectos. Se ha visto usar «carnadas» —insectos o migas— para atraer peces.",
   habitat:"Orillas de ríos, quebradas, lagunas y embalses con piedras o vegetación.",
@@ -93,7 +93,7 @@ const BIRDS=[
 {
   id:"bubulcus-ibis", common:"Garcita del ganado", alt:"Garcilla bueyera · Cattle Egret",
   sci:"Bubulcus ibis", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.bubulcus2,date:"",place:AB,ind:"En plumaje de cría, llamando junto a los nidos"},{img:IMG.bubulcus4,date:"",place:AB,ind:"Con la corona y el pecho color ante de la época de cría"},{img:IMG.bubulcus3,date:"",place:AB,ind:"Adulto posado, con el pico anaranjado"},{img:IMG.bubulcus5,date:"",place:AB,ind:"Colonia de nidos en los eucaliptos"},{img:IMG.bubulcus,date:"",place:AB,ind:"Abriendo las alas junto a un nido"}],
+  photos:[{img:IMG.bubulcus3,date:"",place:AB,ind:"Adulto posado, con el pico anaranjado"},{img:IMG.bubulcus2,date:"",place:AB,ind:"En plumaje de cría, llamando junto a los nidos"},{img:IMG.bubulcus4,date:"",place:AB,ind:"Con la corona y el pecho color ante de la época de cría"},{img:IMG.bubulcus5,date:"",place:AB,ind:"Colonia de nidos en los eucaliptos"},{img:IMG.bubulcus,date:"",place:AB,ind:"Abriendo las alas junto a un nido"}],
   desc:"Garza blanca pequeña y rechoncha, de pico corto. En época de cría, como en estas fotos, le salen plumas color ante en la corona, el pecho y la espalda, y el pico y las patas se vuelven anaranjados. Es originaria de África: a finales del siglo XIX cruzó el Atlántico por sus propios medios y en pocas décadas se extendió por toda América siguiendo a la ganadería.",
   diet:"Saltamontes y otros insectos que espanta el ganado al caminar; también ranas y lagartijas.",
   habitat:"Potreros con ganado y orillas de humedales. Anida en colonias ruidosas sobre árboles, a menudo junto al agua; en Boyacá usa eucaliptos y sauces.",
@@ -102,7 +102,7 @@ const BIRDS=[
 {
   id:"chaetocercus-mulsant", common:"Estrellita ventriblanca", alt:"Rumbito · White-bellied Woodstar",
   sci:"Chaetocercus mulsant", family:"Trochilidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.chaetoF,date:"",place:AB,ind:"Hembra en vuelo"},{img:IMG.chaetoF2,date:"",place:AB,ind:"Hembra de perfil, con la cola de punta canela"}],
+  photos:[{img:IMG.chaetoF2,date:"",place:AB,ind:"Hembra de perfil, con la cola de punta canela"},{img:IMG.chaetoF,date:"",place:AB,ind:"Hembra en vuelo"}],
   desc:"Colibrí diminuto, de unos 7,5 cm. El macho tiene gorguera magenta y pecho blanco; la hembra, como la de las fotos, es canela por debajo, con un antifaz oscuro y una ceja blanca detrás del ojo. Vuela recto y zumbando, como un abejorro.",
   diet:"Néctar de flores pequeñas y de bebederos; insectos diminutos.",
   habitat:"Bordes de bosque andino, jardines y matorrales floridos, entre unos 1.800 y 3.000 m.",

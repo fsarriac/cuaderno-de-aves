@@ -395,7 +395,7 @@ const BIRDS = [
 {
   id:"mimus-gilvus", common:"Sinsonte tropical", alt:"Sinsonte común · Tropical Mockingbird",
   sci:"Mimus gilvus", family:"Mimidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.gilvus3, date:"", place:SS, ind:"Adulto sobre el muro de ladrillo"},{img:IMG.gilvus, date:"", place:SS, ind:"Adulto"},{img:IMG.gilvus2, date:"", place:SS, ind:"Con un fruto en el pico, sobre el tejado"},{img:IMG.gilvus4, date:"", place:SS, ind:"Adulto entre las hojas, con el antifaz oscuro y la cola larga"}],
+  photos:[{img:IMG.gilvus4, date:"", place:SS, ind:"Adulto entre las hojas, con el antifaz oscuro y la cola larga"},{img:IMG.gilvus3, date:"", place:SS, ind:"Adulto sobre el muro de ladrillo"},{img:IMG.gilvus, date:"", place:SS, ind:"Adulto"},{img:IMG.gilvus2, date:"", place:SS, ind:"Con un fruto en el pico, sobre el tejado"}],
   desc:"Gris claro por encima y blancuzco por debajo, con antifaz oscuro y cola larga de puntas blancas que abre al posarse. Canta desde perchas altas, con frases variadas y repetidas.",
   diet:"Omnívoro: insectos, arañas, frutos y semillas. Busca alimento en el suelo y en arbustos.",
   habitat:"Áreas abiertas, potreros con árboles, cercas vivas, jardines y zonas urbanas, del nivel del mar hasta la Sabana.",
@@ -413,7 +413,7 @@ const BIRDS = [
 {
   id:"anisognathus-igniventris", common:"Clarinero escarlata", alt:"Tangara de montaña ventriescarlata · Scarlet-bellied Mountain Tanager",
   sci:"Anisognathus igniventris", family:"Thraupidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.anisognathus, date:"", place:SS, ind:"Adulto"},{img:IMG.anisognathus2, date:"", place:SS, ind:"De espaldas, con el hombro azul a la vista"},{img:IMG.anisognathusM, date:"", place:MS, ind:"Entre moras silvestres y retamo"}],
+  photos:[{img:IMG.anisognathusM, date:"", place:MS, ind:"Entre moras silvestres y retamo"},{img:IMG.anisognathus, date:"", place:SS, ind:"Adulto"},{img:IMG.anisognathus2, date:"", place:SS, ind:"De espaldas, con el hombro azul a la vista"}],
   desc:"Negro azabache con una mancha escarlata detrás del ojo, el vientre rojo encendido y un parche azul celeste en el hombro. De espaldas casi parece todo negro, hasta que gira y aparecen los colores.",
   diet:"Frutos y bayas de arbustos andinos; también insectos y algo de néctar.",
   habitat:"Bosque altoandino, subpáramo y bordes con arbustos, entre unos 2.500 y 3.700 m. En la Sabana visita jardines con setos y árboles frutales.",
@@ -440,7 +440,7 @@ const BIRDS = [
 {
   id:"troglodytes-aedon", common:"Cucarachero", alt:"Cucarachero común · House Wren",
   sci:"Troglodytes aedon", family:"Troglodytidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.troglodytes, date:"", place:SS, ind:"Buscando insectos bajo el seto"},{img:IMG.troglodytesPF, date:"", place:PF, ind:"En el borde de una jardinera de piedra"},{img:IMG.troglodytesPF2, date:"", place:PF, ind:"Junto a una cerca, entre el pasto"}],
+  photos:[{img:IMG.troglodytesPF2, date:"", place:PF, ind:"Junto a una cerca, entre el pasto"},{img:IMG.troglodytes, date:"", place:SS, ind:"Buscando insectos bajo el seto"},{img:IMG.troglodytesPF, date:"", place:PF, ind:"En el borde de una jardinera de piedra"}],
   desc:"Pájaro pequeño y pardo con finas barras oscuras en alas y cola, que suele llevar levantada. Su canto es un trino largo, rápido y burbujeante, sorprendentemente fuerte para su tamaño.",
   diet:"Insectos, arañas, cucarachas y larvas que busca entre hojarasca, rendijas y arbustos.",
   habitat:"Jardines, setos, potreros con arbustos y casas. Anida en huecos de muros, tejados y cajas nido.",
@@ -467,7 +467,7 @@ const BIRDS = [
 {
   id:"gallinula-galeata", common:"Tingua de pico rojo", alt:"Polla de agua · Gallareta común · Common Gallinule",
   sci:"Gallinula galeata", family:"Rallidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.gallinula, date:"", place:SS, ind:"Adulto caminando entre la vegetación del humedal, con la línea blanca del flanco"},{img:IMG.gallinula2, date:"", place:SS, ind:"Adulto con un juvenil, pardo y sin escudo rojo"},{img:IMG.gallinulaPF, date:"", place:PF, ind:"Caminando sobre el helecho de agua"},{img:IMG.gallinulaPF2, date:"", place:PF, ind:"Nadando junto a los juncos, con la cola blanca levantada"},{img:IMG.gallinulaPF3, date:"", place:PF, ind:"En la orilla, entre buchón de agua"}],
+  photos:[{img:IMG.gallinulaPF, date:"", place:PF, ind:"Caminando sobre el helecho de agua"},{img:IMG.gallinula, date:"", place:SS, ind:"Adulto caminando entre la vegetación del humedal, con la línea blanca del flanco"},{img:IMG.gallinula2, date:"", place:SS, ind:"Adulto con un juvenil, pardo y sin escudo rojo"},{img:IMG.gallinulaPF2, date:"", place:PF, ind:"Nadando junto a los juncos, con la cola blanca levantada"},{img:IMG.gallinulaPF3, date:"", place:PF, ind:"En la orilla, entre buchón de agua"}],
   desc:"Del tamaño de una gallina pequeña, gris pizarra casi negra, con un escudo rojo en la frente y el pico rojo de punta amarilla. Tiene una línea blanca a lo largo del flanco y la parte inferior de la cola blanca, que mueve al caminar. Los juveniles son pardos y grises, sin rojo en el pico.",
   diet:"Brotes, semillas y hojas de plantas acuáticas, caracoles, insectos y lombrices.",
   habitat:"Humedales, lagunas y canales con orillas de vegetación densa, desde el nivel del mar hasta la Sabana.",
@@ -525,7 +525,7 @@ const BIRDS = [
 {
   id:"chrysomus-icterocephalus", common:"Monjita", alt:"Turpial de agua · Yellow-hooded Blackbird",
   sci:"Chrysomus icterocephalus", family:"Icteridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.chrysomusM, date:"", place:PF, ind:"Macho de capucha amarilla, con una hembra debajo"},{img:IMG.chrysomusF, date:"", place:PF, ind:"Hembra entre los juncos, con la garganta amarilla"},{img:IMG.chrysomusF2, date:"", place:PF, ind:"Hembra agarrada a un junco"},{img:IMG.chrysomusF3, date:"", place:PF, ind:"Hembra de frente, junto a las flores del junco"}],
+  photos:[{img:IMG.chrysomusF, date:"", place:PF, ind:"Hembra entre los juncos, con la garganta amarilla"},{img:IMG.chrysomusM, date:"", place:PF, ind:"Macho de capucha amarilla, con una hembra debajo"},{img:IMG.chrysomusF2, date:"", place:PF, ind:"Hembra agarrada a un junco"},{img:IMG.chrysomusF3, date:"", place:PF, ind:"Hembra de frente, junto a las flores del junco"}],
   desc:"El macho es negro brillante con una capucha amarillo intenso. La hembra es parda oliva con la garganta y la cara amarillentas. En la Sabana vive una raza propia, bogotensis, ligada a los juncales de los humedales.",
   diet:"Insectos y semillas que busca entre juncos, eneas y pastos altos.",
   habitat:"Juncales y eneas de humedales y orillas de lagunas. Anida en colonias sobre la vegetación del agua.",
@@ -606,7 +606,7 @@ const BIRDS = [
 {
   id:"fulica-americana", common:"Tingua de pico amarillo", alt:"Focha americana · American Coot",
   sci:"Fulica americana", family:"Rallidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.fulica, date:"", place:HC, ind:"Posada sobre una rama en el agua; otra nada al fondo"},{img:IMG.fulicaPF, date:"", place:PF, ind:"Nadando en la laguna, con el pico y el escudo amarillos"},{img:IMG.fulicaPF2, date:"", place:PF, ind:"Adulto alimentando a su pollo"},{img:IMG.fulicaPF3, date:"", place:PF, ind:"Sobre una malla caída en el agua"}],
+  photos:[{img:IMG.fulicaPF, date:"", place:PF, ind:"Nadando en la laguna, con el pico y el escudo amarillos"},{img:IMG.fulica, date:"", place:HC, ind:"Posada sobre una rama en el agua; otra nada al fondo"},{img:IMG.fulicaPF2, date:"", place:PF, ind:"Adulto alimentando a su pollo"},{img:IMG.fulicaPF3, date:"", place:PF, ind:"Sobre una malla caída en el agua"}],
   desc:"Ave acuática gris pizarra con la cabeza negra y un pico y escudo frontal amarillos. Nada como un pato, pero no lo es: es pariente de las tinguas y tiene los dedos lobulados en vez de palmeados.",
   diet:"Plantas acuáticas que arranca buceando o picoteando en la superficie; también insectos, caracoles y pequeños invertebrados.",
   habitat:"Lagunas y humedales con aguas abiertas y bordes de juncos. La población de los Andes de Colombia es residente y se considera una subespecie propia.",

@@ -86,7 +86,7 @@ const BIRDS = [
 {
   id:"chloroceryle-amazona", common:"Martín pescador amazónico", alt:"Amazon Kingfisher",
   sci:"Chloroceryle amazona", family:"Alcedinidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.amazona, date:"", place:PJ, ind:"Posado sobre el agua, con la cresta levantada"},{img:IMG.amazona2, date:"", place:PJ, ind:"A contraluz al amanecer"}],
+  photos:[{img:IMG.amazona2, date:"", place:PJ, ind:"A contraluz al amanecer"},{img:IMG.amazona, date:"", place:PJ, ind:"Posado sobre el agua, con la cresta levantada"}],
   desc:"Verde oscuro brillante por encima, con collar blanco y un pico largo y pesado. El macho tiene una banda castaña en el pecho; la hembra, verde. Es el más grande de los martines pescadores verdes.",
   diet:"Peces pequeños y medianos que caza zambulléndose desde ramas bajas.",
   habitat:"Orillas de ciénagas, caños y ríos con ramas sobre el agua.",
