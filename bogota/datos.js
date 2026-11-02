@@ -6,6 +6,32 @@ const LUGAR = {
   region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
+ "troglodytesPF": "fotos/troglodytesPF.jpg",
+ "troglodytesPF2": "fotos/troglodytesPF2.jpg",
+ "icterusPF": "fotos/icterusPF.jpg",
+ "chrysomusM": "fotos/chrysomusM.jpg",
+ "chrysomusF": "fotos/chrysomusF.jpg",
+ "chrysomusF2": "fotos/chrysomusF2.jpg",
+ "chrysomusF3": "fotos/chrysomusF3.jpg",
+ "serpophaga": "fotos/serpophaga.jpg",
+ "fulicaPF": "fotos/fulicaPF.jpg",
+ "fulicaPF2": "fotos/fulicaPF2.jpg",
+ "fulicaPF3": "fotos/fulicaPF3.jpg",
+ "gallinulaPF": "fotos/gallinulaPF.jpg",
+ "gallinulaPF2": "fotos/gallinulaPF2.jpg",
+ "gallinulaPF3": "fotos/gallinulaPF3.jpg",
+ "podilymbus": "fotos/podilymbus.jpg",
+ "podilymbus2": "fotos/podilymbus2.jpg",
+ "porphyriops": "fotos/porphyriops.jpg",
+ "porphyriops2": "fotos/porphyriops2.jpg",
+ "porphyriops3": "fotos/porphyriops3.jpg",
+ "porphyriops4": "fotos/porphyriops4.jpg",
+ "oxyuraPF": "fotos/oxyuraPF.jpg",
+ "butoridesPF": "fotos/butoridesPF.jpg",
+ "nyctanassa": "fotos/nyctanassa.jpg",
+ "geranoaetus": "fotos/geranoaetus.jpg",
+ "tringa": "fotos/tringa.jpg",
+
  "rupornisPresa": "fotos/rupornisPresa.jpg",
  "olivaceaF2": "fotos/olivaceaF2.jpg",
  "olivaceaF3": "fotos/olivaceaF3.jpg",
@@ -101,6 +127,7 @@ const IMG = {
 };
 const SS = "Hacienda San Simón, Guaymaral";
 const HC = "Humedal de Córdoba, Bogotá";
+const PF = "Parque La Florida, Bogotá";
 const MS = "Cerro de Monserrate, Bogotá";
 const HOME = {name:"Guaymaral, Sabana de Bogotá", lat:4.8, lon:-74.05, when:"", role:"", here:true};
 
@@ -328,7 +355,7 @@ const BIRDS = [
 {
   id:"icterus-chrysater", common:"Toche", alt:"Turpial montañero · Yellow-backed Oriole",
   sci:"Icterus chrysater", family:"Icteridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.icterus, date:"", place:SS, ind:"Adulto"}],
+  photos:[{img:IMG.icterus, date:"", place:SS, ind:"Adulto"},{img:IMG.icterusPF, date:"", place:PF, ind:"Buscando insectos entre ramas secas"}],
   desc:"Amarillo intenso con la cara, la garganta, las alas y la cola negras. A diferencia de otros turpiales, la espalda también es amarilla. Canta un silbido aflautado y variado.",
   diet:"Insectos, frutos y néctar. Frecuenta árboles frutales como el durazno de la foto.",
   habitat:"Bordes de bosque, cafetales, jardines y huertos. Teje nidos colgantes en forma de bolsa.",
@@ -412,7 +439,7 @@ const BIRDS = [
 {
   id:"troglodytes-aedon", common:"Cucarachero", alt:"Cucarachero común · House Wren",
   sci:"Troglodytes aedon", family:"Troglodytidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.troglodytes, date:"", place:SS, ind:"Buscando insectos bajo el seto"}],
+  photos:[{img:IMG.troglodytes, date:"", place:SS, ind:"Buscando insectos bajo el seto"},{img:IMG.troglodytesPF, date:"", place:PF, ind:"En el borde de una jardinera de piedra"},{img:IMG.troglodytesPF2, date:"", place:PF, ind:"Junto a una cerca, entre el pasto"}],
   desc:"Pájaro pequeño y pardo con finas barras oscuras en alas y cola, que suele llevar levantada. Su canto es un trino largo, rápido y burbujeante, sorprendentemente fuerte para su tamaño.",
   diet:"Insectos, arañas, cucarachas y larvas que busca entre hojarasca, rendijas y arbustos.",
   habitat:"Jardines, setos, potreros con arbustos y casas. Anida en huecos de muros, tejados y cajas nido.",
@@ -439,7 +466,7 @@ const BIRDS = [
 {
   id:"gallinula-galeata", common:"Tingua de pico rojo", alt:"Polla de agua · Gallareta común · Common Gallinule",
   sci:"Gallinula galeata", family:"Rallidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.gallinula, date:"", place:SS, ind:"Adulto caminando entre la vegetación del humedal, con la línea blanca del flanco"},{img:IMG.gallinula2, date:"", place:SS, ind:"Adulto con un juvenil, pardo y sin escudo rojo"}],
+  photos:[{img:IMG.gallinula, date:"", place:SS, ind:"Adulto caminando entre la vegetación del humedal, con la línea blanca del flanco"},{img:IMG.gallinula2, date:"", place:SS, ind:"Adulto con un juvenil, pardo y sin escudo rojo"},{img:IMG.gallinulaPF, date:"", place:PF, ind:"Caminando sobre el helecho de agua"},{img:IMG.gallinulaPF2, date:"", place:PF, ind:"Nadando junto a los juncos, con la cola blanca levantada"},{img:IMG.gallinulaPF3, date:"", place:PF, ind:"En la orilla, entre buchón de agua"}],
   desc:"Del tamaño de una gallina pequeña, gris pizarra casi negra, con un escudo rojo en la frente y el pico rojo de punta amarilla. Tiene una línea blanca a lo largo del flanco y la parte inferior de la cola blanca, que mueve al caminar. Los juveniles son pardos y grises, sin rojo en el pico.",
   diet:"Brotes, semillas y hojas de plantas acuáticas, caracoles, insectos y lombrices.",
   habitat:"Humedales, lagunas y canales con orillas de vegetación densa, desde el nivel del mar hasta la Sabana.",
@@ -453,6 +480,88 @@ const BIRDS = [
   desc:"Garza blanca pequeña y rechoncha, con pico corto amarillo anaranjado. En época de cría le salen plumas color canela en la cabeza, el pecho y la espalda. Es originaria de África: a finales del siglo XIX cruzó el Atlántico por sus propios medios, llegó a Suramérica y en pocas décadas se extendió por todo el continente siguiendo a la ganadería.",
   diet:"Saltamontes, lombrices y otros insectos que espanta el ganado o la podadora; también ranas y lagartijas.",
   habitat:"Potreros con ganado, prados, campos arados y orillas de humedales, desde el nivel del mar hasta la Sabana.",
+  migration:null
+},
+{
+  id:"porphyriops-melanops", common:"Tingua moteada", alt:"Polla de agua moteada · Spot-flanked Gallinule",
+  sci:"Porphyriops melanops", family:"Rallidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.porphyriops, date:"", place:PF, ind:"De frente entre los juncos, con el pico verde lima"},{img:IMG.porphyriops2, date:"", place:PF, ind:"Nadando, con los flancos moteados de blanco"},{img:IMG.porphyriops3, date:"", place:PF, ind:"De perfil, con el ojo rojo"},{img:IMG.porphyriops4, date:"", place:PF, ind:"Caminando sobre el buchón de agua"}],
+  desc:"Tingua pequeña de cabeza y pecho gris pizarra, corona negra, dorso castaño y flancos negros con gotas blancas. El pico es verde lima y el ojo rojo. En la Sabana vive una raza propia, bogotensis, que solo existe en los humedales del altiplano.",
+  diet:"Brotes y semillas de plantas acuáticas, insectos, caracoles y pequeños invertebrados.",
+  habitat:"Humedales con juncos, eneas y plantas flotantes del altiplano cundiboyacense, entre unos 2.500 y 3.100 m.",
+  tip:"Aunque la especie no está amenazada en el mundo, la tingua moteada de la Sabana está en peligro en Colombia: depende de unos pocos humedales que se siguen rellenando y secando. Conservar los juncales es conservarla.",
+  migration:null
+},
+{
+  id:"podilymbus-podiceps", common:"Zambullidor piquipinto", alt:"Pato zambullidor · Pied-billed Grebe",
+  sci:"Podilymbus podiceps", family:"Podicipedidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.podilymbus, date:"", place:PF, ind:"Nadando, con el anillo negro en el pico claro"},{img:IMG.podilymbus2, date:"", place:PF, ind:"Alejándose, con la cola esponjada"}],
+  desc:"Ave acuática pardo grisácea, compacta, de cola casi inexistente y pico grueso como de gallina. En época de cría el pico es blanquecino con un anillo negro y la garganta negra. No es un pato: tiene los dedos lobulados y casi nunca sale del agua.",
+  diet:"Peces pequeños, renacuajos, insectos acuáticos y crustáceos que caza buceando.",
+  habitat:"Lagunas, humedales y embalses con vegetación en la orilla, desde el nivel del mar hasta la Sabana.",
+  migration:null
+},
+{
+  id:"serpophaga-cinerea", common:"Atrapamoscas de torrente", alt:"Tiranuelo de torrente · Torrent Tyrannulet",
+  sci:"Serpophaga cinerea", family:"Tyrannidae", iucn:"LC", conf:"media",
+  confNote:"El cuerpo gris pálido, la corona negra y las alas y la cola negruzcas con bordes claros encajan con esta especie. Suele vivir junto a quebradas y ríos de montaña; en los humedales de la Sabana se ve menos.",
+  photos:[{img:IMG.serpophaga, date:"", place:PF, ind:"Posado entre los juncos"}],
+  desc:"Mosquero pequeño y redondo, gris claro, con la corona y la cara negras y las alas y la cola negruzcas. Mueve la cola hacia arriba y hacia abajo sin parar.",
+  diet:"Insectos pequeños que atrapa en vuelos cortos sobre el agua o picotea de las piedras y los tallos.",
+  habitat:"Quebradas y ríos de montaña con piedras, y orillas de lagunas y humedales andinos.",
+  migration:null
+},
+{
+  id:"chrysomus-icterocephalus", common:"Monjita", alt:"Turpial de agua · Yellow-hooded Blackbird",
+  sci:"Chrysomus icterocephalus", family:"Icteridae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.chrysomusM, date:"", place:PF, ind:"Macho de capucha amarilla, con una hembra debajo"},{img:IMG.chrysomusF, date:"", place:PF, ind:"Hembra entre los juncos, con la garganta amarilla"},{img:IMG.chrysomusF2, date:"", place:PF, ind:"Hembra agarrada a un junco"},{img:IMG.chrysomusF3, date:"", place:PF, ind:"Hembra de frente, junto a las flores del junco"}],
+  desc:"El macho es negro brillante con una capucha amarillo intenso. La hembra es parda oliva con la garganta y la cara amarillentas. En la Sabana vive una raza propia, bogotensis, ligada a los juncales de los humedales.",
+  diet:"Insectos y semillas que busca entre juncos, eneas y pastos altos.",
+  habitat:"Juncales y eneas de humedales y orillas de lagunas. Anida en colonias sobre la vegetación del agua.",
+  migration:null
+},
+{
+  id:"butorides-striata", common:"Garcita rayada", alt:"Garcita estriada · Striated Heron",
+  sci:"Butorides striata", family:"Ardeidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.butoridesPF, date:"", place:PF, ind:"Al acecho sobre un montón de buchón seco"}],
+  desc:"Garza pequeña y rechoncha, de patas amarillas cortas, corona negra, dorso gris pizarra y cuello gris. Camina agachada y se queda inmóvil antes de lanzar el picotazo.",
+  diet:"Peces pequeños, ranas, cangrejos e insectos. Se ha visto usar «carnadas» —insectos o migas— para atraer peces.",
+  habitat:"Orillas de ríos, lagunas, humedales y embalses con vegetación.",
+  migration:null
+},
+{
+  id:"nyctanassa-violacea", common:"Guaco manglero", alt:"Martinete coronado · Yellow-crowned Night Heron",
+  sci:"Nyctanassa violacea", family:"Ardeidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.nyctanassa, date:"", place:PF, ind:"Adulto entre los juncos: cara negra con mejilla blanca y corona clara"}],
+  desc:"Garza mediana y robusta, gris con plumas oscuras en el centro, cabeza negra con una franja blanca en la mejilla y la corona blanquecina amarillenta. Ojo rojo anaranjado, pico grueso y negro.",
+  diet:"Sobre todo cangrejos y otros crustáceos; también peces, ranas e insectos acuáticos.",
+  habitat:"Manglares, playas y ciénagas de las costas y tierras bajas. En la Sabana de Bogotá es un visitante muy raro: según los guías del parque, rara vez se ve a esta altura.",
+  migration:null
+},
+{
+  id:"tringa-flavipes", common:"Patiamarillo menor", alt:"Andarríos patiamarillo · Lesser Yellowlegs",
+  sci:"Tringa flavipes", family:"Scolopacidae", iucn:"LC", conf:"media",
+  confNote:"Las patas amarillas largas, el cuerpo gris pálido y la rabadilla blanca apuntan a un patiamarillo. Las fotos en vuelo no permiten medir el pico, que es lo que separa el menor del mayor (Tringa melanoleuca).",
+  photos:[{img:IMG.tringa, date:"", place:PF, ind:"En vuelo bajo sobre la laguna, con las patas amarillas estiradas"}],
+  desc:"Ave playera esbelta, gris pardo por encima y blanca por debajo, de patas largas amarillo brillante y pico recto y fino. En vuelo muestra la rabadilla blanca.",
+  diet:"Insectos acuáticos, larvas, pequeños crustáceos y peces que picotea caminando en aguas poco profundas.",
+  habitat:"Orillas fangosas de lagunas, humedales, arrozales y playas.",
+  migration:{type:"Larga distancia", km:"~6.000–8.000 km por trayecto",
+    note:"Cría en los bosques boreales de Alaska y Canadá y pasa el invierno del norte en Suramérica. Los humedales de la Sabana son una de sus paradas.",
+    stops:[
+      {name:"Alaska y Canadá", lat:60, lon:-110, when:"May–jul", role:"Cría"},
+      {name:"Costa atlántica de EE. UU.", lat:35, lon:-77, when:"Ago–sep", role:"Paso"},
+      {...HOME, when:"Sep–abr", role:"Invernada"}],
+    rangeTo:{lat:-30, lon:-60, name:"Argentina"}}
+},
+{
+  id:"geranoaetus-albicaudatus", common:"Gavilán coliblanco", alt:"Aguililla coliblanca · White-tailed Hawk",
+  sci:"Geranoaetus albicaudatus", family:"Accipitridae", iucn:"LC", conf:"baja",
+  confNote:"Identificación de los guías del parque, que lo vieron en el campo. La foto, a contraluz, no deja ver la cola blanca con banda negra ni los hombros rojizos que lo confirman.",
+  photos:[{img:IMG.geranoaetus, date:"", place:PF, ind:"En vuelo a contraluz sobre el parque"}],
+  desc:"Gavilán grande de alas anchas y cola corta: gris oscuro por encima con hombros rojizos, blanco por debajo y cola blanca con una banda negra cerca de la punta.",
+  diet:"Roedores, conejos, reptiles e insectos grandes; caza en vuelo o desde perchas en zonas abiertas.",
+  habitat:"Sabanas, potreros y zonas abiertas con árboles dispersos.",
   migration:null
 },
 {
@@ -486,7 +595,7 @@ const BIRDS = [
 {
   id:"fulica-americana", common:"Tingua de pico amarillo", alt:"Focha americana · American Coot",
   sci:"Fulica americana", family:"Rallidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.fulica, date:"", place:HC, ind:"Posada sobre una rama en el agua; otra nada al fondo"}],
+  photos:[{img:IMG.fulica, date:"", place:HC, ind:"Posada sobre una rama en el agua; otra nada al fondo"},{img:IMG.fulicaPF, date:"", place:PF, ind:"Nadando en la laguna, con el pico y el escudo amarillos"},{img:IMG.fulicaPF2, date:"", place:PF, ind:"Adulto alimentando a su pollo"},{img:IMG.fulicaPF3, date:"", place:PF, ind:"Sobre una malla caída en el agua"}],
   desc:"Ave acuática gris pizarra con la cabeza negra y un pico y escudo frontal amarillos. Nada como un pato, pero no lo es: es pariente de las tinguas y tiene los dedos lobulados en vez de palmeados.",
   diet:"Plantas acuáticas que arranca buceando o picoteando en la superficie; también insectos, caracoles y pequeños invertebrados.",
   habitat:"Lagunas y humedales con aguas abiertas y bordes de juncos. La población de los Andes de Colombia es residente y se considera una subespecie propia.",
@@ -495,7 +604,7 @@ const BIRDS = [
 {
   id:"oxyura-jamaicensis", common:"Pato turrio", alt:"Pato andino · Ruddy Duck",
   sci:"Oxyura jamaicensis", family:"Anatidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.oxyura, date:"", place:HC, ind:"Macho, con el pico azul celeste"}],
+  photos:[{img:IMG.oxyura, date:"", place:HC, ind:"Macho, con el pico azul celeste"},{img:IMG.oxyuraPF, date:"", place:PF, ind:"Dos hembras, pardas con una línea oscura en la mejilla"}],
   desc:"Pato pequeño y compacto, de cola rígida que a menudo lleva levantada. El macho es castaño rojizo con la cabeza negra y un pico azul celeste brillante. La población de los Andes, más grande y de cabeza toda negra, a veces se considera una especie aparte, el pato andino (Oxyura ferruginea).",
   diet:"Semillas y raíces de plantas acuáticas, larvas de insectos y pequeños invertebrados que busca buceando.",
   habitat:"Lagunas y humedales con aguas abiertas y bordes de juncos y eneas, en tierras altas. En la Sabana depende de los pocos humedales que quedan.",
@@ -554,6 +663,14 @@ const BIRDS = [
 }];
 
 const XTRA={
+ "porphyriops-melanops":{sw:[["#7A808A","Cabeza"],["#7A3A22","Dorso"],["#C8E07A","Pico"],["#F4F4F0","Gotas"]]},
+ "podilymbus-podiceps":{sw:[["#6E5A44","Cuerpo"],["#D8D4C8","Pico"],["#1E1A16","Anillo"]]},
+ "serpophaga-cinerea":{sw:[["#B8BCC0","Cuerpo"],["#1E1E22","Corona"],["#2A2A2E","Alas"]]},
+ "chrysomus-icterocephalus":{sw:[["#F2C21A","Capucha"],["#141414","Cuerpo"],["#8A7A3A","Hembra"]]},
+ "butorides-striata":{sw:[["#3A4A5A","Corona"],["#9AA4AE","Cuello"],["#E8C83A","Patas"]]},
+ "nyctanassa-violacea":{sw:[["#8C949C","Cuerpo"],["#1A1A1E","Cara"],["#F4F2E4","Mejilla"],["#E86A2A","Ojo"]]},
+ "tringa-flavipes":{sw:[["#8C8A84","Dorso"],["#F4F4F0","Vientre"],["#E8C83A","Patas"]],m:[9,10,11,12,1,2,3,4]},
+ "geranoaetus-albicaudatus":{sw:[["#4A4E54","Dorso"],["#F4F4F0","Vientre y cola"],["#A8582E","Hombros"]]},
  "bubulcus-ibis":{sw:[["#F7F7F5","Plumaje"],["#E8A86A","Plumas de cría"],["#F08A3A","Pico"]]},
  "gallinula-galeata":{sw:[["#2A2E34","Plumaje"],["#D8322A","Escudo"],["#E8D23A","Punta del pico"],["#F4F4F0","Línea del flanco"]]},
  "coragyps-atratus":{sw:[["#141414","Plumaje"],["#5A5A5A","Cabeza"],["#E8E8E4","Puntas alares"]]},
@@ -598,6 +715,14 @@ const XTRA={
 
 /* Hábitos y dónde verlo en la hacienda */
 const HAB={
+ "porphyriops-melanops":["Tímida: camina entre el buchón y los juncos y se esconde al menor ruido. Nada moviendo la cabeza adelante y atrás.","Orillas de la laguna del parque con juncos y buchón, en las mañanas tranquilas."],
+ "podilymbus-podiceps":["Se sumerge de repente y reaparece lejos; cuando se siente en peligro se hunde despacio hasta dejar solo la cabeza fuera del agua.","Aguas abiertas de la laguna, cerca de los juncales."],
+ "serpophaga-cinerea":["Muy activo: salta entre tallos y piedras moviendo la cola, y hace vuelos cortos sobre el agua para atrapar insectos.","Juncos y orillas de la laguna."],
+ "chrysomus-icterocephalus":["Vive en grupos ruidosos en los juncales; el macho canta con un silbido metálico desde la punta de un junco.","Juncales de la laguna, casi siempre agarrada de los tallos."],
+ "butorides-striata":["Se queda inmóvil largo rato al borde del agua, con el cuello encogido, y lanza el pico como un resorte.","Montones de vegetación y orillas de la laguna."],
+ "nyctanassa-violacea":["Caza sobre todo al anochecer y de noche; de día descansa quieta entre la vegetación.","Juncales de la orilla. Su presencia en la Sabana es excepcional."],
+ "tringa-flavipes":["Camina rápido en aguas bajas picoteando la superficie y menea la cabeza cuando se alarma; vuela con un silbido de dos o tres notas.","Orillas fangosas y bancos de vegetación de la laguna, de septiembre a abril."],
+ "geranoaetus-albicaudatus":["Planea en círculos a gran altura y se cierne en el aire antes de lanzarse sobre la presa.","Cielo abierto sobre el parque y los potreros vecinos."],
  "bubulcus-ibis":["Camina por el prado con pasos lentos y estira el cuello de golpe para atrapar insectos. Sigue al ganado y a las podadoras para comer lo que espantan.","Prados y potreros de la hacienda, sobre todo detrás del ganado."],
  "gallinula-galeata":["Camina sobre las plantas flotantes moviendo la cabeza y la cola a cada paso, y nada como un pato. Es tímida: al menor susto corre a esconderse entre los juncos.","Orillas con vegetación densa del humedal de la hacienda, en las mañanas tranquilas."],
  "coragyps-atratus":["Muy sociable: duerme y come en grupos grandes y se impone en la carroña por número. Se asolea con las alas abiertas en las mañanas frías.","Árboles altos y potreros de la hacienda; en el cielo, en grupos que planean juntos."],
@@ -641,6 +766,8 @@ const HAB={
 };
 
 const PLACES={
+ "porphyriops-melanops":["humedal"],"podilymbus-podiceps":["humedal"],"serpophaga-cinerea":["humedal"],"chrysomus-icterocephalus":["humedal"],
+ "butorides-striata":["humedal"],"nyctanassa-violacea":["humedal"],"tringa-flavipes":["humedal"],"geranoaetus-albicaudatus":["cielo"],
  "bubulcus-ibis":["prado"],
  "gallinula-galeata":["humedal"],
  "coragyps-atratus":["cielo","arboles"],
