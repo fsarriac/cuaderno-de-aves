@@ -6,6 +6,7 @@ const LUGAR = {
   region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
+ "coruscansSS2": "fotos/coruscansSS2.jpg",
  "coruscansSS": "fotos/coruscansSS.jpg",
  "albaSS": "fotos/albaSS.jpg",
  "rallus": "fotos/rallus.jpg",
@@ -424,7 +425,7 @@ const BIRDS = [
 {
   id:"colibri-coruscans", common:"Colibrí chillón", alt:"Orejivioleta ventriazul · Sparkling Violetear",
   sci:"Colibri coruscans", family:"Trochilidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.coruscansM1, date:"", place:MS, ind:"Macho, con el parche azul del vientre"},{img:IMG.coruscansM2, date:"", place:MS, ind:"De frente, con la oreja violeta"},{img:IMG.coruscansM3, date:"", place:MS, ind:"De perfil sobre una rama con musgo"},{img:IMG.coruscans, date:"", place:SS, ind:"Libando en una flor de antorcha (Kniphofia)"},{img:IMG.coruscansSS, date:"", place:SS, ind:"Suspendido frente al bebedero, con la cola abierta y la banda oscura"}],
+  photos:[{img:IMG.coruscansM1, date:"", place:MS, ind:"Macho, con el parche azul del vientre"},{img:IMG.coruscansM2, date:"", place:MS, ind:"De frente, con la oreja violeta"},{img:IMG.coruscansM3, date:"", place:MS, ind:"De perfil sobre una rama con musgo"},{img:IMG.coruscans, date:"", place:SS, ind:"Libando en una flor de antorcha (Kniphofia)"},{img:IMG.coruscansSS, date:"", place:SS, ind:"Suspendido frente al bebedero, con la cola abierta y la banda oscura"},{img:IMG.coruscansSS2, date:"", place:SS, ind:"En vuelo visto desde atrás: verde brillante, con el parche azul de la mejilla y la banda azul de la cola"}],
   desc:"Colibrí grande, verde brillante, con un parche violeta azulado que va del ojo hacia la oreja y el pecho con reflejos azules. Lo distingue del orejivioleta verde el parche azul violeta en el centro del vientre, bien visible en las fotos de Monserrate. Su canto, un «chip» metálico repetido sin parar desde una percha, le da el nombre.",
   diet:"Néctar de flores tubulares como la antorcha (Kniphofia), las fucsias y los bebederos; insectos pequeños.",
   habitat:"Jardines, bordes de bosque, matorrales y páramo, desde unos 1.500 hasta 3.500 m. Muy adaptado a parques y casas de la Sabana.",
