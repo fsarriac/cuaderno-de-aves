@@ -6,6 +6,7 @@ const LUGAR = {
   region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
+ "albaSS": "fotos/albaSS.jpg",
  "rallus": "fotos/rallus.jpg",
  "troglodytesPF": "fotos/troglodytesPF.jpg",
  "troglodytesPF2": "fotos/troglodytesPF2.jpg",
@@ -541,6 +542,15 @@ const BIRDS = [
   migration:null
 },
 {
+  id:"ardea-alba", common:"Garza real", alt:"Garceta grande · Great Egret",
+  sci:"Ardea alba", family:"Ardeidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.albaSS, date:"", place:SS, ind:"Posada entre los pastos y arbustos de la orilla, con el pico amarillo y las patas negras"}],
+  desc:"Garza blanca grande, de pico amarillo y patas negras, mucho más grande que la garcita del ganado, con la que comparte potreros en la Sabana. En época de cría le crecen plumas largas y finas en la espalda; por ellas casi desaparece hacia 1900, cuando se usaban en los sombreros de moda.",
+  diet:"Peces, ranas, cangrejos e insectos grandes; caza caminando despacio o esperando inmóvil.",
+  habitat:"Humedales, lagos, ríos y potreros inundados, desde el nivel del mar hasta la Sabana de Bogotá.",
+  migration:null
+},
+{
   id:"nyctanassa-violacea", common:"Guaco manglero", alt:"Martinete coronado · Yellow-crowned Night Heron",
   sci:"Nyctanassa violacea", family:"Ardeidae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.nyctanassa, date:"", place:PF, ind:"Adulto entre los juncos: cara negra con mejilla blanca y corona clara"}],
@@ -674,6 +684,7 @@ const BIRDS = [
 }];
 
 const XTRA={
+ "ardea-alba":{sw:[["#F7F7F5","Plumaje"],["#E8C03A","Pico"],["#151515","Patas"]]},
  "rallus-semiplumbeus":{sw:[["#6E7A86","Pecho"],["#6A5240","Dorso"],["#D8322A","Pico"],["#F4F4F0","Barras"]]},
  "porphyriops-melanops":{sw:[["#7A808A","Cabeza"],["#7A3A22","Dorso"],["#C8E07A","Pico"],["#F4F4F0","Gotas"]]},
  "podilymbus-podiceps":{sw:[["#6E5A44","Cuerpo"],["#D8D4C8","Pico"],["#1E1A16","Anillo"]]},
@@ -727,6 +738,7 @@ const XTRA={
 
 /* Hábitos y dónde verlo en la hacienda */
 const HAB={
+ "ardea-alba":["Camina despacio con el cuello estirado y se queda quieta acechando; cuando descansa recoge el cuello en forma de S. Al atardecer vuela a dormir en árboles junto al agua.","Orillas de los lagos y canales de la hacienda, y potreros húmedos."],
  "rallus-semiplumbeus":["Muy esquiva: camina despacio entre los juncos y casi nunca sale a campo abierto. Se delata por su llamada, una serie de chillidos agudos parecidos a un relincho.","Bordes de los juncales de la laguna, en silencio y con paciencia; las primeras horas de la mañana son las mejores."],
  "porphyriops-melanops":["Tímida: camina entre el buchón y los juncos y se esconde al menor ruido. Nada moviendo la cabeza adelante y atrás.","Orillas de la laguna del parque con juncos y buchón, en las mañanas tranquilas."],
  "podilymbus-podiceps":["Se sumerge de repente y reaparece lejos; cuando se siente en peligro se hunde despacio hasta dejar solo la cabeza fuera del agua.","Aguas abiertas de la laguna, cerca de los juncales."],
@@ -779,6 +791,7 @@ const HAB={
 };
 
 const PLACES={
+ "ardea-alba":["humedal"],
  "rallus-semiplumbeus":["humedal"],
  "porphyriops-melanops":["humedal"],"podilymbus-podiceps":["humedal"],"serpophaga-cinerea":["humedal"],"chrysomus-icterocephalus":["humedal"],
  "butorides-striata":["humedal"],"nyctanassa-violacea":["humedal"],"tringa-flavipes":["humedal"],"geranoaetus-albicaudatus":["cielo"],

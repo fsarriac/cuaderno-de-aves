@@ -5,7 +5,7 @@ const LUGAR = {
   nombre: "Barichara", corto: "Barichara",
   region: "Barichara", hero: "fotos/momotus.jpg"
 };
-const IMG = {}; for (const k of ["momotus","momotus2","saltator","saltator2","pyroM","pyroF","cyclarhis","mimus","episcopus","sicalis","sicalis2","sicalis3","machetornis","troglodytes","melanerpes","melanerpes2","columbina","campylorhynchus","elaenia","mimus2","melancholicus","stilpnia","ortalis","sicalis4","rupornis","melancholicus2"]) IMG[k]="fotos/"+k+".jpg";
+const IMG = {}; for (const k of ["momotus","momotus2","saltator","saltator2","pyroM","pyroF","cyclarhis","mimus","episcopus","sicalis","sicalis2","sicalis3","machetornis","troglodytes","melanerpes","melanerpes2","columbina","campylorhynchus","elaenia","mimus2","melancholicus","stilpnia","ortalis","sicalis4","rupornis","melancholicus2","ortalis2"]) IMG[k]="fotos/"+k+".jpg";
 const BA = "Barichara, Santander";
 const HOME = {name:"Barichara, Santander", lat:6.63, lon:-73.22, when:"", role:"", here:true};
 
@@ -122,7 +122,7 @@ const BIRDS = [
 {
   id:"ortalis-columbiana", common:"Guacharaca colombiana", alt:"Guacharaca · Colombian Chachalaca",
   sci:"Ortalis columbiana", family:"Cracidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.ortalis, date:"", place:BA, ind:"Caminando por una rama entre barbas de viejo"}],
+  photos:[{img:IMG.ortalis, date:"", place:BA, ind:"Caminando por una rama entre barbas de viejo"},{img:IMG.ortalis2, date:"", place:BA, ind:"En vuelo junto a un guadual, a contraluz: se ve la cola larga y rojiza abierta en abanico"}],
   desc:"Ave grande, parecida a una gallina delgada de cola larga, parda con la cabeza y el cuello grises. Es endémica de Colombia: no vive en ningún otro país. De cerca se le ven escamas blancas en el pecho.",
   diet:"Frutos, hojas tiernas, flores y brotes; baja al suelo a comer frutos caídos.",
   habitat:"Bosque seco, rastrojos, cañadas arborizadas y fincas con árboles frutales, en los valles interandinos.",
