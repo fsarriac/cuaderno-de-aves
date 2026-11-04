@@ -1,6 +1,6 @@
 /* Menú flotante de lugares: siempre a mano para saltar a otro lugar o volver a la portada */
 (function(){
-  var L=[["bogota","Bogotá"],["cartagena","Cartagena y alrededores"],["pijino","Ciénaga de Pijiño"],["cafetera","Zona Cafetera"],["boyaca","Boyacá"],["barichara","Barichara"]];
+  var L=[["bogota","Bogotá"],["cartagena","Cartagena y alrededores"],["pijino","Ciénaga de Pijiño"],["cafetera","Zona Cafetera"],["boyaca","Boyacá"],["barichara","Barichara"],["guajira","La Guajira"]];
   var here=location.pathname.split("/").filter(Boolean).slice(-2).join("/");
   var st=document.createElement("style");
   st.textContent=".lnav{position:fixed;z-index:40;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));font-family:'Public Sans',system-ui,sans-serif}"+

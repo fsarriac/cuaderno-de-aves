@@ -111,7 +111,7 @@ const T=EN?{lede:n=>`The ${n} wild species in the notebook in one place, grouped
   ph:"Buscar: colibrí, Piranga, heron…",place:"Lugar",all:"Todos",n:n=>`${n} especies`,sp:n=>n===1?"1 especie":`${n} especies`,
   order:"Orden",fam:"Familia",fams:"Familias",back:"← Todos los grupos",none:"No hay especies que coincidan con la búsqueda.",noneHere:"Ninguna especie de este grupo en el lugar elegido.",
   mig:"Migratoria",dom:"Doméstica",feral:"Asilvestrada",h1:'Explorar por <em>especies</em>',eb:"Cuaderno de aves · Colombia",title:"Explorar por especies · Cuaderno de aves"};
-const SHORT=EN?{bogota:"Bogotá",cartagena:"Cartagena",pijino:"Pijiño",barichara:"Barichara",cafetera:"Coffee Reg.",boyaca:"Boyacá"}:{bogota:"Bogotá",cartagena:"Cartagena",pijino:"Pijiño",barichara:"Barichara",cafetera:"Z. Cafetera",boyaca:"Boyacá"};
+const SHORT=EN?{bogota:"Bogotá",cartagena:"Cartagena",pijino:"Pijiño",barichara:"Barichara",cafetera:"Coffee Reg.",boyaca:"Boyacá",guajira:"La Guajira"}:{bogota:"Bogotá",cartagena:"Cartagena",pijino:"Pijiño",barichara:"Barichara",cafetera:"Z. Cafetera",boyaca:"Boyacá",guajira:"La Guajira"};
 const LNAME=EN?{cartagena:"Cartagena and surroundings",cafetera:"Coffee Region",pijino:"Ciénaga de Pijiño"}:{};
 const gname=g=>EN?g.en:g.n, cname=s=>(EN&&s.en)||s.common;
 document.title=T.title;$("#h1").innerHTML=T.h1;$("#eb").textContent=T.eb;$("#q").placeholder=T.ph;$("#q").setAttribute("aria-label",T.ph);
