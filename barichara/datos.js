@@ -5,7 +5,7 @@ const LUGAR = {
   nombre: "Barichara", corto: "Barichara",
   region: "Barichara", hero: "fotos/momotus.jpg"
 };
-const IMG = {}; for (const k of ["momotus","momotus2","saltator","saltator2","pyroM","pyroF","cyclarhis","mimus","episcopus","sicalis","sicalis2","sicalis3","machetornis","troglodytes","melanerpes","melanerpes2","columbina","campylorhynchus","elaenia","mimus2","melancholicus","stilpnia","ortalis","sicalis4","rupornis","melancholicus2","ortalis2"]) IMG[k]="fotos/"+k+".jpg";
+const IMG = {}; for (const k of ["momotus","momotus2","saltator","saltator2","pyroM","pyroF","cyclarhis","mimus","episcopus","sicalis","sicalis2","sicalis3","machetornis","troglodytes","melanerpes","melanerpes2","columbina","campylorhynchus","elaenia","mimus2","melancholicus","stilpnia","ortalis","sicalis4","rupornis","melancholicus2","ortalis2","melancholicus3","ignobilis"]) IMG[k]="fotos/"+k+".jpg";
 const BA = "Barichara, Santander";
 const HOME = {name:"Barichara, Santander", lat:6.63, lon:-73.22, when:"", role:"", here:true};
 
@@ -140,9 +140,18 @@ const BIRDS = [
   migration:null
 },
 {
+  id:"turdus-ignobilis", common:"Mirla embarradora", alt:"Mirla ollera · Black-billed Thrush",
+  sci:"Turdus ignobilis", family:"Turdidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.ignobilis, date:"", place:BA, ind:"Buscando lombrices en el pasto, entre hojas secas"}],
+  desc:"Mirla parda oliva, más pequeña y oscura que la mirla parda, con el pico negro y la garganta blancuzca finamente rayada. Su nombre local viene del barro con el que arma el nido.",
+  diet:"Lombrices, insectos y frutos.",
+  habitat:"Jardines, cafetales, potreros con árboles y bordes de bosque de tierras medias.",
+  migration:null
+},
+{
   id:"tyrannus-melancholicus", common:"Sirirí común", alt:"Tirano tropical · Tropical Kingbird",
   sci:"Tyrannus melancholicus", family:"Tyrannidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.melancholicus, date:"", place:BA, ind:"Posado en lo alto, con el pecho amarillo"},{img:IMG.melancholicus2, date:"", place:BA, ind:"En un cable frente a una pared encalada"}],
+  photos:[{img:IMG.melancholicus3, date:"", place:BA, ind:"Sobre un poste de madera junto a un letrero del sendero"},{img:IMG.melancholicus, date:"", place:BA, ind:"Posado en lo alto, con el pecho amarillo"},{img:IMG.melancholicus2, date:"", place:BA, ind:"En un cable frente a una pared encalada"}],
   desc:"Cabeza gris con antifaz oscuro, dorso oliva, pecho y vientre amarillos y cola parda con una muesca en la punta. Es de las aves más comunes de Colombia y casi siempre se ve en una percha alta y expuesta.",
   diet:"Insectos que caza en vuelo con salidas cortas desde la percha; también algunos frutos.",
   habitat:"Cualquier zona abierta con árboles: potreros, pueblos, cables y bordes de bosque.",
@@ -168,6 +177,7 @@ const BIRDS = [
 }];
 
 const XTRA={
+ "turdus-ignobilis":{sw:[["#6A5E4A","Dorso"],["#A89A84","Pecho"],["#151515","Pico"]]},
  "momotus-subrufescens":{sw:[["#3CC2E0","Corona"],["#4E9A6E","Dorso"],["#C27A45","Pecho"],["#141414","Antifaz"]]},
  "saltator-striatipectus":{sw:[["#7D8A7A","Cabeza"],["#8C9A3A","Alas"],["#E9E6DC","Pecho rayado"]]},
  "pyrocephalus-rubinus":{sw:[["#E5341F","Macho"],["#4A3A33","Dorso"],["#E8956A","Vientre hembra"]]},
@@ -188,6 +198,7 @@ const XTRA={
 };
 
 const HAB={
+ "turdus-ignobilis":["Camina a saltos por el pasto, se detiene, inclina la cabeza y saca lombrices del suelo; canta un trino variado al amanecer.","Prados, jardines y patios con árboles del pueblo."],
  "momotus-subrufescens":["Se queda inmóvil largo rato en ramas bajas y sombreadas, balanceando la cola de lado a lado como un péndulo. Canta al amanecer un «u-dut» grave y doble, que es la mejor forma de encontrarlo.","Cañadas sombreadas y bordes de bosque seco alrededor del pueblo, temprano en la mañana."],
  "saltator-striatipectus":["Anda en parejas entre arbustos y copas bajas. Canta frases cortas y melodiosas desde una percha visible y baja a beber a pocetas y bebederos.","Bebederos, árboles frutales y cercas vivas."],
  "pyrocephalus-rubinus":["Caza desde perchas bajas y expuestas y vuelve casi siempre al mismo sitio. En celo, el macho sube aleteando con las plumas erizadas mientras canta y luego se deja caer.","Ramas bajas y cercas en zonas abiertas, sobre todo con barbas de viejo."],
@@ -208,6 +219,7 @@ const HAB={
 };
 
 const PLACES={
+ "turdus-ignobilis":["prado","arboles"],
  "momotus-subrufescens":["arboles"],"saltator-striatipectus":["comedero","arboles"],"pyrocephalus-rubinus":["arboles","prado"],
  "cyclarhis-gujanensis":["arboles"],"campylorhynchus-griseus":["arboles"],"troglodytes-aedon":["arboles","prado"],
  "melanerpes-rubricapillus":["arboles"],"machetornis-rixosa":["prado"],"columbina-talpacoti":["prado"],
