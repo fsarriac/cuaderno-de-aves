@@ -2,7 +2,7 @@
    Cuando se sepa el sitio exacto de cada foto, cámbielo en "place" (p. ej. "Valle de Cocora, Quindío").
    Si hay fotos de varios sitios, aparece solo el filtro "Sitio". */
 const LUGAR = { nombre:"Zona Cafetera", corto:"la Zona Cafetera", region:"la Zona Cafetera", hero:"fotos/flammigerusM.jpg" };
-const IMG = {}; for (const k of ["aglaeactis","atlapetes","anisognathus","zonotrichia","piaya","episcopus","dimidiatus","dimidiatus2","turdus","stilpnia","stilpnia2","icterus","forpus","phimosus","flammigerusM","flammigerusF","flammigerusF2","euphonia","euphonia2","melanerpes","stilpnia3","sicalis","episcopus2","episcopus3","ignobilis","cyanicollis","flammigerusF3","euphonia3","aglaeactis2","anisognathus2","ortalis","sporophila","ignobilis2","euphonia4","melanerpes2","florisuga","saltator","atlapetes2","eriocnemis","ignobilis3","amazilia"]) IMG[k]="fotos/"+k+".jpg";
+const IMG = {}; for (const k of ["aglaeactis","atlapetes","anisognathus","zonotrichia","piaya","episcopus","dimidiatus","dimidiatus2","turdus","stilpnia","stilpnia2","icterus","forpus","phimosus","flammigerusM","flammigerusF","flammigerusF2","euphonia","euphonia2","melanerpes","stilpnia3","sicalis","episcopus2","episcopus3","episcopus4","ignobilis","cyanicollis","flammigerusF3","euphonia3","aglaeactis2","anisognathus2","ortalis","sporophila","ignobilis2","euphonia4","melanerpes2","florisuga","saltator","atlapetes2","eriocnemis","ignobilis3","amazilia"]) IMG[k]="fotos/"+k+".jpg";
 const ZC = "Zona Cafetera";
 const HOME = {name:"Zona Cafetera", lat:4.64, lon:-75.57, when:"", role:"", here:true};
 
@@ -74,7 +74,7 @@ const BIRDS = [
 {
   id:"thraupis-episcopus", common:"Azulejo común", alt:"Tangara azuleja · Blue-gray Tanager",
   sci:"Thraupis episcopus", family:"Thraupidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.episcopus, date:"", place:ZC, ind:"En el comedero de banano"},{img:IMG.episcopus2, date:"", place:ZC, ind:"En un palo de papaya"},{img:IMG.episcopus3, date:"", place:ZC, ind:"En vuelo, con las alas celestes abiertas"}],
+  photos:[{img:IMG.episcopus, date:"", place:ZC, ind:"En el comedero de banano"},{img:IMG.episcopus2, date:"", place:ZC, ind:"En un palo de papaya"},{img:IMG.episcopus3, date:"", place:ZC, ind:"En vuelo, con las alas celestes abiertas"},{img:IMG.episcopus4, date:"", place:ZC, ind:"Aleteando sobre el banano del comedero, en plena disputa: se ven las alas celestes por encima"}],
   desc:"Gris azulado pálido con hombros y alas azul celeste. Inquieto y ruidoso, anda en parejas.",
   diet:"Frutos, néctar e insectos.",
   habitat:"Bordes, jardines, cafetales y pueblos.",
