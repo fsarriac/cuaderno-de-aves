@@ -4,8 +4,8 @@
 const LUGAR = { nombre:"Zona Cafetera", corto:"la Zona Cafetera", region:"la Zona Cafetera", hero:"fotos/flammigerusM.jpg" };
 const IMG = {}; for (const k of ["aglaeactis","atlapetes","anisognathus","zonotrichia","piaya","episcopus","dimidiatus","dimidiatus2","turdus","stilpnia","stilpnia2","icterus","forpus","phimosus","flammigerusM","flammigerusF","flammigerusF2","euphonia","euphonia2","melanerpes","stilpnia3","sicalis","episcopus2","episcopus3","episcopus4","ignobilis","cyanicollis","flammigerusF3","euphonia3","aglaeactis2","anisognathus2","ortalis","sporophila","ignobilis2","euphonia4","melanerpes2","florisuga","saltator","atlapetes2","eriocnemis","ignobilis3","amazilia"]) IMG[k]="fotos/"+k+".jpg";
 const ZC = "Zona Cafetera";
-const VN = "Hacienda Venecia, Manizales";
-const RZ = "Cerca del Nevado del Ruiz";
+const VN = "Hacienda Venecia";
+const RZ = "Nevado del Ruiz";
 const HOME = {name:"Zona Cafetera", lat:4.64, lon:-75.57, when:"", role:"", here:true};
 
 const BIRDS = [
@@ -220,7 +220,7 @@ const BIRDS = [
   id:"eriocnemis-mosquera", common:"Calzadito pechidorado", alt:"Paramero dorado · Golden-breasted Puffleg",
   sci:"Eriocnemis mosquera", family:"Trochilidae", iucn:"LC", conf:"media",
   confNote:"Las «calzas» blancas de las patas lo ubican entre los calzaditos, y el pecho verde dorado encaja con esta especie. Otros calzaditos de la cordillera se distinguen por manchas azules o violetas en la garganta o bajo la cola, que en esta foto no se ven bien.",
-  photos:[{img:IMG.eriocnemis, date:"", place:ZC, ind:"Posado en una varilla, con las calzas blancas visibles"}],
+  photos:[{img:IMG.eriocnemis, date:"", place:VN, ind:"Posado en una varilla, con las calzas blancas visibles"}],
   desc:"Colibrí mediano de pico recto y fino, verde con el pecho dorado bronceado y la cola oscura. Como todos los calzaditos, tiene plumas blancas y esponjosas que le cubren las patas, como si llevara calzas.",
   diet:"Néctar de flores de arbustos de alta montaña y pequeños insectos.",
   habitat:"Bordes de bosque altoandino y subpáramo, entre unos 2.400 y 3.600 m.",
