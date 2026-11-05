@@ -6,7 +6,7 @@ const LUGAR = {
   nombre: "Cartagena y alrededores", corto: "Cartagena y alrededores",
   region: "la región de Cartagena", hero: "fotos/pelecanusIR.jpg"
 };
-const IMG = {}; for (const k of ["chrysomus","chrysomus2","jacana","rostrhamus","milvago","dendro","dendro2","leistes","theristicus","buteogallus","buteogallus2","thula","quiscalus","crotophaga","furnarius","bubulcus","brotogeris","brotogeris2","leucophaeus","leucophaeus2","araMG","araMG2","caracara","melanerpesMG2","melanerpesMG3","melanerpesMG4","brotogerisMG","brotogerisMG2","quiscalusMG","quiscalusMG2","quiscalusMG3","myiozetetes","melancholicus","nannopterum","nannopterum2","pelecanus","thalasseus","cocoi","cocoi2","cocoi3","cocoi4","cocoi5","cocoi6","alba","alba2","alba3","albaMG","eudocimus","pitangus","pitangus2","pitangus3","pitangus4","pitangusIR","fregataMG2","quiscalusMG4","fregataIR","fregataIR2","pelecanusIR4","pelecanus2","pelecanus3","milvago2","milvagoAR","eupsittula","eupsittula2","ara","quiscalus2","quiscalus3","pelecanusIR","pelecanusIR2","pelecanusIR3","quiscalusF","sicalisMG","pelecanusZ","pelecanusZ2","melanerpesMG","pelecanusPicada","cathartesMG","fregataJuv","fregata","fregata2","quiscalusIR","thalasseusIR","thalasseusMG","leucophaeus","melanerpesMG2","melanerpesMG3","melanerpesMG4","brotogerisMG","brotogerisMG2","quiscalusMG","quiscalusMG2","quiscalusMG3","myiozetetes","melancholicus","thalasseusMG","araMG2","pitangusIR","fregataIR","fregataIR2","pelecanusIR4","pelecanusIR5","progne","leucotis","thulaMG","fregataMG2","fregataMG3","quiscalusMG4","milvagoAR","albaMG","eudocimus","leucophaeus2","araMG","caracara","albaCD","cocoiVuelo","nannopterum3"]) IMG[k]="fotos/"+k+".jpg";
+const IMG = {}; for (const k of ["chrysomus","chrysomus2","jacana","rostrhamus","milvago","dendro","dendro2","leistes","theristicus","buteogallus","buteogallus2","thula","quiscalus","crotophaga","furnarius","bubulcus","brotogeris","brotogeris2","leucophaeus","leucophaeus2","araMG","araMG2","caracara","melanerpesMG2","melanerpesMG3","melanerpesMG4","brotogerisMG","brotogerisMG2","quiscalusMG","quiscalusMG2","quiscalusMG3","myiozetetes","melancholicus","nannopterum","nannopterum2","pelecanus","thalasseus","cocoi","cocoi2","cocoi3","cocoi4","cocoi5","cocoi6","alba","alba2","alba3","albaMG","eudocimus","pitangus","pitangus2","pitangus3","pitangus4","pitangusIR","fregataMG2","quiscalusMG4","fregataIR","fregataIR2","pelecanusIR4","pelecanus2","pelecanus3","milvago2","milvagoAR","eupsittula","eupsittula2","ara","quiscalus2","quiscalus3","pelecanusIR","pelecanusIR2","pelecanusIR3","quiscalusF","sicalisMG","pelecanusZ","pelecanusZ2","melanerpesMG","pelecanusPicada","cathartesMG","fregataJuv","fregata","fregata2","quiscalusIR","thalasseusIR","thalasseusMG","leucophaeus","melanerpesMG2","melanerpesMG3","melanerpesMG4","brotogerisMG","brotogerisMG2","quiscalusMG","quiscalusMG2","quiscalusMG3","myiozetetes","melancholicus","thalasseusMG","araMG2","pitangusIR","fregataIR","fregataIR2","pelecanusIR4","pelecanusIR5","progne","furnarius2","thulaMG","fregataMG2","fregataMG3","quiscalusMG4","milvagoAR","albaMG","eudocimus","leucophaeus2","araMG","caracara","albaCD","cocoiVuelo","nannopterum3"]) IMG[k]="fotos/"+k+".jpg";
 const AR = "Arjona, Bolívar";
 const CD = "Canal del Dique, Bolívar";
 const MG = "Paseo peatonal de Manga, Cartagena";
@@ -281,7 +281,7 @@ const BIRDS = [
 {
   id:"furnarius-leucopus", common:"Hornero patiamarillo", alt:"Pale-legged Hornero",
   sci:"Furnarius leucopus", family:"Furnariidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.furnarius, date:"", place:AR, ind:"Adulto en una rama"}],
+  photos:[{img:IMG.furnarius, date:"", place:AR, ind:"Adulto en una rama"},{img:IMG.furnarius2, date:"", place:AR, ind:"Mismo individuo, de frente: patas largas y pálidas, ceja blanca y cola rojiza"}],
   desc:"Rojizo por encima, con ceja blanca, garganta blancuzca, pecho ante y patas pálidas. Su nombre viene del nido: una bola de barro con forma de horno de leña, que construye en ramas y postes.",
   diet:"Insectos y larvas que busca caminando en el suelo húmedo.",
   habitat:"Bordes de ciénagas y caños, potreros con árboles y jardines de tierras bajas.",
@@ -309,15 +309,6 @@ const BIRDS = [
   migration:null
 },
 {
-  id:"cantorchilus-leucotis", common:"Cucarachero anteado", alt:"Buff-breasted Wren",
-  sci:"Cantorchilus leucotis", family:"Troglodytidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.leucotis, date:"", place:AR, ind:"Posado en una rama, con la garganta blanca y el pecho ante"}],
-  desc:"Cucarachero mediano, pardo por encima, con la cola rojiza finamente barrada, ceja blanca, garganta blanca y el pecho y el vientre color ante. Casi siempre anda en pareja entre la maraña, y los dos cantan a dúo con frases fuertes y alternadas.",
-  diet:"Insectos, arañas y otros invertebrados que busca entre hojas y enredaderas.",
-  habitat:"Bosques de ribera, matorrales húmedos y bordes de ciénaga en tierras bajas.",
-  migration:null
-},
-{
   id:"ara-ararauna", common:"Guacamaya azul y amarilla", alt:"Guacamayo azulamarillo · Blue-and-yellow Macaw",
   sci:"Ara ararauna", family:"Psittacidae", iucn:"LC", conf:"alta", domestic:true, feral:true,
   confNote:"La de la izquierda es una guacamaya azul y amarilla. La de la derecha, con la frente roja y el dorso verde, parece un híbrido con otra especie de guacamaya, algo común en aves que provienen del cautiverio.",
@@ -331,7 +322,6 @@ const BIRDS = [
 
 const XTRA={
  "progne-tapera":{sw:[["#6B5A4A","Dorso"],["#F2F0EA","Vientre"],["#8A6E55","Banda del pecho"]]},
- "cantorchilus-leucotis":{sw:[["#7A5A3A","Dorso"],["#E3A86A","Pecho"],["#F4F0E6","Garganta"]]},
  "caracara-cheriway":{sw:[["#1E1A16","Capucha"],["#E05A3A","Cara"],["#F2EEE4","Cuello"]]},
  "eudocimus-albus":{sw:[["#F6F4F0","Plumaje"],["#E2564E","Pico y cara"],["#141414","Puntas alares"]]},
  "leucophaeus-atricilla":{sw:[["#5E646C","Manto"],["#F4F4F2","Cabeza y vientre"],["#141414","Puntas alares"]],m:[10,11,12,1,2,3,4]},
@@ -367,7 +357,6 @@ const XTRA={
 
 const HAB={
  "progne-tapera":["Descansa en fila sobre cables y ramas secas y vuela bajo sobre el agua y los potreros. Anida en huecos, a menudo en nidos viejos de horneros.","Cables y ramas secas junto a las ciénagas de Arjona."],
- "cantorchilus-leucotis":["Se mueve bajo y escondido entre la vegetación densa, y se oye mucho antes de verse. Las parejas cantan a dúo.","Matorrales y árboles junto a las ciénagas de Arjona."],
  "caracara-cheriway":["Camina mucho por el suelo y planea bajo sobre playas y potreros buscando comida; a menudo sigue a los gallinazos hasta la carroña.","Cielo sobre la bahía y potreros abiertos."],
  "eudocimus-albus":["Anda en bandadas que se alimentan caminando en el barro y vuelan en fila o en V, alternando aleteos y planeos cortos.","Orillas fangosas y manglares; desde el paseo se ve sobre todo cuando pasa volando al atardecer."],
  "leucophaeus-atricilla":["Anda en grupos que siguen a las lanchas y a los pescadores, se posan en boyas y muelles y bajan en picada corta a recoger comida de la superficie.","Muelles, boyas y el borde de la bahía frente al paseo, sobre todo de octubre a abril."],
@@ -402,7 +391,7 @@ const HAB={
 };
 
 const PLACES={
- "progne-tapera":["cielo","humedal"],"cantorchilus-leucotis":["arboles"],
+ "progne-tapera":["cielo","humedal"],
  "caracara-cheriway":["cielo","prado"],
  "eudocimus-albus":["humedal","cielo"],
  "leucophaeus-atricilla":["humedal","cielo"],"myiozetetes-similis":["arboles"],"tyrannus-melancholicus":["arboles","cielo"],
