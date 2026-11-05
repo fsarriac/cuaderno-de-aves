@@ -1,3 +1,5 @@
+/* regreso-primavera */
+const REGRESO={"tringa-flavipes": {"stops": [{"lat": 16, "lon": -86}, {"lat": 30, "lon": -92}, {"lat": 38, "lon": -98}, {"lat": 51, "lon": -105}], "es": "En primavera no vuelve por la costa atlántica: sube por el centro del continente. Cruza el golfo de México hasta Luisiana y sigue casi en línea recta por las Grandes Llanuras hasta Canadá. En otoño la ruta es más variable y muchas bajan por la costa este.", "en": "In spring it does not return along the Atlantic coast: it flies up the middle of the continent, crossing the Gulf of Mexico to Louisiana and continuing almost in a straight line across the Great Plains to Canada. In fall the route is more variable and many come down the East Coast."}, "tyrannus-tyrannus": {"stops": [{"lat": 6, "lon": -71}, {"lat": 9, "lon": -79.5}, {"lat": 20.5, "lon": -88.5}, {"lat": 29.5, "lon": -91}], "es": "En primavera la mayoría no rodea el golfo de México por México y Texas, como en otoño: desde la península de Yucatán lo cruza en un vuelo directo hasta la costa de Luisiana.", "en": "In spring most do not go around the Gulf of Mexico through Mexico and Texas as in fall: from the Yucatán Peninsula they cross it in a single direct flight to the Louisiana coast."}};
 /* Fotos de la misma especie tomadas en otros lugares del cuaderno */
 if(typeof OTROS!=="undefined"){BIRDS.forEach(b=>{const k=b.sci.split(" / ")[0].replace(/ \(doméstico\)/,"");(OTROS[k]||[]).filter(x=>x.lugar!==LUGAR.nombre).forEach(x=>b.photos.push({img:x.img,place:(x.place&&x.place.indexOf(x.lugar)<0?x.place+" · "+x.lugar:(x.place||x.lugar)),ind:x.ind,ext:true}));});}
 var SITE='';
@@ -71,7 +73,8 @@ grid.addEventListener("click",e=>{const c=e.target.closest(".card");if(c)openBir
 const W=360,H=377,K=3.75,LON0=-120,LAT0=55,PAD=30;
 const px=(lat,lon)=>[PAD+(lon-LON0)*K, 14+(LAT0-lat)*K];
 const mapLayer=`<path class="land" d="${MAP.land}"/><path class="col" d="${MAP.col}"/><path class="borders" d="${MAP.borders}"/>`;
-function routeSVG(m){
+function routeSVG(m,id){
+  const RB=REGRESO[id];
   const pts=m.stops.map(s=>px(s.lat,s.lon));
   const d="M"+pts.map(p=>p.map(n=>n.toFixed(1)).join(" ")).join(" L");
   let len=0;for(let i=1;i<pts.length;i++)len+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);
@@ -85,9 +88,9 @@ function routeSVG(m){
   const stops=m.stops.map((s,i)=>{const [x,y]=pts[i];const left=x>W*0.6;
     return `<circle class="${s.here?'home':'stop'}" cx="${x}" cy="${y}" r="${s.here?7:4.5}"/><text class="stoplbl" x="${left?x-10:x+10}" y="${y+4}" text-anchor="${left?'end':'start'}">${s.here?LUGAR.corto:s.role}</text>`}).join("");
   const rl=r[0]>W*0.6;
-  return `<svg class="route" viewBox="0 0 ${W} ${H}" role="img" aria-label="Ruta migratoria esquemática de ${m.stops[0].name} a Guaymaral">
+  return `<svg class="route" viewBox="0 0 ${W} ${H}" role="img" aria-label="Ruta migratoria esquemática de ${m.stops[0].name} a ${LUGAR.corto}">
     <rect class="sea" x="0" y="0" width="${W}" height="${H}"/>${mapLayer}${g}
-    <path class="back" d="M${last[0]} ${last[1]} Q ${last[0]-40} ${(last[1]+pts[0][1])/2} ${pts[0][0]-6} ${pts[0][1]+6}"/>
+    ${RB?`<path class="back" d="M${last[0]} ${last[1]} L${RB.stops.map(s=>px(s.lat,s.lon).map(n=>n.toFixed(1)).join(" ")).join(" L")} L${pts[0][0]} ${pts[0][1]}"/>`+RB.stops.map(s=>{const q=px(s.lat,s.lon);return `<circle cx="${q[0]}" cy="${q[1]}" r="2.6" style="fill:var(--bg);stroke:var(--piranga);stroke-width:1.2;opacity:.8"/>`}).join(""):""}
     <line class="range" x1="${last[0]}" y1="${last[1]}" x2="${r[0]}" y2="${r[1]}"/>
     <circle cx="${r[0]}" cy="${r[1]}" r="3" style="fill:var(--piranga);opacity:.5"/>
     <text class="lbl" x="${rl?r[0]-8:r[0]+8}" y="${r[1]+3}" text-anchor="${rl?'end':'start'}">hasta ${m.rangeTo.name}</text>
@@ -161,9 +164,9 @@ function openBird(id,from){
       <p style="font-weight:600">${b.migration.type} <span class="mono" style="font-weight:400;color:var(--muted);font-size:12.5px">· ${b.migration.km}</span></p>
       <p class="note">${b.migration.note}</p>
     </div>
-    <div style="border-radius:6px;overflow:hidden;box-shadow:0 0 0 1px var(--line)">${routeSVG(b.migration)}</div>
-    <p class="note" style="margin:6px 0 16px">Ruta aproximada sobre un mapa de las Américas; Colombia resaltada. Línea continua: viaje al sur (otoño). Punteada: regreso al norte (marzo–mayo). Franja tenue: resto del área de invernada.</p>
-    <ol class="tl">${b.migration.stops.map(s=>`<li class="${s.here?'here':''}"><p style="font-weight:600;font-size:14px">${s.name}</p><p class="mono" style="font-size:11.5px;color:var(--muted)">${s.role} · ${s.when} · ${s.lat.toFixed(1)}°${s.lat>=0?'N':'S'}</p></li>`).join("")}</ol>`
+    <div style="border-radius:6px;overflow:hidden;box-shadow:0 0 0 1px var(--line)">${routeSVG(b.migration,b.id)}</div>
+    <p class="note" style="margin:6px 0 16px">Ruta aproximada sobre un mapa de las Américas; Colombia resaltada. ${REGRESO[b.id]?"Línea continua: viaje al sur (otoño). Punteada: regreso al norte en primavera, por otra ruta.":"Línea: viaje al sur (otoño); el regreso en primavera es casi por el mismo camino."} Franja tenue: resto del área de invernada.</p>
+    <ol class="tl">${b.migration.stops.map(s=>`<li class="${s.here?'here':''}"><p style="font-weight:600;font-size:14px">${s.name}</p><p class="mono" style="font-size:11.5px;color:var(--muted)">${s.role} · ${s.when} · ${s.lat.toFixed(1)}°${s.lat>=0?'N':'S'}</p></li>`).join("")}</ol><p class="note" style="margin:4px 0 16px"><b>${window.LANG==="en"?"Return trip":"Regreso"}:</b> ${REGRESO[b.id]?REGRESO[b.id][window.LANG==="en"?"en":"es"]:(window.LANG==="en"?"The return north in spring follows roughly the same route.":"El regreso al norte, en primavera, sigue a grandes rasgos la misma ruta.")}</p>`
     :b.feral?`<div class="resident-box" style="border-color:var(--gold)"><p style="font-weight:600;color:var(--gold)">Ave asilvestrada</p><p class="note" style="margin-top:2px">${b.statusNote||"De origen doméstico, pero vive libre y se reproduce sola."}</p></div>`
     :b.domestic?`<div class="resident-box" style="border-color:var(--gold)"><p style="font-weight:600;color:var(--gold)">Ave doméstica</p><p class="note" style="margin-top:2px">${b.statusNote||"Vive al cuidado de las personas; no es fauna silvestre."}</p></div>`
     :`<div class="resident-box"><p style="font-weight:600;color:var(--resident)">Residente</p><p class="note" style="margin-top:2px">Vive en ${LUGAR.region} todo el año y se reproduce aquí. No realiza migraciones estacionales.</p></div>`;

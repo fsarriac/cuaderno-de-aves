@@ -279,6 +279,9 @@ html a.lugar,html .porespecies,html .tile,html .gcard{transition:transform 220ms
 #dMedia img{animation:fotoIn 240ms var(--ease-out) both}
 @keyframes fotoIn{from{opacity:.4;filter:blur(3px)}to{opacity:1;filter:none}}
 
+/* Ruta de regreso en primavera: punteada pero legible */
+.route .back{opacity:.85;stroke-width:1.6}
+
 /* Menú "Lugares": nace desde su botón (abajo a la izquierda), no aparece de golpe */
 nav.lnav ul:not([hidden]){animation:menuIn 180ms var(--ease-out) both;transform-origin:bottom left}
 @keyframes menuIn{from{opacity:0;transform:scale(.96) translateY(4px)}to{opacity:1;transform:none}}
