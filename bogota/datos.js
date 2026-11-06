@@ -6,6 +6,8 @@ const LUGAR = {
   region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
+ "rubraFSS3": "fotos/rubraFSS3.jpg",
+ "gallinagoSS2": "fotos/gallinagoSS2.jpg",
  "coruscansSS2": "fotos/coruscansSS2.jpg",
  "coruscansSS": "fotos/coruscansSS.jpg",
  "albaSS": "fotos/albaSS.jpg",
@@ -213,7 +215,7 @@ const BIRDS = [
     {img:IMG.rubraVidPoster, video:IMG.rubraVid, date:"", place:SS, ind:"Macho en el comedero (video)"},
     {img:IMG.rubraF, date:"", place:SS, ind:"Hembra o macho joven, tonos anaranjados"},
     {img:IMG.rubraF3, date:"", place:SS, ind:"Hembra, amarillo mostaza"},
-    {img:IMG.rubraF2, date:"", place:SS, ind:"Hembra en el comedero"},{img:IMG.rubraFSS, date:"", place:SS, ind:"Hembra o macho joven en el comedero, con papaya"},{img:IMG.rubraSS3, date:"", place:SS, ind:"Macho joven mudando a rojo, comiendo papaya en el comedero"},{img:IMG.rubraFSS2, date:"", place:SS, ind:"Hembra con banano en el pico"}],
+    {img:IMG.rubraF2, date:"", place:SS, ind:"Hembra en el comedero"},{img:IMG.rubraFSS, date:"", place:SS, ind:"Hembra o macho joven en el comedero, con papaya"},{img:IMG.rubraSS3, date:"", place:SS, ind:"Macho joven mudando a rojo, comiendo papaya en el comedero"},{img:IMG.rubraFSS2, date:"", place:SS, ind:"Hembra con banano en el pico"},{img:IMG.rubraFSS3, date:"", place:SS, ind:"Hembra sobre la papaya del comedero, de tonos mostaza y anaranjados"}],
   desc:"El único pájaro de Norteamérica completamente rojo. El macho conserva el rojo todo el año. La hembra y los jóvenes son amarillo anaranjado, con el pico grueso y claro que comparten con el macho.",
   diet:"Especialista en abejas y avispas: las caza al vuelo y les quita el aguijón golpeándolas contra una rama. Complementa con frutos e insectos.",
   habitat:"Cría en bosques abiertos de pino y roble del sur de EE. UU. y norte de México. Inverna en bordes de bosque, cafetales, parques y jardines hasta unos 3.000 m.",
@@ -340,7 +342,7 @@ const BIRDS = [
   id:"gallinago-nobilis", common:"Caica", alt:"Becasina paramuna · Noble Snipe",
   sci:"Gallinago nobilis", family:"Scolopacidae", iucn:"NT", conf:"media",
   confNote:"Similar a la becasina de Wilson (Gallinago delicata), migratoria boreal. El pico muy largo y el tono ante general favorecen a la caica, residente de los humedales altoandinos.",
-  photos:[{img:IMG.gallinago, date:"", place:SS, ind:"Adulto en aguas someras"}],
+  photos:[{img:IMG.gallinago, date:"", place:SS, ind:"Adulto en aguas someras"},{img:IMG.gallinagoSS2, date:"", place:SS, ind:"Buscando comida en el lodo de la orilla, entre la vegetación"}],
   desc:"Ave limícola rechoncha, de patrón críptico pardo, negro y ante, con un pico recto y larguísimo. Suele quedarse inmóvil y salir volando en zigzag solo cuando se le pisa casi encima.",
   diet:"Lombrices, larvas e invertebrados que detecta hundiendo el pico en el barro.",
   habitat:"Humedales, turberas, potreros encharcados y bordes de páramo, entre unos 2.000 y 4.000 m. Depende de que los humedales de la Sabana se conserven.",
