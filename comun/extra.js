@@ -63,3 +63,18 @@
   window.addEventListener("keydown",function(e){if(cur&&(e.key==="Escape"||e.key==="ArrowLeft"||e.key==="ArrowRight")){e.stopImmediatePropagation();e.preventDefault();close();}},true);
   addEventListener("resize",function(){if(cur&&!cur.closing){var t=target(cur.img.naturalWidth,cur.img.naturalHeight);cur.to=t;cur.c.style.width=t.w+"px";cur.c.style.height=t.h+"px";cur.c.style.transform=tf(t,t);}});
 })();
+/* sitio-link: enlace directo a un sitio dentro de un lugar, p. ej. bogota/#sitio=san-simon */
+(function(){
+  var norm=function(s){return (s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");};
+  function go(){
+    var m=location.hash.match(/^#sitio=([\w-]+)/); if(!m) return;
+    var want=norm(decodeURIComponent(m[1]));
+    var chips=[].slice.call(document.querySelectorAll("[data-s]")).filter(function(c){return c.dataset.s;});
+    var c=chips.find(function(c){return norm(c.dataset.s.split(",")[0]).indexOf(want)>=0||norm(c.dataset.s).indexOf(want)>=0;});
+    if(!c) return;
+    c.click();
+    var g=document.getElementById("grid"); if(g) setTimeout(function(){g.scrollIntoView({block:"start"});},80);
+  }
+  if(document.readyState==="complete") setTimeout(go,120); else addEventListener("load",function(){setTimeout(go,120);});
+  addEventListener("hashchange",go);
+})();
