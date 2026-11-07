@@ -6,6 +6,9 @@ const LUGAR = {
   region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
+ "pygoNido": "fotos/pygoNido.jpg",
+ "pygoNido2": "fotos/pygoNido2.jpg",
+ "pygoTrio": "fotos/pygoTrio.jpg",
  "gilvusSS5": "fotos/gilvusSS5.jpg",
  "humeralisSS": "fotos/humeralisSS.jpg",
  "rubraFSS3": "fotos/rubraFSS3.jpg",
@@ -319,13 +322,13 @@ const BIRDS = [
   migration:null
 },
 {
-  id:"pygochelidon-cyanoleuca", common:"Golondrina blanquiazul", alt:"Blue-and-white Swallow",
-  sci:"Pygochelidon cyanoleuca", family:"Hirundinidae", iucn:"LC", conf:"media",
-  confNote:"En las fotos de San Simón también los adultos, de dorso azul brillante, tienen el vientre y la parte de abajo de la cola pardos, no blancos y negros como en la blanquiazul típica. Eso apunta a que podría tratarse de la golondrina ventriparda (Orochelidon murina); falta confirmarlo.",
-  photos:[{img:IMG.pygochelidon, date:"", place:SS, ind:"Grupo posado en un muro"},{img:IMG.pygoJuv, date:"", place:SS, ind:"Juvenil recién salido del nido"}],
-  desc:"Golondrina pequeña, azul oscuro brillante por encima y clara por debajo. Los jóvenes son más opacos y tienen el vientre pardusco. Pasa el día en vuelo sobre potreros y casas y se reúne a descansar en cables y muros.",
+  id:"pygochelidon-cyanoleuca", common:"Golondrina ventriparda", alt:"Golondrina plomiza · Brown-bellied Swallow",
+  sci:"Orochelidon murina", family:"Hirundinidae", iucn:"LC", conf:"media",
+  confNote:"Todas las golondrinas fotografiadas en San Simón, adultos de dorso azul brillante incluidos, tienen la garganta pálida y el vientre pardo, sin el vientre blanco limpio de la golondrina blanquiazul (Pygochelidon cyanoleuca), que también vive en Bogotá. Por eso se identifican como ventripardas; una vista clara de la parte de abajo de la cola, que en esta especie es oscura, lo confirmaría del todo.",
+  photos:[{img:IMG.pygochelidon, date:"", place:SS, ind:"Grupo posado en un muro"},{img:IMG.pygoJuv, date:"", place:SS, ind:"Joven recién salido del nido"},{img:IMG.pygoNido, date:"", place:SS, ind:"Llevando paja al nido, en un hueco bajo el alero del techo"},{img:IMG.pygoNido2, date:"", place:SS, ind:"Entrando al nido con material en el pico"},{img:IMG.pygoTrio, date:"", place:SS, ind:"Tres posadas en el muro bajo la llovizna: garganta pálida y vientre pardo"}],
+  desc:"Golondrina pequeña de montaña, azul acero brillante por encima, con la garganta y el pecho grisáceos pálidos y el vientre pardo ahumado. Vive en las partes altas de los Andes, desde unos 1.800 hasta más de 4.000 m, y en la Sabana anida en casas y edificios.",
   diet:"Insectos pequeños capturados en vuelo.",
-  habitat:"Áreas abiertas, pueblos y ciudades. Anida en huecos de edificios, aleros y taludes.",
+  habitat:"Páramos, laderas abiertas, potreros y pueblos de tierra fría. Anida en huecos bajo tejas, aleros y taludes.",
   migration:null
 },
 {
