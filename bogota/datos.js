@@ -6,6 +6,8 @@ const LUGAR = {
   region: "la Sabana", hero: "fotos/rubraSS3.jpg"
 };
 const IMG = {
+ "gilvusSS5": "fotos/gilvusSS5.jpg",
+ "humeralisSS": "fotos/humeralisSS.jpg",
  "rubraFSS3": "fotos/rubraFSS3.jpg",
  "gallinagoSS2": "fotos/gallinagoSS2.jpg",
  "coruscansSS2": "fotos/coruscansSS2.jpg",
@@ -371,7 +373,7 @@ const BIRDS = [
   id:"diglossa-humeralis", common:"Pinchaflor negro", alt:"Carbonero · Black Flowerpiercer",
   sci:"Diglossa humeralis", family:"Thraupidae", iucn:"LC", conf:"alta",
   confNote:"El pico queda tapado por una hoja. El plumaje negro opaco y la conducta en flores de farolito (Abutilon) apuntan al pinchaflor negro, pero conviene una foto donde se vea el pico ganchudo.",
-  photos:[{img:IMG.diglossa, date:"", place:SS, ind:"Adulto en farolitos (Abutilon)"},{img:IMG.diglossa2, date:"", place:SS, ind:"Entre el follaje del seto"}],
+  photos:[{img:IMG.diglossa, date:"", place:SS, ind:"Adulto en farolitos (Abutilon)"},{img:IMG.diglossa2, date:"", place:SS, ind:"Entre el follaje del seto"},{img:IMG.humeralisSS, date:"", place:SS, ind:"Entre las flores de farolito (Abutilon), una de sus favoritas del jardín"}],
   desc:"Pájaro negro opaco, con un parche gris azulado en el hombro y el pico curvo terminado en gancho. Ese pico le permite «robar» néctar: perfora la base de la flor sin polinizarla.",
   diet:"Néctar, que obtiene perforando las flores; insectos pequeños.",
   habitat:"Bordes de bosque andino, matorrales, jardines y páramo, entre unos 2.500 y 4.000 m.",
@@ -400,7 +402,7 @@ const BIRDS = [
 {
   id:"mimus-gilvus", common:"Sinsonte tropical", alt:"Sinsonte común · Ruiseñor · Tropical Mockingbird",
   sci:"Mimus gilvus", family:"Mimidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.gilvus4, date:"", place:SS, ind:"Adulto entre las hojas, con el antifaz oscuro y la cola larga"},{img:IMG.gilvus3, date:"", place:SS, ind:"Adulto sobre el muro de ladrillo"},{img:IMG.gilvus, date:"", place:SS, ind:"Adulto"},{img:IMG.gilvus2, date:"", place:SS, ind:"Con un fruto en el pico, sobre el tejado"}],
+  photos:[{img:IMG.gilvus4, date:"", place:SS, ind:"Adulto entre las hojas, con el antifaz oscuro y la cola larga"},{img:IMG.gilvus3, date:"", place:SS, ind:"Adulto sobre el muro de ladrillo"},{img:IMG.gilvus, date:"", place:SS, ind:"Adulto"},{img:IMG.gilvus2, date:"", place:SS, ind:"Con un fruto en el pico, sobre el tejado"},{img:IMG.gilvusSS5, date:"", place:SS, ind:"Dos sinsontes en el comedero: el de la derecha abre las alas para espantar al otro"}],
   desc:"Gris claro por encima y blancuzco por debajo, con antifaz oscuro y cola larga de puntas blancas que abre al posarse. Canta desde perchas altas, con frases variadas y repetidas.",
   diet:"Omnívoro: insectos, arañas, frutos y semillas. Busca alimento en el suelo y en arbustos.",
   habitat:"Áreas abiertas, potreros con árboles, cercas vivas, jardines y zonas urbanas, del nivel del mar hasta la Sabana.",
@@ -769,7 +771,7 @@ const HAB={
  "turdus-grayi":["Tranquila y discreta. Busca alimento en el suelo bajo los árboles y sube al dosel a comer frutos. Su canto es un silbido largo y melodioso, sobre todo al comenzar las lluvias.","Copas de árboles frondosos y el suelo bajo ellos, en la mañana. Todo el año."],
  "spatula-discors":["Se alimenta flotando y filtrando la superficie, a veces con la cabeza bajo el agua. Es tímido y despega en vuelo rápido y bajo ante cualquier movimiento. En invernada se junta en grupos con otros patos.","Espejos de agua del humedal cubiertos de lenteja de agua, sobre todo en la mañana. De septiembre a abril."],
  "anisognathus-igniventris":["Anda en parejas o grupos ruidosos que recorren los arbustos en busca de frutos. Su canto es un repique metálico y desordenado, como un clarinete.","Setos y árboles frutales del jardín; más fácil en la mañana. Todo el año."],
- "colibri-coruscans":["Muy territorial: defiende flores y bebederos a gritos y en persecuciones aéreas. Canta largo rato desde una percha alta y expuesta.","Bebederos y flores de antorcha, fucsias y salvias. Todo el año."],
+ "colibri-coruscans":["Muy territorial: defiende flores y bebederos a gritos y en persecuciones aéreas. Canta largo rato desde una percha alta y expuesta. En San Simón es el dueño del bebedero: persigue y ataca a los otros colibríes que intentan usarlo, y uno apareció muerto en el bebedero, con plumas arrancadas, al parecer tras sus ataques.","Bebederos y flores de antorcha, fucsias y salvias. Todo el año."],
  "phimosus-infuscatus":["Camina despacio en parejas o grupos, metiendo el pico curvo en el barro. Vuela en fila con el cuello estirado.","Bordes del humedal y potreros encharcados, sobre todo después de las lluvias. Todo el año."],
  "troglodytes-aedon":["Inquieto y curioso: salta entre las ramas bajas con la cola levantada y regaña con un «chet» seco a quien se acerque. Canta todo el año.","Base de setos, jardineras, aleros y montones de leña. Todo el año."],
  "buteo-platypterus":["Caza al acecho desde una percha a media altura y se lanza sobre la presa. En invernada anda solo; en migración viaja en bandadas enormes que suben en espiral en las corrientes de aire caliente.","Perchas en bordes de arboledas y cercas vivas. En mañanas soleadas de octubre y marzo, mira al cielo: pueden pasar bandadas en vuelo."],
