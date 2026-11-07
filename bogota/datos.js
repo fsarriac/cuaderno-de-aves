@@ -398,7 +398,7 @@ const BIRDS = [
   migration:null
 },
 {
-  id:"mimus-gilvus", common:"Sinsonte tropical", alt:"Sinsonte común · Tropical Mockingbird",
+  id:"mimus-gilvus", common:"Sinsonte tropical", alt:"Sinsonte común · Ruiseñor · Tropical Mockingbird",
   sci:"Mimus gilvus", family:"Mimidae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.gilvus4, date:"", place:SS, ind:"Adulto entre las hojas, con el antifaz oscuro y la cola larga"},{img:IMG.gilvus3, date:"", place:SS, ind:"Adulto sobre el muro de ladrillo"},{img:IMG.gilvus, date:"", place:SS, ind:"Adulto"},{img:IMG.gilvus2, date:"", place:SS, ind:"Con un fruto en el pico, sobre el tejado"}],
   desc:"Gris claro por encima y blancuzco por debajo, con antifaz oscuro y cola larga de puntas blancas que abre al posarse. Canta desde perchas altas, con frases variadas y repetidas.",
@@ -777,7 +777,7 @@ const HAB={
  "piranga-olivacea":["Discreta y lenta: recorre el dosel revisando hojas con calma y puede pasar largo rato quieta. A menudo se une a bandadas mixtas de tangaras y reinitas.","En el comedero de frutas, sobre todo en la tarde, y en las copas de los árboles de los bordes. De octubre a abril."],
  "setophaga-petechia":["Muy activa: revolotea sin parar entre las hojas y se cuelga para alcanzar insectos. Defiende un pequeño territorio incluso durante la invernada.","Arbustos y árboles bajos cerca del agua, sauces y setos. Mañanas, de septiembre a abril."],
  "contopus":["Se posa erguido y quieto en una rama seca, sale en un vuelo corto a atrapar un insecto y regresa casi siempre a la misma percha.","Ramas muertas y expuestas en lo alto de árboles, en bordes y claros. De septiembre a abril."],
- "piranga-rubra":["Tranquila y paciente: se queda inmóvil largos ratos en el dosel antes de moverse. Saquea avisperos y panales para comerse las larvas.","Comederos de papaya y banano, y árboles altos del jardín. De octubre a abril."],
+ "piranga-rubra":["Tranquila y paciente: se queda inmóvil largos ratos en el dosel antes de moverse. Saquea avisperos y panales para comerse las larvas.","Comederos de papaya y banano, y árboles altos del jardín. En San Simón es la única que le disputa la papaya al sinsonte. De octubre a abril."],
  "zonotrichia-capensis":["Vive en parejas que defienden su territorio todo el año. Se alimenta en el suelo dando saltitos y alza el copete cuando está alerta. Su canto se oye a cualquier hora, incluso de noche.","En el césped, bordes de caminos y cercas, prácticamente en cualquier rincón abierto. Todo el año."],
  "zenaida-auriculata":["Camina por el suelo picoteando semillas, en parejas o bandadas. Al despegar hace un ruido seco con las alas.","Prados y bordes de setos, picoteando el suelo; también en cables. En San Simón andan en grupos de 3 a 5 por el suelo alrededor de la casa y se posan en el techo; no buscan la fruta del comedero, pero llegan cuando hay otros pájaros, quizá porque su presencia les indica que el sitio es seguro. Todo el año."],
  "vanellus-chilensis":["Vigilante y ruidoso: anda en parejas y da la alarma a gritos ante cualquier intruso. En época de cría se lanza en vuelos rasantes contra personas, perros o rapaces que se acerquen al nido.","Potreros abiertos y prados recién cortados. Si grita y vuela sobre ti, hay un nido cerca: aléjate despacio. Todo el año."],
@@ -789,9 +789,9 @@ const HAB={
  "diglossa-humeralis":["Activo y solitario; defiende sus arbustos con flores de otros pájaros. Sujeta la flor con el gancho del pico y la perfora por la base para tomar el néctar.","Farolitos (Abutilon), fucsias y otras flores tubulares del jardín. Todo el año."],
  "turdus-fuscater":["Camina y salta por el césped, se detiene, inclina la cabeza para escuchar y clava el pico para sacar una lombriz. Canta al amanecer, a veces antes de que salga el sol.","Prados y jardines, sobre todo después de la lluvia o del riego. Todo el año."],
  "spinus":["Anda en grupos pequeños y parlanchines, con vuelo ondulante. Se cuelga de las plantas para sacarles las semillas.","Plantas en semilla (dientes de león, cardos) y copas peladas de árboles. Todo el año."],
- "mimus-gilvus":["Territorial y vocal. Canta desde lo más alto y abre las alas de golpe, mostrando el blanco, para espantar insectos o rivales.","Postes, cercas y copas de arbustos en zonas abiertas. Todo el año."],
- "thraupis-episcopus":["Inquieto y ruidoso. Anda en parejas o grupos pequeños y suele imponerse sobre otras aves en el comedero.","Comedero de frutas, palmas y árboles del jardín. Todo el año."],
- "thraupis-palmarum":["Acrobático: trepa por las hojas de las palmas y se cuelga boca abajo para revisar el envés en busca de insectos.","Palmas y comedero de frutas. Todo el año."]
+ "mimus-gilvus":["Territorial y vocal. Canta desde lo más alto y abre las alas de golpe, mostrando el blanco, para espantar insectos o rivales.","Postes, cercas y copas de arbustos en zonas abiertas. En el comedero de San Simón es muy agresivo: cuando las tangaras están comiendo se les viene encima volando, llega haciendo ruido y hasta las golpea; ellas se van y vuelven cuando él se aleja. Prefiere la papaya, y con un comedero aparte solo para ella deja más tranquilas a las demás. Todo el año."],
+ "thraupis-episcopus":["Inquieto y ruidoso. Anda en parejas o grupos pequeños y suele imponerse sobre otras aves en el comedero.","Comedero de frutas, palmas y árboles del jardín. En San Simón come más banano que papaya. Todo el año."],
+ "thraupis-palmarum":["Acrobático: trepa por las hojas de las palmas y se cuelga boca abajo para revisar el envés en busca de insectos.","Palmas y comedero de frutas. En San Simón come más banano que papaya. Todo el año."]
 };
 
 const PLACES={
