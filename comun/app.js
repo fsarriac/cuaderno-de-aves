@@ -104,7 +104,7 @@ function routeSVG(m,id){
 
 function mediaHTML(b,p){
   return (p.video
-    ? `<video src="${p.video}" poster="${p.img}" controls loop muted playsinline></video>`
+    ? `<video src="${p.video}" poster="${p.img}" controls autoplay loop muted playsinline></video>`
     : `<img src="${p.img}" alt="${b.common}">`)+`<p class="pcap">${p.ind||""}${p.place?` · ${p.place}`:""}</p>`;
 }
 function fieldHTML(p){
@@ -218,7 +218,7 @@ function openBird(id,from){
     </div>`;
   body.querySelectorAll(".thumb").forEach(t=>t.addEventListener("click",()=>{
     const p=b.photos[+t.dataset.i];
-    $("#dMedia").innerHTML=mediaHTML(b,p);
+    $("#dMedia").innerHTML=mediaHTML(b,p);{const _v=$("#dMedia video");if(_v){_v.muted=true;_v.play().catch(()=>{});}}
     body.querySelectorAll(".thumb").forEach(x=>x.setAttribute("aria-selected",x===t));
   }));
   body.scrollTop=0;

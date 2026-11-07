@@ -105,7 +105,7 @@ const BIRDS = [
   id:"icterus-chrysater", common:"Toche", alt:"Turpial montañero · Yellow-backed Oriole",
   sci:"Icterus chrysater", family:"Icteridae", iucn:"LC", conf:"media",
   confNote:"No se ven las alas, que en el toche son negras. La cara y el babero negros sobre amarillo intenso encajan con esta especie, la más común de su tipo en la zona.",
-  photos:[{img:IMG.icterus, date:"", place:VN, ind:"Posado en una hoja de plátano"}],
+  photos:[{img:IMG.icterus, date:"", place:VN, ind:"Posado en una hoja de plátano"},{img:"fotos/icterusVidP.jpg", video:"fotos/icterusVid.mp4", date:"", place:VN, ind:"Despegando de una hoja de plátano, en cámara lenta"}],
   desc:"Amarillo intenso con la cara, la garganta, las alas y la cola negras; la espalda también es amarilla. Canta un silbido aflautado.",
   diet:"Insectos, frutos y néctar.",
   habitat:"Bordes de bosque, cafetales, jardines y huertos.",
@@ -123,7 +123,7 @@ const BIRDS = [
 {
   id:"melanerpes-rubricapillus", common:"Carpintero habado", alt:"Red-crowned Woodpecker",
   sci:"Melanerpes rubricapillus", family:"Picidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.melanerpes, date:"", place:VN, ind:"Macho en un tronco"},{img:IMG.melanerpes2, date:"", place:VN, ind:"Macho en el comedero de guadua"}],
+  photos:[{img:IMG.melanerpes, date:"", place:VN, ind:"Macho en un tronco"},{img:IMG.melanerpes2, date:"", place:VN, ind:"Macho en el comedero de guadua"},{img:"fotos/melanerpesVidP.jpg", video:"fotos/melanerpesVid.mp4", date:"", place:VN, ind:"Despegando del tronco: en cámara lenta se ve el barrado del dorso"}],
   desc:"Dorso barrado en blanco y negro, partes inferiores beige y corona roja en el macho.",
   diet:"Insectos y larvas de la madera, frutos y néctar.",
   habitat:"Bordes, cafetales, jardines y postes de madera.",
@@ -229,7 +229,7 @@ const BIRDS = [
 {
   id:"amazilia-tzacatl", common:"Amazilia colirrufa", alt:"Colibrí colirrufo · Rufous-tailed Hummingbird",
   sci:"Amazilia tzacatl", family:"Trochilidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.amazilia, date:"", place:VN, ind:"De espaldas en una cuerda, con la cola rufa y el pico rojo"}],
+  photos:[{img:IMG.amazilia, date:"", place:VN, ind:"De espaldas en una cuerda, con la cola rufa y el pico rojo"},{img:"fotos/amaziliaVidP.jpg", video:"fotos/amaziliaVid.mp4", date:"", place:VN, ind:"Levantando vuelo desde una ramita, en cámara lenta"}],
   desc:"Colibrí mediano, verde brillante, con el pico rojo de punta negra y la cola castaño rojiza. Es el colibrí más común de las tierras templadas y cálidas de Colombia.",
   diet:"Néctar de flores de jardín, heliconias y bebederos; también pequeños insectos y arañas.",
   habitat:"Jardines, cafetales, bordes de bosque y potreros con árboles, desde el nivel del mar hasta unos 1.800 m.",

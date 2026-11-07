@@ -67,7 +67,7 @@ const BIRDS = [
 {
   id:"melanerpes-rubricapillus", common:"Carpintero habado", alt:"Carpintero coronirrojo · Red-crowned Woodpecker",
   sci:"Melanerpes rubricapillus", family:"Picidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.melanerpes, date:"", place:BA, ind:"Macho picando una rama"},{img:IMG.melanerpes2, date:"", place:BA, ind:"Macho, con el dorso barrado a la vista"}],
+  photos:[{img:IMG.melanerpes, date:"", place:BA, ind:"Macho picando una rama"},{img:IMG.melanerpes2, date:"", place:BA, ind:"Macho, con el dorso barrado a la vista"},{img:"fotos/melanerpesBAVidP.jpg", video:"fotos/melanerpesBAVid.mp4", date:"", place:BA, ind:"Despegue de una rama con barbas de viejo, en cámara lenta"}],
   desc:"Dorso barrado en blanco y negro, partes inferiores beige con una mancha rojiza en el vientre. El macho tiene la corona y la nuca rojas; la hembra solo la nuca.",
   diet:"Insectos y larvas que saca de la madera, frutos y néctar.",
   habitat:"Bosque seco, jardines, parques y cercas con postes de madera. Los huecos que excava luego los usan otras aves para anidar.",
