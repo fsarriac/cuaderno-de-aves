@@ -6,7 +6,7 @@ const LUGAR = {
   region: "las riberas del Magdalena", hero: "fotos/chauna.jpg",
   sitios: ["Charca de Guarinocito, La Dorada", "Conjunto Campestre Palma Real, La Dorada", "Ciénaga de Pijiño, Magdalena", "Canal del Dique, Bolívar"]
 };
-const IMG = {}; for (const k of ["amazonaLD","tyrannusLD","tyrannusLD2","sulcirostris","sulcirostris2","burrovianus","caracaraLD","brotogerisLD","chalybea","coragypsLD","sicalisLD","pandionLD","chauna","chauna2","chrysomusLD","chrysomusLD2","chrysomusLDF","dendrocygnaLD","amazonaLD2","sternula","anhinga","tachycineta","cocoiLD","cocoiLD2","cocoiLD3","patagioenas","arundinicola","arundinicolaF","jacanaLD","butoridesLD","auraLD","crotophagaMj","crotophagaMj2","butoridesLD2","chrysomusLDF2","certhiaxis","certhiaxis2","anhinga2","anhingaF","anhingaF2","tachycineta2","busarellus","busarellus2","cocoiLD4","porphyrioLD","nannopterumLD","nannopterumLD2","nannopterumLD3","albaLD","albaLD2","arundinicola2","tachycineta3","cocoiLD5","cocoiLD6","anhingaF3","anhingaF4","butoridesLD3","donacobius","tigrisoma","fluvicola","fluvicola2","cd_cocoi","cd_cocoi2","cd_cocoi3","cd_cocoi4","cd_cocoi5","cd_cocoiVuelo","cd_cocoi6","cd_alba2","cd_alba","cd_alba3","cd_albaCD","cd_nannopterum","cd_nannopterum2","cd_nannopterum3","cd_pelecanus","cd_thalasseus"]) IMG[k]="fotos/"+k+".jpg"; for (const k of ["amazona","amazona2","pandion","pandion2","caracara","fluvicola","jacana","jacanaJuv","milvago","milvago2","milvagoJuv","nycticorax","nycticorax2","torquata","torquata2","aramus","crotophaga","alba","alba2","tigrisoma","alba2"]) IMG[k]="fotos/"+k+".jpg";
+const IMG = {}; for (const k of ["amazonaLD","tyrannusLD","tyrannusLD2","sulcirostris","sulcirostris2","burrovianus","caracaraLD","brotogerisLD","chalybea","coragypsLD","sicalisLD","pandionLD","chauna","chauna2","chrysomusLD","chrysomusLD2","chrysomusLDF","dendrocygnaLD","amazonaLD2","sternula","anhinga","tachycineta","cocoiLD","cocoiLD2","cocoiLD3","patagioenas","arundinicola","arundinicolaF","jacanaLD","butoridesLD","auraLD","crotophagaMj","crotophagaMj2","butoridesLD2","chrysomusLDF2","certhiaxis","certhiaxis2","anhinga2","anhingaF","anhingaF2","tachycineta2","busarellus","busarellus2","cocoiLD4","porphyrioLD","nannopterumLD","nannopterumLD2","nannopterumLD3","albaLD","albaLD2","arundinicola2","tachycineta3","cocoiLD5","cocoiLD6","anhingaF3","anhingaF4","butoridesLD3","donacobius","tigrisomaLD","fluvicolaLD","fluvicolaLD2","cd_cocoi","cd_cocoi2","cd_cocoi3","cd_cocoi4","cd_cocoi5","cd_cocoiVuelo","cd_cocoi6","cd_alba2","cd_alba","cd_alba3","cd_albaCD","cd_nannopterum","cd_nannopterum2","cd_nannopterum3","cd_pelecanus","cd_thalasseus"]) IMG[k]="fotos/"+k+".jpg"; for (const k of ["amazona","amazona2","pandion","pandion2","caracara","fluvicola","jacana","jacanaJuv","milvago","milvago2","milvagoJuv","nycticorax","nycticorax2","torquata","torquata2","aramus","crotophaga","alba","alba2","tigrisoma","alba2"]) IMG[k]="fotos/"+k+".jpg";
 const PJ = "Ciénaga de Pijiño, Magdalena";
 const GU = "Charca de Guarinocito, La Dorada";
 const PR = "Conjunto Campestre Palma Real, La Dorada";
@@ -45,7 +45,7 @@ const BIRDS = [
   id:"tigrisoma-lineatum", common:"Vaco colorado", alt:"Garza tigre · Rufescent Tiger-Heron",
   sci:"Tigrisoma lineatum", family:"Ardeidae", iucn:"LC", conf:"media",
   confNote:"Es un juvenil: los jóvenes de las garzas tigre se parecen mucho entre sí. El vaco colorado es el más común en las ciénagas de tierras bajas del Caribe.",
-  photos:[{img:IMG.tigrisoma, date:"", place:PJ, ind:"Juvenil, con el barrado de «tigre»"},{img:IMG.tigrisoma, date:"", place:GU, ind:"Adulto entre la vegetación de la orilla: cabeza y cuello castaños"}],
+  photos:[{img:IMG.tigrisoma, date:"", place:PJ, ind:"Juvenil, con el barrado de «tigre»"},{img:IMG.tigrisomaLD, date:"", place:GU, ind:"Adulto entre la vegetación de la orilla: cabeza y cuello castaños"}],
   desc:"El juvenil, como el de la foto, es canela con barras negras, un camuflaje perfecto entre juncos y hojas secas. El adulto tiene la cabeza y el cuello castaño rojizo. Ante el peligro se queda inmóvil con el pico apuntando al cielo para confundirse con la vegetación.",
   diet:"Peces, ranas, cangrejos e insectos acuáticos que acecha inmóvil en la orilla.",
   habitat:"Orillas sombreadas de ciénagas, caños y bosques inundables.",
@@ -99,7 +99,7 @@ const BIRDS = [
 {
   id:"fluvicola-pica", common:"Viudita", alt:"Viudita acuática · Pied Water-Tyrant",
   sci:"Fluvicola pica", family:"Tyrannidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.fluvicola, date:"", place:PJ, ind:"Adulto, blanco y negro"},{img:IMG.fluvicola, date:"", place:GU, ind:"Sobre una hoja de buchón: blanca con la espalda y las alas negras"},{img:IMG.fluvicola2, date:"", place:GU, ind:"Caminando sobre los buchones"}],
+  photos:[{img:IMG.fluvicola, date:"", place:PJ, ind:"Adulto, blanco y negro"},{img:IMG.fluvicolaLD, date:"", place:GU, ind:"Sobre una hoja de buchón: blanca con la espalda y las alas negras"},{img:IMG.fluvicolaLD2, date:"", place:GU, ind:"Caminando sobre los buchones"}],
   desc:"Pequeño atrapamoscas blanco con la nuca, la espalda y las alas negras, como un traje de viuda. Mueve la cola continuamente.",
   diet:"Insectos pequeños que caza saltando entre la vegetación flotante y las orillas.",
   habitat:"Orillas de ciénagas, lagunas y canales con plantas acuáticas.",
