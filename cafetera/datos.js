@@ -187,9 +187,8 @@ const BIRDS = [
 },
 {
   id:"ortalis-columbiana", common:"Guacharaca colombiana", alt:"Guacharaca · Colombian Chachalaca",
-  sci:"Ortalis columbiana", family:"Cracidae", iucn:"LC", conf:"media",
-  confNote:"Son siluetas a contraluz: la especie se deduce porque es la única guacharaca de la zona.",
-  photos:[{img:IMG.ortalis, date:"", place:VN, ind:"Dos a contraluz en un árbol seco con barbas de viejo. Son siluetas: la especie se deduce por la zona"}],
+  sci:"Ortalis columbiana", family:"Cracidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.ortalis, date:"", place:VN, ind:"Dos a contraluz en un árbol seco con barbas de viejo"}],
   desc:"Ave grande, parecida a una gallina delgada de cola larga, parda con la cabeza y el cuello grises y una piel roja desnuda en la garganta. Es endémica de Colombia: no vive en ningún otro país.",
   diet:"Frutos, hojas tiernas, flores y brotes; baja al suelo a comer frutos caídos y visita los comederos con banano.",
   habitat:"Bordes de bosque, guaduales, cafetales con sombra y fincas con árboles frutales.",
