@@ -471,7 +471,7 @@ const BIRDS = [
 },
 {
   id:"fluvicola-pica", common:"Viudita blanca", alt:"Monjita blanca · Pied Water-Tyrant", sci:"Fluvicola pica", family:"Tyrannidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.fluvicola, date:"", place:LD, ind:"Sobre una hoja de buchón · Charca de Guarinocito"},{img:IMG.fluvicola2, date:"", place:LD, ind:"Saltando entre los buchones · Charca de Guarinocito"}],
+  photos:[{img:IMG.fluvicola, date:"", place:LD, ind:"Sobre una hoja de buchón: blanca con la espalda y las alas negras · Charca de Guarinocito"},{img:IMG.fluvicola2, date:"", place:LD, ind:"Caminando sobre los buchones · Charca de Guarinocito"}],
   desc:"Atrapamoscas pequeño y blanco, con la nuca, la espalda, las alas y la cola negras. Se parece a un chorlito en miniatura por cómo corre sobre la vegetación flotante.",
   diet:"Insectos pequeños que atrapa caminando sobre las plantas acuáticas o en vuelos cortos.",
   habitat:"Charcas, ciénagas y potreros inundados con buchones y vegetación flotante, en tierras bajas.",
