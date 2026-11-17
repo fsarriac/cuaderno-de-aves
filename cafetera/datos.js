@@ -2,7 +2,7 @@
    Cuando se sepa el sitio exacto de cada foto, cámbielo en "place" (p. ej. "Valle de Cocora, Quindío").
    Si hay fotos de varios sitios, aparece solo el filtro "Sitio". */
 const LUGAR = { nombre:"Caldas", corto:"Caldas", region:"Caldas", hero:"fotos/flammigerusM.jpg" };
-const IMG = {}; for (const k of ["amazonaLD","tyrannusLD","tyrannusLD2","sulcirostris","sulcirostris2","burrovianus","caracaraLD","brotogerisLD","chalybea","coragypsLD","sicalisLD","pandionLD","chauna","chauna2","chrysomusLD","chrysomusLD2","chrysomusLDF","dendrocygnaLD","amazonaLD2","sternula","anhinga","tachycineta","cocoiLD","cocoiLD2","cocoiLD3","patagioenas","arundinicola","arundinicolaF","jacanaLD","butoridesLD","auraLD"]) IMG[k]="fotos/"+k+".jpg"; for (const k of ["aglaeactis","atlapetes","anisognathus","zonotrichia","piaya","episcopus","dimidiatus","dimidiatus2","turdus","stilpnia","stilpnia2","icterus","forpus","phimosus","flammigerusM","flammigerusF","flammigerusF2","euphonia","euphonia2","melanerpes","stilpnia3","sicalis","episcopus2","episcopus3","episcopus4","ignobilis","cyanicollis","flammigerusF3","euphonia3","aglaeactis2","anisognathus2","ortalis","sporophila","ignobilis2","euphonia4","melanerpes2","florisuga","saltator","atlapetes2","eriocnemis","ignobilis3","amazilia"]) IMG[k]="fotos/"+k+".jpg";
+const IMG = {}; for (const k of ["amazonaLD","tyrannusLD","tyrannusLD2","sulcirostris","sulcirostris2","burrovianus","caracaraLD","brotogerisLD","chalybea","coragypsLD","sicalisLD","pandionLD","chauna","chauna2","chrysomusLD","chrysomusLD2","chrysomusLDF","dendrocygnaLD","amazonaLD2","sternula","anhinga","tachycineta","cocoiLD","cocoiLD2","cocoiLD3","patagioenas","arundinicola","arundinicolaF","jacanaLD","butoridesLD","auraLD","crotophagaMj","crotophagaMj2","butoridesLD2","chrysomusLDF2","certhiaxis","certhiaxis2","anhinga2","anhingaF","anhingaF2","tachycineta2","busarellus","busarellus2","cocoiLD4","porphyrioLD","nannopterumLD","nannopterumLD2","nannopterumLD3","albaLD","albaLD2","arundinicola2","tachycineta3","cocoiLD5","cocoiLD6","anhingaF3","anhingaF4","butoridesLD3","donacobius","tigrisoma","fluvicola","fluvicola2"]) IMG[k]="fotos/"+k+".jpg"; for (const k of ["aglaeactis","atlapetes","anisognathus","zonotrichia","piaya","episcopus","dimidiatus","dimidiatus2","turdus","stilpnia","stilpnia2","icterus","forpus","phimosus","flammigerusM","flammigerusF","flammigerusF2","euphonia","euphonia2","melanerpes","stilpnia3","sicalis","episcopus2","episcopus3","episcopus4","ignobilis","cyanicollis","flammigerusF3","euphonia3","aglaeactis2","anisognathus2","ortalis","sporophila","ignobilis2","euphonia4","melanerpes2","florisuga","saltator","atlapetes2","eriocnemis","ignobilis3","amazilia"]) IMG[k]="fotos/"+k+".jpg";
 const ZC = "Zona Cafetera";
 const VN = "Hacienda Venecia";
 const RZ = "Nevado del Ruiz";
@@ -317,7 +317,7 @@ const BIRDS = [
 },
 {
   id:"anhinga-anhinga", common:"Pato aguja", alt:"Anhinga · Anhinga", sci:"Anhinga anhinga", family:"Anhingidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.anhinga, date:"", place:LD, ind:"Macho secándose: plumas plateadas en la espalda y cola con punta clara · Charca de Guarinocito"}],
+  photos:[{img:IMG.anhinga, date:"", place:LD, ind:"Macho secándose: plumas plateadas en la espalda y cola con punta clara · Charca de Guarinocito"},{img:IMG.anhinga2, date:"", place:LD, ind:"Macho de espaldas: las plumas plateadas de la espalda · Charca de Guarinocito"},{img:IMG.anhingaF, date:"", place:LD, ind:"Hembra, con la cabeza y el cuello canela pálido · Charca de Guarinocito"},{img:IMG.anhingaF2, date:"", place:LD, ind:"Hembra con las alas y la cola abiertas, secándose · Charca de Guarinocito"},{img:IMG.anhingaF3, date:"", place:LD, ind:"Hembra a contraluz: cuello canela y patas anaranjadas · Charca de Guarinocito"},{img:IMG.anhingaF4, date:"", place:LD, ind:"Nadando con solo el cuello afuera, como una serpiente · Charca de Guarinocito"}],
   desc:"Ave acuática negra, de cuello largo y delgado como una serpiente, pico amarillo en forma de daga y cola larga en abanico con la punta clara. El macho tiene la espalda y las alas cubiertas de plumas plateadas; la hembra tiene la cabeza y el cuello canela. Nada con el cuerpo sumergido y solo el cuello afuera.",
   diet:"Peces que ensarta con el pico bajo el agua, como con un arpón; los lanza al aire y se los traga de cabeza.",
   habitat:"Ciénagas, charcas, caños y ríos de aguas tranquilas con árboles en la orilla.",
@@ -325,7 +325,7 @@ const BIRDS = [
 },
 {
   id:"ardea-cocoi", common:"Garzón azul", alt:"Garza cuca · Cocoi Heron", sci:"Ardea cocoi", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.cocoiLD, date:"", place:LD, ind:"Entre los buchones, con la corona negra y el hombro negro · Charca de Guarinocito"},{img:IMG.cocoiLD2, date:"", place:LD, ind:"Cabeza y cuello asomados entre los buchones · Charca de Guarinocito"},{img:IMG.cocoiLD3, date:"", place:LD, ind:"En vuelo sobre la charca · Charca de Guarinocito"}],
+  photos:[{img:IMG.cocoiLD, date:"", place:LD, ind:"Entre los buchones, con la corona negra y el hombro negro · Charca de Guarinocito"},{img:IMG.cocoiLD2, date:"", place:LD, ind:"Cabeza y cuello asomados entre los buchones · Charca de Guarinocito"},{img:IMG.cocoiLD3, date:"", place:LD, ind:"En vuelo sobre la charca · Charca de Guarinocito"},{img:IMG.cocoiLD4, date:"", place:LD, ind:"Escondido entre los buchones de la orilla · Charca de Guarinocito"},{img:IMG.cocoiLD5, date:"", place:LD, ind:"Caminando por la orilla, frente a una piedra · Charca de Guarinocito"},{img:IMG.cocoiLD6, date:"", place:LD, ind:"Entre los buchones, con las plumas largas del pecho · Charca de Guarinocito"}],
   desc:"La garza más grande de Suramérica, de casi 1,3 m de alto. Cuello blanco, corona negra, dorso gris azulado, pico amarillo y largo. En vuelo recoge el cuello en forma de S y bate las alas despacio.",
   diet:"Peces grandes, que atrapa de un picotazo rápido después de esperar inmóvil; también cangrejos, ranas y culebras de agua.",
   habitat:"Ríos anchos, canales, ciénagas y manglares de tierras bajas.",
@@ -333,7 +333,7 @@ const BIRDS = [
 },
 {
   id:"butorides-striata", common:"Garcita rayada", alt:"Garcita estriada · Striated Heron", sci:"Butorides striata", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.butoridesLD, date:"", place:LD, ind:"Abriendo las alas entre los buchones · Charca de Guarinocito"}],
+  photos:[{img:IMG.butoridesLD, date:"", place:LD, ind:"Abriendo las alas entre los buchones · Charca de Guarinocito"},{img:IMG.butoridesLD2, date:"", place:LD, ind:"Adulto acechando sobre un tronco entre las cañas · Charca de Guarinocito"},{img:IMG.butoridesLD3, date:"", place:LD, ind:"Adulto en una rama seca · Charca de Guarinocito"}],
   desc:"Garza pequeña y rechoncha, de patas amarillas cortas, corona negra, dorso gris pizarra y cuello gris. Camina agachada y se queda inmóvil antes de lanzar el picotazo.",
   diet:"Peces pequeños, ranas, cangrejos e insectos. Se ha visto usar «carnadas» —insectos o migas— para atraer peces.",
   habitat:"Orillas de ríos, lagunas, humedales y embalses con vegetación.",
@@ -374,7 +374,7 @@ const BIRDS = [
 },
 {
   id:"tachycineta-albiventer", common:"Golondrina aliblanca", alt:"White-winged Swallow", sci:"Tachycineta albiventer", family:"Hirundinidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.tachycineta, date:"", place:LD, ind:"Pareja en una guadua sobre el agua · Charca de Guarinocito"}],
+  photos:[{img:IMG.tachycineta, date:"", place:LD, ind:"Pareja en una guadua sobre el agua · Charca de Guarinocito"},{img:IMG.tachycineta2, date:"", place:LD, ind:"De frente en una rama: dorso azul verdoso y ala blanca · Charca de Guarinocito"},{img:IMG.tachycineta3, date:"", place:LD, ind:"Sobre una estaca: mancha blanca del ala · Charca de Guarinocito"}],
   desc:"Golondrina pequeña, azul verdoso brillante por encima y blanca por debajo, con una mancha blanca grande en el ala y la rabadilla blanca, que se ven sobre todo en vuelo.",
   diet:"Insectos que caza en vuelos bajos y rasantes sobre el agua.",
   habitat:"Ríos, ciénagas y lagunas de tierras bajas; siempre cerca del agua.",
@@ -382,7 +382,7 @@ const BIRDS = [
 },
 {
   id:"arundinicola-leucocephala", common:"Viudita", alt:"Monjita · White-headed Marsh Tyrant", sci:"Arundinicola leucocephala", family:"Tyrannidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.arundinicola, date:"", place:LD, ind:"Macho de cabeza blanca, con una hembra al fondo · Charca de Guarinocito"},{img:IMG.arundinicolaF, date:"", place:LD, ind:"Hembra sobre una hoja de buchón · Charca de Guarinocito"}],
+  photos:[{img:IMG.arundinicola, date:"", place:LD, ind:"Macho de cabeza blanca, con una hembra al fondo · Charca de Guarinocito"},{img:IMG.arundinicolaF, date:"", place:LD, ind:"Hembra sobre una hoja de buchón · Charca de Guarinocito"},{img:IMG.arundinicola2, date:"", place:LD, ind:"Macho sobre un palo: cabeza blanca y base del pico amarilla · Charca de Guarinocito"}],
   desc:"Atrapamoscas pequeño de los pantanos. El macho es negro con la cabeza entera blanca, como con una capucha; la hembra es gris parda por encima y blanca por debajo, con la frente y la cara blancas. Los dos tienen la base del pico amarilla.",
   diet:"Insectos que caza con salidas cortas desde una percha baja sobre el agua.",
   habitat:"Ciénagas, charcas y potreros inundados con vegetación flotante y juncos, en tierras bajas.",
@@ -390,7 +390,7 @@ const BIRDS = [
 },
 {
   id:"chrysomus-icterocephalus", common:"Monjita", alt:"Turpial de agua · Yellow-hooded Blackbird", sci:"Chrysomus icterocephalus", family:"Icteridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.chrysomusLD, date:"", place:LD, ind:"Macho sobre los buchones de agua · Charca de Guarinocito"},{img:IMG.chrysomusLD2, date:"", place:LD, ind:"Macho volando sobre los buchones · Charca de Guarinocito"},{img:IMG.chrysomusLDF, date:"", place:LD, ind:"Hembra entre los buchones: parda, con la cara y la garganta amarillas · Charca de Guarinocito"}],
+  photos:[{img:IMG.chrysomusLD, date:"", place:LD, ind:"Macho sobre los buchones de agua · Charca de Guarinocito"},{img:IMG.chrysomusLD2, date:"", place:LD, ind:"Macho volando sobre los buchones · Charca de Guarinocito"},{img:IMG.chrysomusLDF, date:"", place:LD, ind:"Hembra entre los buchones: parda, con la cara y la garganta amarillas · Charca de Guarinocito"},{img:IMG.chrysomusLDF2, date:"", place:LD, ind:"Grupo de hembras y jóvenes en las ramas de la orilla · Charca de Guarinocito"}],
   desc:"El macho es negro brillante con una capucha amarillo intenso y un pequeño antifaz negro entre el pico y el ojo. La hembra es parda oliva con la garganta y la ceja amarillentas.",
   diet:"Insectos y semillas que busca entre juncos, eneas y pastos altos.",
   habitat:"Ciénagas, juncales, arrozales y canales. Anida en colonias sobre la vegetación del agua.",
@@ -411,6 +411,78 @@ const BIRDS = [
   desc:"Ave grande y negra con la cabeza desnuda y roja. En vuelo se reconoce por las alas en V abierta, con la mitad posterior plateada, y un balanceo de lado a lado sin casi aletear.",
   diet:"Carroña, que encuentra por el olfato, algo raro entre las aves.",
   habitat:"Cielos abiertos sobre costas, potreros y ciudades. En el invierno del norte llegan además aves migratorias de Norteamérica.",
+  migration:null
+},
+{
+  id:"busarellus-nigricollis", common:"Gavilán de ciénaga", alt:"Gavilán pescador · Black-collared Hawk", sci:"Busarellus nigricollis", family:"Accipitridae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.busarellus, date:"", place:LD, ind:"En la copa de un yarumo: cabeza blanca y collar negro · Charca de Guarinocito"},{img:IMG.busarellus2, date:"", place:LD, ind:"Mirando de frente entre las hojas · Charca de Guarinocito"}],
+  desc:"Gavilán grande de color canela rojizo, con la cabeza blanquecina, un collar negro en el pecho y las plumas de vuelo negras. Tiene las patas cubiertas de escamas ásperas, como las del águila pescadora, para agarrar peces resbalosos.",
+  diet:"Peces que atrapa en la superficie del agua tirándose con las patas por delante; también caracoles, insectos acuáticos y algún roedor.",
+  habitat:"Ciénagas, charcas, caños y ríos lentos con árboles en la orilla, en tierras bajas.",
+  migration:null
+},
+{
+  id:"nannopterum-brasilianum", common:"Pato cuervo", alt:"Cormorán neotropical · Neotropic Cormorant", sci:"Nannopterum brasilianum", family:"Phalacrocoracidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.nannopterumLD, date:"", place:LD, ind:"Joven posado en una rama sobre la charca · Charca de Guarinocito"},{img:IMG.nannopterumLD2, date:"", place:LD, ind:"Nadando con solo el cuello afuera · Charca de Guarinocito"},{img:IMG.nannopterumLD3, date:"", place:LD, ind:"Grupo en vuelo sobre la charca · Charca de Guarinocito"}],
+  desc:"Negro, de cuello largo, cola larga y pico ganchudo con piel amarilla en la base. Sus plumas no son del todo impermeables: eso le ayuda a hundirse al bucear, pero después tiene que posarse con las alas abiertas para secarlas al sol.",
+  diet:"Peces que persigue buceando, impulsándose con las patas palmeadas.",
+  habitat:"Ciénagas, ríos, lagunas, manglares y costas.",
+  migration:null
+},
+{
+  id:"porphyrio-martinica", common:"Tingua azul", alt:"Calamón morado · Purple Gallinule", sci:"Porphyrio martinica", family:"Rallidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.porphyrioLD, date:"", place:LD, ind:"Trepando por un arbusto de la orilla: escudo celeste y pico rojo · Charca de Guarinocito"}],
+  desc:"De las aves más coloridas de la Sabana: cabeza y pecho azul violeta, espalda verde turquesa, pico rojo con punta amarilla, un escudo celeste en la frente y patas amarillas larguísimas.",
+  diet:"Omnívora: semillas, hojas y flores de plantas acuáticas, insectos, caracoles, ranas pequeñas y hasta huevos de otras aves.",
+  habitat:"Humedales con juncos, eneas y vegetación flotante. Sus dedos muy largos le reparten el peso para caminar sobre las plantas que flotan.",
+  migration:null
+},
+{
+  id:"crotophaga-major", common:"Garrapatero mayor", alt:"Cocinera · Greater Ani", sci:"Crotophaga major", family:"Cuculidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.crotophagaMj, date:"", place:LD, ind:"Entre ramas y hojas de palma: ojo blanco y brillo azul · Charca de Guarinocito"},{img:IMG.crotophagaMj2, date:"", place:LD, ind:"Pareja en una rama, con las colas largas colgando · Charca de Guarinocito"}],
+  desc:"El más grande de los garrapateros: negro con brillo azul y verde en la espalda y las alas, cola larga y un pico alto y arqueado con una cresta encima. Los ojos blancos lo separan de los otros dos garrapateros, que los tienen oscuros.",
+  diet:"Saltamontes, chinches, arañas, lagartijas y ranas pequeñas; algunos frutos.",
+  habitat:"Bosques de galería, manglares y orillas arboladas de ríos, ciénagas y charcas; siempre cerca del agua.",
+  migration:null
+},
+{
+  id:"certhiaxis-cinnamomeus", common:"Rastrojero barbiamarillo", alt:"Chamicero de ciénaga · Yellow-chinned Spinetail", sci:"Certhiaxis cinnamomeus", family:"Furnariidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.certhiaxis, date:"", place:LD, ind:"Pareja en un tronco seco: barbilla amarilla · Charca de Guarinocito"},{img:IMG.certhiaxis2, date:"", place:LD, ind:"Entrando a su nido de palitos · Charca de Guarinocito"}],
+  desc:"Pajarito rufo canela por encima y blanco por debajo, con la cara gris, una línea oscura por el ojo y una manchita amarilla en la barbilla. Es pariente de los horneros y, como ellos, constructor: hace un nido grande y cerrado de palitos con un túnel de entrada.",
+  diet:"Insectos y arañas que busca entre la vegetación de la orilla y las plantas flotantes.",
+  habitat:"Orillas de ciénagas, charcas y ríos con juncos, buchones y arbustos bajos, en tierras bajas.",
+  migration:null
+},
+{
+  id:"ardea-alba", common:"Garza real", alt:"Garceta grande · Great Egret", sci:"Ardea alba", family:"Ardeidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.albaLD, date:"", place:LD, ind:"En la orilla, entre el pasto y los buchones · Charca de Guarinocito"},{img:IMG.albaLD2, date:"", place:LD, ind:"Posada sobre la polisombra de una casa junto a la charca · Charca de Guarinocito"}],
+  desc:"Garza blanca grande, de pico amarillo y patas negras, mucho más grande que la garza patiamarilla y la garcita del ganado. En época de cría le crecen plumas largas y finas en la espalda; por ellas casi desaparece hacia 1900, cuando se usaban en los sombreros de moda.",
+  diet:"Peces, ranas, cangrejos e insectos grandes; caza caminando despacio o esperando inmóvil.",
+  habitat:"Ciénagas, ríos, manglares, arrozales y potreros inundados.",
+  migration:null
+},
+{
+  id:"tigrisoma-lineatum", common:"Vaco colorado", alt:"Garza tigre · Rufescent Tiger-Heron", sci:"Tigrisoma lineatum", family:"Ardeidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.tigrisoma, date:"", place:LD, ind:"Adulto entre la vegetación de la orilla: cabeza y cuello castaños · Charca de Guarinocito"}],
+  desc:"Garza robusta de cuello grueso. El adulto tiene la cabeza y el cuello castaño rojizo, una línea blanca por el frente del cuello, la cara amarilla y el cuerpo gris pardo finamente vermiculado. Los jóvenes son canela con barras negras, como un tigre, de ahí el nombre.",
+  diet:"Peces, ranas, cangrejos e insectos acuáticos que caza al acecho.",
+  habitat:"Orillas sombreadas de ciénagas, charcas, caños y ríos con bosque, en tierras bajas.",
+  migration:null
+},
+{
+  id:"fluvicola-pica", common:"Viudita blanca", alt:"Monjita blanca · Pied Water-Tyrant", sci:"Fluvicola pica", family:"Tyrannidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.fluvicola, date:"", place:LD, ind:"Sobre una hoja de buchón · Charca de Guarinocito"},{img:IMG.fluvicola2, date:"", place:LD, ind:"Saltando entre los buchones · Charca de Guarinocito"}],
+  desc:"Atrapamoscas pequeño y blanco, con la nuca, la espalda, las alas y la cola negras. Se parece a un chorlito en miniatura por cómo corre sobre la vegetación flotante.",
+  diet:"Insectos pequeños que atrapa caminando sobre las plantas acuáticas o en vuelos cortos.",
+  habitat:"Charcas, ciénagas y potreros inundados con buchones y vegetación flotante, en tierras bajas.",
+  migration:null
+},
+{
+  id:"donacobius-atricapilla", common:"Pájaro trompetero", alt:"Sinsonte de agua · Black-capped Donacobius", sci:"Donacobius atricapilla", family:"Donacobiidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.donacobius, date:"", place:LD, ind:"Sobre los buchones: ojo amarillo y pecho canela · Charca de Guarinocito"}],
+  desc:"Pájaro de cola larga, con la cabeza y la espalda negras, el pecho canela, los ojos amarillos y la cola negra con puntas blancas. Es tan raro que tiene su propia familia, con una sola especie. Las parejas cantan a dúo, uno frente al otro, moviendo la cola de lado a lado.",
+  diet:"Insectos y otros invertebrados que busca entre la vegetación flotante y los juncos.",
+  habitat:"Orillas de ciénagas, charcas y ríos con juncos, buchones y pastos altos, en tierras bajas.",
   migration:null
 }];
 
@@ -436,6 +508,15 @@ const XTRA={
  "chrysomus-icterocephalus":{sw:[["#F2C21A","Capucha"],["#111214","Cuerpo"]]},
  "patagioenas-cayennensis":{sw:[["#8A3E3A","Cuerpo"],["#7A8A84","Cabeza"],["#5A5E66","Cola"]]},
  "cathartes-aura":{sw:[["#1B1A1C","Plumaje"],["#9EA2A6","Plumas de vuelo"],["#A8322E","Cabeza"]]},
+ "busarellus-nigricollis":{sw:[["#C2683A","Cuerpo"],["#F2EEE4","Cabeza"],["#141414","Collar y alas"]]},
+ "nannopterum-brasilianum":{sw:[["#141416","Plumaje"],["#E8B83A","Base del pico"]]},
+ "porphyrio-martinica":{sw:[["#3A2FA0","Cabeza y pecho"],["#1F9A8A","Espalda"],["#E2321F","Pico"],["#F2C21A","Patas"],["#A9D8EC","Escudo frontal"]]},
+ "crotophaga-major":{sw:[["#141418","Cuerpo"],["#2A4A7A","Brillo azul"],["#E8F0F2","Ojo"]]},
+ "certhiaxis-cinnamomeus":{sw:[["#C8783A","Dorso"],["#F4F2EA","Vientre"],["#E8D23A","Barbilla"]]},
+ "ardea-alba":{sw:[["#F7F7F5","Plumaje"],["#E8C03A","Pico"],["#151515","Patas"]]},
+ "tigrisoma-lineatum":{sw:[["#8A3A28","Cabeza y cuello"],["#6E6A6A","Cuerpo"],["#E8C83A","Cara"]]},
+ "fluvicola-pica":{sw:[["#F4F4F2","Cuerpo"],["#141414","Espalda y alas"]]},
+ "donacobius-atricapilla":{sw:[["#141418","Cabeza"],["#E8C8A0","Pecho"],["#E8B83A","Ojo"]]},
  "stilpnia-cyanicollis":{sw:[["#3CB4E0","Cabeza"],["#141418","Cuerpo"],["#9CC86A","Hombro"]]},
  "sicalis-flaveola":{sw:[["#F2C21A","Cuerpo"],["#F08A1C","Corona"]]},
  "turdus-ignobilis":{sw:[["#6A5E4A","Dorso"],["#A89A84","Pecho"],["#151515","Pico"]]},
@@ -473,7 +554,7 @@ const HAB={
  "chauna-chavaria":["Anda en parejas que se posan en lo alto de los arbustos de la orilla y se llaman con gritos fortísimos. Camina sobre la vegetación flotante con sus dedos enormes y vuela planeando alto, como un gallinazo.","Copas de los arbustos de la orilla de la charca."],
  "anhinga-anhinga":["Sus plumas se empapan para poder bucear, así que después de pescar se posa con las alas abiertas a secarlas al sol. Cuando nada, solo se le ve el cuello zigzagueando sobre el agua.","Palos y ramas secas sobre la charca, secándose al sol."],
  "ardea-cocoi":["Solitaria y paciente: puede pasar mucho tiempo inmóvil en la orilla antes de lanzar el picotazo. Al espantarse da un graznido ronco y se va volando bajo sobre el agua.","Entre los buchones de la orilla de la charca."],
- "butorides-striata":["Se queda inmóvil largo rato al borde del agua, con el cuello encogido, y lanza el pico como un resorte.","Escondida entre los buchones de la orilla."],
+ "butorides-striata":["Se queda inmóvil largo rato al borde del agua, con el cuello encogido, y lanza el pico como un resorte.","Escondida entre los buchones y las cañas de la orilla."],
  "dendrocygna-autumnalis":["Anda en parejas o grupos que silban al volar. De día descansa en la orilla o en árboles; al atardecer sale a comer a arrozales y potreros inundados.","En vuelo sobre la charca, sobre todo al amanecer y al atardecer."],
  "jacana-jacana":["Camina despacio sobre la vegetación flotante. Al aterrizar levanta las alas y muestra el amarillo. Es ruidoso y defiende su espacio a gritos.","Caminando sobre los buchones y la vegetación flotante."],
  "sternula-superciliaris":["Patrulla el agua en vuelo, se detiene un instante en el aire y se tira de cabeza. Descansa en palos y troncos que salen del agua.","Palos y estacas en medio de la charca."],
@@ -483,6 +564,15 @@ const HAB={
  "chrysomus-icterocephalus":["Vive en colonias ruidosas. Los machos cantan con un chirrido metálico desde lo alto de los juncos y de los árboles junto al agua.","Sobre los buchones de agua de la charca."],
  "patagioenas-cayennensis":["Suele verse sola o en parejas, posada en la punta de un árbol seco y alto, desde donde canta. Vuela rápido y directo.","Árboles secos altos junto a la charca."],
  "cathartes-aura":["Planea durante horas en las corrientes de aire caliente, buscando comida por el olfato.","Árboles secos junto a la charca y el cielo sobre ella."],
+ "busarellus-nigricollis":["Espera inmóvil en una rama sobre el agua y baja en un planeo corto para sacar el pez con las patas. Suele dejarse ver bien, en perchas expuestas.","Copas de los árboles de la orilla, como los yarumos."],
+ "nannopterum-brasilianum":["Bucea durante muchos segundos y reaparece lejos. Pasa largos ratos posado en ramas secas sobre el agua, a menudo con las alas abiertas para secarlas.","Ramas sobre la charca y nadando en el agua abierta; en grupos al atardecer."],
+ "porphyrio-martinica":["Camina despacio sobre la vegetación flotante, sacudiendo la cola corta y mostrando el blanco de debajo. Trepa por los juncos con habilidad y es algo tímida.","Orillas con buchones y arbustos; trepa entre las ramas."],
+ "crotophaga-major":["Vive en grupos ruidosos que se mueven juntos por la vegetación de la orilla y hacen un nido comunal donde varias hembras ponen. Hace un ruido como de olla hirviendo, que le da el nombre de «cocinera».","Árboles y palmas de la orilla de la charca."],
+ "certhiaxis-cinnamomeus":["Anda en parejas que se llaman con un trino seco y rápido. Se mueve inquieto entre la vegetación de la orilla y entra y sale de su nido de palitos.","Troncos secos y matorrales de la orilla de la charca."],
+ "ardea-alba":["Camina despacio con el cuello estirado y se queda quieta acechando. Al atardecer vuela en grupos a dormir en árboles junto al agua.","Orillas de la charca, entre el pasto y los buchones; a veces en techos y polisombras."],
+ "tigrisoma-lineatum":["Solitaria y paciente: se queda inmóvil largos ratos en la sombra de la orilla, con el cuello estirado, antes de lanzar el pico. Si se siente vista, se queda quieta apuntando el pico al cielo.","Orillas sombreadas de la charca, entre los buchones y la vegetación baja."],
+ "fluvicola-pica":["Camina y salta sobre las hojas de buchón, siempre en movimiento, y abre la cola con frecuencia. Anda en parejas.","Sobre los buchones de la charca."],
+ "donacobius-atricapilla":["Se posa a la vista en lo alto de la vegetación de la orilla y canta fuerte, a menudo en pareja, abriendo y cerrando la cola. Los jóvenes de una nidada anterior ayudan a criar a sus hermanos.","Buchones y arbustos bajos de la orilla de la charca."],
  "stilpnia-cyanicollis":["En parejas o con bandadas mixtas de tangaras que recorren las copas; revisa ramas y hojas por debajo.","Yarumos y árboles frutales en bordes de cafetal."],
  "sicalis-flaveola":["En grupos que comen en el suelo; el macho canta desde ramas altas.","Potreros, patios y cercas."],
  "turdus-ignobilis":["Camina por el suelo picando lombrices y sube a los frutales; canta un trino variado al amanecer.","Papayos, comederos y prados."],
@@ -530,6 +620,15 @@ const PLACES={
  "chrysomus-icterocephalus":["humedal"],
  "patagioenas-cayennensis":["arboles"],
  "cathartes-aura":["cielo","arboles"],
+ "busarellus-nigricollis":["humedal","arboles"],
+ "nannopterum-brasilianum":["humedal","arboles"],
+ "porphyrio-martinica":["humedal"],
+ "crotophaga-major":["humedal","arboles"],
+ "certhiaxis-cinnamomeus":["humedal","arboles"],
+ "ardea-alba":["humedal"],
+ "tigrisoma-lineatum":["humedal"],
+ "fluvicola-pica":["humedal"],
+ "donacobius-atricapilla":["humedal"],
  "stilpnia-cyanicollis":["arboles"],"sicalis-flaveola":["prado"],"turdus-ignobilis":["arboles","prado","comedero"],
  "ramphocelus-flammigerus":["comedero","arboles"],"ramphocelus-dimidiatus":["comedero","arboles"],"anisognathus-igniventris":["arboles"],
  "aglaeactis-cupripennis":["arboles"],"atlapetes-pallidinucha":["arboles"],"zonotrichia-capensis":["prado"],"piaya-cayana":["arboles"],
