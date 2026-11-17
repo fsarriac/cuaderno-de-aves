@@ -1,13 +1,13 @@
 /* ═══════════════ ZONA CAFETERA · CALDAS, RISARALDA, QUINDÍO ═══════════════
    Cuando se sepa el sitio exacto de cada foto, cámbielo en "place" (p. ej. "Valle de Cocora, Quindío").
    Si hay fotos de varios sitios, aparece solo el filtro "Sitio". */
-const LUGAR = { nombre:"Caldas, Risaralda y Quindío", corto:"Caldas, Risaralda y Quindío", region:"Caldas, Risaralda y Quindío", hero:"fotos/flammigerusM.jpg" };
+const LUGAR = { nombre:"Caldas", corto:"Caldas", region:"Caldas", hero:"fotos/flammigerusM.jpg" };
 const IMG = {}; for (const k of ["amazonaLD","tyrannusLD","tyrannusLD2","sulcirostris","sulcirostris2","burrovianus","caracaraLD","brotogerisLD","chalybea","coragypsLD","sicalisLD","pandionLD","chauna","chauna2","chrysomusLD","chrysomusLD2","chrysomusLDF","dendrocygnaLD","amazonaLD2","sternula","anhinga","tachycineta","cocoiLD","cocoiLD2","cocoiLD3","patagioenas","arundinicola","arundinicolaF","jacanaLD","butoridesLD","auraLD"]) IMG[k]="fotos/"+k+".jpg"; for (const k of ["aglaeactis","atlapetes","anisognathus","zonotrichia","piaya","episcopus","dimidiatus","dimidiatus2","turdus","stilpnia","stilpnia2","icterus","forpus","phimosus","flammigerusM","flammigerusF","flammigerusF2","euphonia","euphonia2","melanerpes","stilpnia3","sicalis","episcopus2","episcopus3","episcopus4","ignobilis","cyanicollis","flammigerusF3","euphonia3","aglaeactis2","anisognathus2","ortalis","sporophila","ignobilis2","euphonia4","melanerpes2","florisuga","saltator","atlapetes2","eriocnemis","ignobilis3","amazilia"]) IMG[k]="fotos/"+k+".jpg";
 const ZC = "Zona Cafetera";
 const VN = "Hacienda Venecia";
 const RZ = "Nevado del Ruiz";
 const LD = "La Dorada";
-const HOME = {name:"Caldas, Risaralda y Quindío", lat:4.64, lon:-75.57, when:"", role:"", here:true};
+const HOME = {name:"Caldas", lat:4.64, lon:-75.57, when:"", role:"", here:true};
 
 const BIRDS = [
 {
