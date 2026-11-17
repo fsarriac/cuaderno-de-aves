@@ -270,6 +270,7 @@ render();
     const n=$("#nMig"); if(n&&n.parentElement) n.parentElement.hidden=true; }
   if(!hasDom){ const d=document.querySelector('.chip[data-f="dom"]'); if(d) d.hidden=true; }
   const sites=[...new Set(BIRDS.flatMap(b=>b.photos.filter(p=>!p.ext).map(p=>p.place)).filter(s=>s&&!/confirmar/.test(s)))];
+  if(LUGAR.sitios) sites.sort((a,b)=>LUGAR.sitios.indexOf(a)-LUGAR.sitios.indexOf(b));
   if(sites.length>1){
     const row=document.createElement("div"); row.className="places"; row.setAttribute("role","group"); row.setAttribute("aria-label","Sitio");
     row.innerHTML='<span class="eyebrow" style="flex:none">Sitio</span><button class="chip pchip" data-s="" aria-pressed="true">Todos</button>'+
