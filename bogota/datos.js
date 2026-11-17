@@ -184,7 +184,7 @@ const BIRDS = [
 {
   id:"setophaga-petechia", common:"Reinita amarilla", alt:"Chipe amarillo · Yellow Warbler",
   sci:"Setophaga petechia", family:"Parulidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.petechia, date:"9 may 2013 · 07:54", place:"Lugar por confirmar", ind:"Macho, con rayas rojizas en el pecho",
+  photos:[{img:IMG.petechia, date:"9 may 2013 · 07:54", place:SS, ind:"Macho, con rayas rojizas en el pecho",
     exif:{Cámara:"Sony SLT-A55V", Focal:"300 mm (450 eq.)", Apertura:"f/5.6", Obturación:"1/2000 s", ISO:"500"}}],
   desc:"Pequeña reinita casi toda amarilla, con el ojo oscuro destacado en una cara lisa. El macho lleva finas rayas castañas en el pecho. Se mueve sin parar entre las ramas.",
   diet:"Insectos y arañas que toma de hojas y ramas; orugas en buena proporción.",
@@ -201,7 +201,7 @@ const BIRDS = [
   id:"contopus", common:"Pibí oriental", alt:"Eastern Wood-Pewee",
   sci:"Contopus virens", family:"Tyrannidae", iucn:"LC", conf:"baja",
   confNote:"Los pibís oriental (Contopus virens) y occidental (C. sordidulus) pasan por la Sabana y no se separan por foto: solo el canto los distingue.",
-  photos:[{img:IMG.contopus, date:"21 abr 2013 · 15:22", place:"Lugar por confirmar", ind:"Adulto. Por confirmar: los pibís oriental y occidental pasan por la Sabana y no se separan por foto, solo por el canto",
+  photos:[{img:IMG.contopus, date:"21 abr 2013 · 15:22", place:SS, ind:"Adulto. Por confirmar: los pibís oriental y occidental pasan por la Sabana y no se separan por foto, solo por el canto",
     exif:{Cámara:"Sony SLT-A55V", Focal:"210 mm (315 eq.)", Apertura:"f/5.6", Obturación:"1/2000 s", ISO:"1000"}}],
   desc:"Atrapamoscas gris pardo con dos barras claras en el ala, sin anillo ocular y con la cabeza algo picuda. Casi idéntico al pibí occidental; se distinguen por el canto, un «pi-iii-uí» silbado y lastimero que le da su nombre. Se posa erguido en ramas secas y expuestas, y vuelve a la misma percha tras cada captura.",
   diet:"Insectos voladores (moscas, abejas, polillas) que atrapa en vuelos cortos desde la percha.",
