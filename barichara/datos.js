@@ -13,7 +13,7 @@ const BIRDS = [
 {
   id:"momotus-subrufescens", common:"Barranquero", alt:"Momoto · Whooping Motmot",
   sci:"Momotus subrufescens", family:"Momotidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.momotus, date:"", place:BA, ind:"Adulto en una rama con líquenes"},{img:IMG.momotus2, date:"", place:BA, ind:"De frente, con el pecho canela y la cola de raqueta"}],
+  photos:[{img:IMG.momotus, date:"", place:BA, ind:"Adulto en una rama con líquenes"},{img:IMG.momotus2, date:"", place:BA, ind:"De tres cuartos, con el pecho canela y la cola de raqueta"}],
   desc:"Corona con un aro azul turquesa, antifaz negro, dorso verde y pecho canela. Su cola larga termina en dos «raquetas»: las barbas de las plumas centrales se desprenden y dejan solo el astil desnudo antes de la punta. Su nombre viene de los barrancos donde excava túneles de más de un metro para anidar.",
   diet:"Insectos grandes, arañas, lagartijas y ranas pequeñas que caza desde una percha; también frutos.",
   habitat:"Bosque seco, cañadas sombreadas, cafetales y bordes de bosque, desde tierras bajas hasta unos 1.500 m.",
@@ -30,7 +30,7 @@ const BIRDS = [
 },
 {
   id:"pyrocephalus-rubinus", common:"Atrapamoscas pechirrojo", alt:"Petirrojo · Vermilion Flycatcher",
-  sci:"Pyrocephalus rubinus", family:"Tyrannidae", iucn:"LC", conf:"alta",
+  sci:"Pyrocephalus obscurus", family:"Tyrannidae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.pyroM, date:"", place:BA, ind:"Macho entre barbas de viejo"},{img:IMG.pyroF, date:"", place:BA, ind:"Hembra, con el vientre salmón"}],
   desc:"El macho es inconfundible: corona y partes inferiores rojo encendido, antifaz y dorso pardo oscuro. La hembra es gris parda, con la garganta blanca, el pecho finamente rayado y el vientre salmón.",
   diet:"Insectos que atrapa en vuelos cortos desde una percha baja, a menudo bajando al suelo.",
@@ -94,7 +94,7 @@ const BIRDS = [
 {
   id:"sicalis-flaveola", common:"Canario coronado", alt:"Canario costeño · Saffron Finch",
   sci:"Sicalis flaveola", family:"Thraupidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.sicalis2, date:"", place:BA, ind:"Macho de frente"},{img:IMG.sicalis, date:"", place:BA, ind:"Macho comiendo semillas en el patio"},{img:IMG.sicalis3, date:"", place:BA, ind:"Macho entre pastos altos"},{img:IMG.sicalis4, date:"", place:BA, ind:"Hembra o joven entre cañas, contra el cielo"}],
+  photos:[{img:IMG.sicalis2, date:"", place:BA, ind:"Macho de frente"},{img:IMG.sicalis, date:"", place:BA, ind:"Macho comiendo semillas en el patio"},{img:IMG.sicalis3, date:"", place:BA, ind:"Macho entre pastos altos"},{img:IMG.sicalis4, date:"", place:BA, ind:"Macho adulto entre cañas, contra el cielo: se ve la corona anaranjada"}],
   desc:"El macho es amarillo intenso con la frente y la corona anaranjadas; la hembra y los jóvenes son más opacos y grisáceos. Anda en grupos que comen en el suelo.",
   diet:"Semillas de pastos y granos; algunos insectos.",
   habitat:"Áreas abiertas, patios, potreros y pueblos de tierras bajas y medias. Anida en huecos, aleros y nidos viejos de otras aves.",
@@ -104,7 +104,7 @@ const BIRDS = [
 {
   id:"mimus-gilvus", common:"Sinsonte tropical", alt:"Sinsonte común · Tropical Mockingbird",
   sci:"Mimus gilvus", family:"Mimidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.mimus, date:"", place:BA, ind:"Cantando desde una rama"},{img:IMG.mimus2, date:"", place:BA, ind:"Pareja en un árbol cubierto de líquenes y barbas de viejo"}],
+  photos:[{img:IMG.mimus, date:"", place:BA, ind:"Cantando desde una rama"},{img:IMG.mimus2, date:"", place:BA, ind:"Dos sinsontes en un árbol cubierto de líquenes y barbas de viejo"}],
   desc:"Gris claro por encima y blancuzco por debajo, con antifaz oscuro y cola larga de puntas blancas que abre al posarse. Canta desde perchas altas, con frases variadas y repetidas.",
   diet:"Omnívoro: insectos, arañas, frutos y semillas. Busca alimento en el suelo y en arbustos.",
   habitat:"Áreas abiertas, cercas vivas, jardines y pueblos, del nivel del mar hasta la Sabana.",
@@ -121,8 +121,9 @@ const BIRDS = [
 },
 {
   id:"ortalis-columbiana", common:"Guacharaca colombiana", alt:"Guacharaca · Colombian Chachalaca",
-  sci:"Ortalis columbiana", family:"Cracidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.ortalis, date:"", place:BA, ind:"Caminando por una rama entre barbas de viejo"},{img:IMG.ortalis2, date:"", place:BA, ind:"En vuelo junto a un guadual, a contraluz: se ve la cola larga y rojiza abierta en abanico"}],
+  sci:"Ortalis columbiana", family:"Cracidae", iucn:"LC", conf:"baja",
+  confNote:"Las fotos son un fotograma de video lejano y una silueta a contraluz: la especie se deduce por la zona; no se ve el escamado del pecho que la separa de la guacharaca culirroja.",
+  photos:[{img:IMG.ortalis, date:"", place:BA, ind:"Caminando por una rama entre barbas de viejo. Por confirmar: es un fotograma de video lejano y no se ve el escamado del pecho que la separa de la guacharaca culirroja"},{img:IMG.ortalis2, date:"", place:BA, ind:"En vuelo junto a un guadual, a contraluz, con la cola abierta. Por confirmar: es una silueta; la especie se deduce por la zona"}],
   desc:"Ave grande, parecida a una gallina delgada de cola larga, parda con la cabeza y el cuello grises. Es endémica de Colombia: no vive en ningún otro país. De cerca se le ven escamas blancas en el pecho.",
   diet:"Frutos, hojas tiernas, flores y brotes; baja al suelo a comer frutos caídos.",
   habitat:"Bosque seco, rastrojos, cañadas arborizadas y fincas con árboles frutales, en los valles interandinos.",
@@ -151,7 +152,7 @@ const BIRDS = [
 {
   id:"tyrannus-melancholicus", common:"Sirirí común", alt:"Tirano tropical · Tropical Kingbird",
   sci:"Tyrannus melancholicus", family:"Tyrannidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.melancholicus3, date:"", place:BA, ind:"Sobre un poste de madera junto a un letrero del sendero"},{img:IMG.melancholicus, date:"", place:BA, ind:"Posado en lo alto, con el pecho amarillo"},{img:IMG.melancholicus2, date:"", place:BA, ind:"En un cable frente a una pared encalada"}],
+  photos:[{img:IMG.melancholicus3, date:"", place:BA, ind:"Sobre un poste de madera junto a un letrero del sendero"},{img:IMG.melancholicus, date:"", place:BA, ind:"Posado en lo alto, con el pecho amarillo. A contraluz: el pico y la cola casi no se ven"},{img:IMG.melancholicus2, date:"", place:BA, ind:"En un cable frente a una pared encalada. A contraluz: casi solo se ve la silueta"}],
   desc:"Cabeza gris con antifaz oscuro, dorso oliva, pecho y vientre amarillos y cola parda con una muesca en la punta. Es de las aves más comunes de Colombia y casi siempre se ve en una percha alta y expuesta.",
   diet:"Insectos que caza en vuelo con salidas cortas desde la percha; también algunos frutos.",
   habitat:"Cualquier zona abierta con árboles: potreros, pueblos, cables y bordes de bosque.",

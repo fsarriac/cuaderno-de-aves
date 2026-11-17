@@ -12,7 +12,7 @@ const BIRDS = [
 {
   id:"ramphocelus-flammigerus", common:"Toche enjalmado", alt:"Asoma culirroja · Flame-rumped Tanager",
   sci:"Ramphocelus flammigerus", family:"Thraupidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.flammigerusF2, date:"", place:VN, ind:"Hembra, con el pecho anaranjado"},{img:IMG.flammigerusM, date:"", place:VN, ind:"Macho, con la rabadilla rojo fuego"},{img:IMG.flammigerusF, date:"", place:VN, ind:"Hembra en el comedero"},{img:IMG.flammigerusF3, date:"", place:VN, ind:"Hembra sobre una baranda"}],
+  photos:[{img:IMG.flammigerusF2, date:"", place:VN, ind:"Hembra, con el pecho anaranjado"},{img:IMG.flammigerusM, date:"", place:VN, ind:"Macho, con la rabadilla rojo fuego"},{img:IMG.flammigerusF, date:"", place:VN, ind:"Hembra en el comedero"},{img:IMG.flammigerusF3, date:"", place:VN, ind:"Hembra sobre un palo"}],
   desc:"El macho es negro aterciopelado con una rabadilla rojo anaranjado encendido, que solo se ve cuando abre las alas o se voltea. La hembra es muy distinta: cabeza y dorso pardo oscuro y pecho y rabadilla amarillo anaranjado. Ambos tienen el pico plateado. Es endémico de Colombia.",
   diet:"Frutos, sobre todo banano y moras, e insectos.",
   habitat:"Bordes de bosque, rastrojos, cafetales con sombrío y jardines, entre unos 500 y 1.800 m.",
@@ -21,7 +21,7 @@ const BIRDS = [
 {
   id:"ramphocelus-dimidiatus", common:"Asoma terciopelo", alt:"Sangre de toro · Crimson-backed Tanager",
   sci:"Ramphocelus dimidiatus", family:"Thraupidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.dimidiatus2, date:"", place:VN, ind:"Macho en el comedero"},{img:IMG.dimidiatus, date:"", place:VN, ind:"Macho entre las heliconias"}],
+  photos:[{img:IMG.dimidiatus2, date:"", place:VN, ind:"Macho en el comedero"},{img:IMG.dimidiatus, date:"", place:VN, ind:"Macho entre flores"}],
   desc:"El macho es rojo sangre oscuro, con alas y cola negras y una base del pico plateada brillante. La hembra es parda rojiza, más apagada. Anda en grupos pequeños y ruidosos.",
   diet:"Frutos, banano y papaya en comederos, e insectos.",
   habitat:"Bordes de bosque, cafetales, rastrojos y jardines de tierras bajas y medias.",
@@ -30,7 +30,7 @@ const BIRDS = [
 {
   id:"anisognathus-igniventris", common:"Clarinero escarlata", alt:"Tangara de montaña ventriescarlata · Scarlet-bellied Mountain Tanager",
   sci:"Anisognathus igniventris", family:"Thraupidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.anisognathus, date:"", place:RZ, ind:"Adulto entre ramas"},{img:IMG.anisognathus2, date:"", place:RZ, ind:"Entre ramas con musgo: hombro azul y media luna roja en el cuello"}],
+  photos:[{img:IMG.anisognathus, date:"", place:RZ, ind:"Adulto entre ramas"},{img:IMG.anisognathus2, date:"", place:RZ, ind:"Entre ramas con musgo: hombro azul y mancha roja detrás del ojo"}],
   desc:"Negro azabache con una mancha escarlata detrás del ojo, el vientre rojo encendido y un parche azul celeste en el hombro.",
   diet:"Frutos y bayas de arbustos andinos; también insectos y algo de néctar.",
   habitat:"Bosque altoandino y subpáramo, entre unos 2.500 y 3.700 m.",
@@ -40,7 +40,7 @@ const BIRDS = [
   id:"aglaeactis-cupripennis", common:"Colibrí rayo de sol", alt:"Rayito brillante · Shining Sunbeam",
   sci:"Aglaeactis cupripennis", family:"Trochilidae", iucn:"LC", conf:"media",
   confNote:"El plumaje canela y el pico corto y recto encajan con el rayo de sol; el brillo morado y dorado de la espalda, que lo confirma, no se ve desde este ángulo.",
-  photos:[{img:IMG.aglaeactis2, date:"", place:RZ, ind:"Revoloteando sobre las flores"},{img:IMG.aglaeactis, date:"", place:RZ, ind:"Posado sobre un arbusto de fucsias"}],
+  photos:[{img:IMG.aglaeactis2, date:"", place:RZ, ind:"Revoloteando sobre las flores"},{img:IMG.aglaeactis, date:"", place:RZ, ind:"Posado sobre un arbusto con flores"}],
   desc:"Colibrí canela rojizo, de pico corto y recto. Cuando gira, la espalda baja muestra un brillo morado, dorado y verde que le da el nombre.",
   diet:"Néctar de flores de arbustos de páramo y fucsias; insectos pequeños.",
   habitat:"Bordes de bosque altoandino, subpáramo y matorrales, entre unos 2.600 y 3.600 m.",
@@ -49,7 +49,7 @@ const BIRDS = [
 {
   id:"atlapetes-pallidinucha", common:"Gorrión montés de nuca pálida", alt:"Pale-naped Brushfinch",
   sci:"Atlapetes pallidinucha", family:"Passerellidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.atlapetes, date:"", place:RZ, ind:"Buscando comida en el musgo"},{img:IMG.atlapetes2, date:"", place:RZ, ind:"De frente entre ramas con líquenes, con la frente amarilla"}],
+  photos:[{img:IMG.atlapetes, date:"", place:RZ, ind:"Buscando comida en el musgo"},{img:IMG.atlapetes2, date:"", place:RZ, ind:"De frente entre ramas con líquenes, con la frente amarilla. No se ve la nuca, que lo separa del gorrión montés de nuca rufa"}],
   desc:"Cara negra, frente canela anaranjada que se aclara a blanco en la nuca, dorso gris oscuro y vientre amarillo oliva.",
   diet:"Insectos, semillas y frutos que busca entre la hojarasca y el musgo.",
   habitat:"Sotobosque y bordes de bosque altoandino, entre unos 2.500 y 3.600 m.",
@@ -76,7 +76,7 @@ const BIRDS = [
 {
   id:"thraupis-episcopus", common:"Azulejo común", alt:"Tangara azuleja · Blue-gray Tanager",
   sci:"Thraupis episcopus", family:"Thraupidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.episcopus, date:"", place:VN, ind:"En el comedero de banano"},{img:IMG.episcopus2, date:"", place:VN, ind:"En un palo de papaya"},{img:IMG.episcopus3, date:"", place:VN, ind:"En vuelo, con las alas celestes abiertas"},{img:IMG.episcopus4, date:"", place:VN, ind:"Aleteando sobre el banano del comedero, en plena disputa: se ven las alas celestes por encima"}],
+  photos:[{img:IMG.episcopus, date:"", place:VN, ind:"En el comedero de banano"},{img:IMG.episcopus2, date:"", place:VN, ind:"En un palo de papaya"},{img:IMG.episcopus3, date:"", place:VN, ind:"En vuelo, con las alas celestes abiertas; la foto está algo movida"},{img:IMG.episcopus4, date:"", place:VN, ind:"Aleteando sobre el banano del comedero, en plena disputa con un ave amarilla (quizá un canario joven): se ven las alas celestes por encima"}],
   desc:"Gris azulado pálido con hombros y alas azul celeste. Inquieto y ruidoso, anda en parejas.",
   diet:"Frutos, néctar e insectos.",
   habitat:"Bordes, jardines, cafetales y pueblos.",
@@ -92,10 +92,19 @@ const BIRDS = [
   migration:null
 },
 {
+  id:"euphonia-xanthogaster", common:"Eufonia ventrinaranja", alt:"Eufonia buchinaranja · Orange-bellied Euphonia", sci:"Euphonia xanthogaster", family:"Fringillidae", iucn:"LC", conf:"media",
+  confNote:"Al ampliar las fotos, la garganta del macho se ve azul oscura, no amarilla como en la eufonia piquigruesa. Encaja con la ventrinaranja, común en los comederos de la zona; la eufonia de vientre anaranjado oscuro (E. saturata) es la otra opción.",
+  photos:[{img:IMG.euphonia4, date:"", place:VN, ind:"Macho de perfil: garganta azul oscura y frente amarilla"},{img:IMG.euphonia, date:"", place:VN, ind:"Macho en el comedero, con la garganta oscura"},{img:IMG.euphonia2, date:"", place:VN, ind:"Macho comiendo banano: garganta oscura y frente amarilla"}],
+  desc:"Eufonia pequeña: el macho es azul oscuro brillante por encima, con la garganta del mismo color, una mancha amarilla en la frente y el pecho y el vientre amarillo anaranjado. La hembra es verde oliva, con la frente rojiza y el pecho grisáceo.",
+  diet:"Frutos pequeños, sobre todo de muérdagos, cuyas semillas ayuda a dispersar; también banano en los comederos.",
+  habitat:"Bosques húmedos de montaña y sus bordes, cafetales con sombrío y jardines, entre unos 500 y 2.000 m.",
+  migration:null
+},
+{
   id:"euphonia-laniirostris", common:"Eufonia piquigruesa", alt:"Thick-billed Euphonia",
-  sci:"Euphonia laniirostris", family:"Fringillidae", iucn:"LC", conf:"media",
-  confNote:"La garganta amarilla apunta a la piquigruesa; otras eufonias de la zona tienen la garganta negra o azul. Una foto de frente lo confirmaría.",
-  photos:[{img:IMG.euphonia2, date:"", place:VN, ind:"Macho comiendo banano"},{img:IMG.euphonia, date:"", place:VN, ind:"Macho en el comedero"},{img:IMG.euphonia3, date:"", place:VN, ind:"Macho joven en vuelo, aún verde oliva"},{img:IMG.euphonia4, date:"", place:VN, ind:"Macho de perfil, con la garganta amarilla"}],
+  sci:"Euphonia laniirostris", family:"Fringillidae", iucn:"LC", conf:"baja",
+  confNote:"Solo queda una foto, movida, de un macho joven en vuelo con la garganta al parecer amarilla.",
+  photos:[{img:IMG.euphonia3, date:"", place:VN, ind:"Macho joven en vuelo, aún verde oliva. Por confirmar: la foto está movida; la garganta parece amarilla"}],
   desc:"Pequeña y compacta: azul oscuro brillante por encima y amarillo intenso por debajo, con la frente amarilla.",
   diet:"Frutos pequeños, sobre todo de muérdagos, cuyas semillas ayuda a dispersar; banano en comederos.",
   habitat:"Bordes de bosque, cafetales y jardines.",
@@ -123,7 +132,7 @@ const BIRDS = [
 {
   id:"melanerpes-rubricapillus", common:"Carpintero habado", alt:"Red-crowned Woodpecker",
   sci:"Melanerpes rubricapillus", family:"Picidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.melanerpes, date:"", place:VN, ind:"Macho en un tronco"},{img:IMG.melanerpes2, date:"", place:VN, ind:"Macho en el comedero de guadua"},{img:"fotos/melanerpesVidP.jpg", video:"fotos/melanerpesVid.mp4", date:"", place:VN, ind:"Despegando del tronco: en cámara lenta se ve el barrado del dorso"}],
+  photos:[{img:IMG.melanerpes, date:"", place:VN, ind:"Macho en un palo de madera"},{img:IMG.melanerpes2, date:"", place:VN, ind:"Macho en el comedero de guadua"},{img:"fotos/melanerpesVidP.jpg", video:"fotos/melanerpesVid.mp4", date:"", place:VN, ind:"Despegando del tronco: en cámara lenta se ve el barrado del dorso"}],
   desc:"Dorso barrado en blanco y negro, partes inferiores beige y corona roja en el macho.",
   diet:"Insectos y larvas de la madera, frutos y néctar.",
   habitat:"Bordes, cafetales, jardines y postes de madera.",
@@ -151,22 +160,13 @@ const BIRDS = [
 {
   id:"turdus-ignobilis", common:"Mirla embarradora", alt:"Mirla ollera · Black-billed Thrush",
   sci:"Turdus ignobilis", family:"Turdidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.ignobilis, date:"", place:VN, ind:"Posada en un palo de papaya"},{img:IMG.ignobilis2, date:"", place:VN, ind:"En el comedero de guadua, junto al banano"},{img:IMG.ignobilis3, date:"", place:VN, ind:"En las hojas de un palo de papaya"}],
+  photos:[{img:IMG.turdus, date:"", place:VN, ind:"Juvenil, con el pecho moteado y el pico oscuro"},{img:IMG.ignobilis, date:"", place:VN, ind:"Posada en un palo de papaya"},{img:IMG.ignobilis2, date:"", place:VN, ind:"Inmaduro en el comedero de guadua, junto al banano: pecho algo escamado"}],
   desc:"Mirla parda oliva, más pequeña y oscura que la mirla parda, con el pico negro y la garganta blancuzca finamente rayada. Su nombre local viene del barro con el que arma el nido.",
   diet:"Lombrices, insectos y frutos, entre ellos papaya y banano.",
   habitat:"Jardines, cafetales, potreros con árboles y bordes de bosque de tierras medias.",
   migration:null
 },
-{
-  id:"turdus-grayi", common:"Mirla parda", alt:"Clay-colored Thrush",
-  sci:"Turdus grayi", family:"Turdidae", iucn:"LC", conf:"media",
-  confNote:"Es un juvenil, con el pecho moteado. Los juveniles de mirla se parecen; el tono pardo claro apunta a la mirla parda.",
-  photos:[{img:IMG.turdus, date:"", place:VN, ind:"Juvenil, con el pecho moteado"}],
-  desc:"El adulto es pardo arcilla claro con el pico amarillo verdoso. Los juveniles, como el de la foto, tienen manchas en el pecho y la espalda.",
-  diet:"Lombrices, insectos y frutos.",
-  habitat:"Jardines, cafetales y bordes de bosque.",
-  migration:null
-},
+
 {
   id:"phimosus-infuscatus", common:"Ibis de cara roja", alt:"Coquito · Bare-faced Ibis",
   sci:"Phimosus infuscatus", family:"Threskiornithidae", iucn:"LC", conf:"alta",
@@ -178,8 +178,9 @@ const BIRDS = [
 },
 {
   id:"ortalis-columbiana", common:"Guacharaca colombiana", alt:"Guacharaca · Colombian Chachalaca",
-  sci:"Ortalis columbiana", family:"Cracidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.ortalis, date:"", place:VN, ind:"Pareja a contraluz en un árbol seco con barbas de viejo"}],
+  sci:"Ortalis columbiana", family:"Cracidae", iucn:"LC", conf:"media",
+  confNote:"Son siluetas a contraluz: la especie se deduce porque es la única guacharaca de la zona.",
+  photos:[{img:IMG.ortalis, date:"", place:VN, ind:"Dos a contraluz en un árbol seco con barbas de viejo. Son siluetas: la especie se deduce por la zona"}],
   desc:"Ave grande, parecida a una gallina delgada de cola larga, parda con la cabeza y el cuello grises y una piel roja desnuda en la garganta. Es endémica de Colombia: no vive en ningún otro país.",
   diet:"Frutos, hojas tiernas, flores y brotes; baja al suelo a comer frutos caídos y visita los comederos con banano.",
   habitat:"Bordes de bosque, guaduales, cafetales con sombra y fincas con árboles frutales.",
@@ -198,8 +199,7 @@ const BIRDS = [
 },
 {
   id:"florisuga-mellivora", common:"Colibrí nuquiblanco", alt:"Jacobino · White-necked Jacobin",
-  sci:"Florisuga mellivora", family:"Trochilidae", iucn:"LC", conf:"media",
-  confNote:"La capucha oscura, el vientre blanco y la cola blanca con puntas negras encajan con el macho de esta especie. La foto en vuelo no deja ver la mancha blanca de la nuca ni el azul de la cabeza.",
+  sci:"Florisuga mellivora", family:"Trochilidae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.florisuga, date:"", place:VN, ind:"Macho en vuelo, abriendo la cola blanca"}],
   desc:"Colibrí grande y llamativo: el macho tiene la cabeza y el pecho azul intenso, una media luna blanca en la nuca, la espalda verde, el vientre blanco y la cola blanca con un borde negro.",
   diet:"Néctar de flores en la copa de los árboles e insectos que atrapa al vuelo.",
@@ -220,7 +220,7 @@ const BIRDS = [
   id:"eriocnemis-mosquera", common:"Calzadito pechidorado", alt:"Paramero dorado · Golden-breasted Puffleg",
   sci:"Eriocnemis mosquera", family:"Trochilidae", iucn:"LC", conf:"media",
   confNote:"Las «calzas» blancas de las patas lo ubican entre los calzaditos, y el pecho verde dorado encaja con esta especie. Otros calzaditos de la cordillera se distinguen por manchas azules o violetas en la garganta o bajo la cola, que en esta foto no se ven bien.",
-  photos:[{img:IMG.eriocnemis, date:"", place:VN, ind:"Posado en una varilla, con las calzas blancas visibles"}],
+  photos:[{img:IMG.eriocnemis, date:"", place:RZ, ind:"Posado en una varilla, con las calzas blancas visibles"}],
   desc:"Colibrí mediano de pico recto y fino, verde con el pecho dorado bronceado y la cola oscura. Como todos los calzaditos, tiene plumas blancas y esponjosas que le cubren las patas, como si llevara calzas.",
   diet:"Néctar de flores de arbustos de alta montaña y pequeños insectos.",
   habitat:"Bordes de bosque altoandino y subpáramo, entre unos 2.400 y 3.600 m.",
@@ -237,6 +237,7 @@ const BIRDS = [
 }];
 
 const XTRA={
+ "euphonia-xanthogaster":{"sw": [["#1E2A5A", "Dorso y garganta"], ["#F2B83A", "Vientre"], ["#E8D23A", "Frente"]]},
  "stilpnia-cyanicollis":{sw:[["#3CB4E0","Cabeza"],["#141418","Cuerpo"],["#9CC86A","Hombro"]]},
  "sicalis-flaveola":{sw:[["#F2C21A","Cuerpo"],["#F08A1C","Corona"]]},
  "turdus-ignobilis":{sw:[["#6A5E4A","Dorso"],["#A89A84","Pecho"],["#151515","Pico"]]},
@@ -263,6 +264,7 @@ const XTRA={
  "florisuga-mellivora":{sw:[["#2A3A9A","Cabeza"],["#F4F4F2","Vientre y cola"],["#3E8A4A","Dorso"]]}
 };
 const HAB={
+ "euphonia-xanthogaster":["Anda en parejas o grupitos que recorren las copas buscando frutos de muérdago, a menudo con bandadas mixtas de tangaras.", "Comederos de banano y árboles con muérdago."],
  "stilpnia-cyanicollis":["En parejas o con bandadas mixtas de tangaras que recorren las copas; revisa ramas y hojas por debajo.","Yarumos y árboles frutales en bordes de cafetal."],
  "sicalis-flaveola":["En grupos que comen en el suelo; el macho canta desde ramas altas.","Potreros, patios y cercas."],
  "turdus-ignobilis":["Camina por el suelo picando lombrices y sube a los frutales; canta un trino variado al amanecer.","Papayos, comederos y prados."],
@@ -289,6 +291,7 @@ const HAB={
  "florisuga-mellivora":["Territorial en las flores; persigue a otros colibríes y caza insectos al vuelo en el aire abierto.","Árboles en flor y bebederos de colibríes."]
 };
 const PLACES={
+ "euphonia-xanthogaster":["comedero", "arboles"],
  "stilpnia-cyanicollis":["arboles"],"sicalis-flaveola":["prado"],"turdus-ignobilis":["arboles","prado","comedero"],
  "ramphocelus-flammigerus":["comedero","arboles"],"ramphocelus-dimidiatus":["comedero","arboles"],"anisognathus-igniventris":["arboles"],
  "aglaeactis-cupripennis":["arboles"],"atlapetes-pallidinucha":["arboles"],"zonotrichia-capensis":["prado"],"piaya-cayana":["arboles"],

@@ -27,8 +27,9 @@ const BIRDS = [
   migration:null
 },
 {
-  id:"egretta-rufescens", common:"Garza rojiza", alt:"Reddish Egret", sci:"Egretta rufescens", family:"Ardeidae", iucn:"NT", conf:"alta",
-  photos:[{img:IMG.rufescens, date:"", place:CM, ind:"En el agua baja de la laguna: cuerpo gris azulado y cuello canela desgreñado"}],
+  id:"egretta-rufescens", common:"Garza rojiza", alt:"Reddish Egret", sci:"Egretta rufescens", family:"Ardeidae", iucn:"NT", conf:"media",
+  confNote:"La foto está borrosa: el cuello rojizo apunta a esta garza, pero no se ven el pico bicolor ni las plumas desgreñadas.",
+  photos:[{img:IMG.rufescens, date:"", place:CM, ind:"En el agua baja de la laguna: cuerpo gris azulado y cuello rojizo. La foto está borrosa: no se ven el pico bicolor ni las plumas desgreñadas"}],
   desc:"Garza mediana de cuerpo gris azulado, con la cabeza y el cuello color canela y las plumas desgreñadas. Los adultos tienen el pico rosado con la punta negra. Es la más inquieta de las garzas: caza corriendo en zigzag, dando giros y abriendo las alas para hacer sombra sobre el agua.",
   diet:"Peces pequeños que persigue en aguas someras y saladas.",
   habitat:"Lagunas costeras saladas, salinas y playas poco profundas; es una garza estrictamente costera.",
@@ -46,7 +47,7 @@ const BIRDS = [
 },
 {
   id:"pelecanus-occidentalis", common:"Pelícano pardo", alt:"Alcatraz · Brown Pelican", sci:"Pelecanus occidentalis", family:"Pelecanidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.pelecanus, date:"", place:CM, ind:"Joven nadando de frente, con el pico apoyado en el pecho"},{img:IMG.pelecanusPL, date:"", place:PL, ind:"Planeando de frente sobre la playa, con las alas totalmente abiertas"},{img:IMG.pelecanus2, date:"", place:CM, ind:"Grupo en un playón: varios se acicalan"}],
+  photos:[{img:IMG.pelecanus, date:"", place:CM, ind:"Joven nadando de frente, con el pico apoyado en el pecho"},{img:IMG.pelecanusPL, date:"", place:PL, ind:"Planeando de frente sobre la playa. Es una silueta a contraluz; en la costa no hay otro pelícano oscuro"},{img:IMG.pelecanus2, date:"", place:CM, ind:"Grupo en un playón: varios se acicalan"}],
   desc:"Ave marina enorme, gris y parda, con la cabeza blanca amarillenta y una bolsa bajo el pico que se estira para atrapar peces. Es el único pelícano que pesca lanzándose en picada desde el aire.",
   diet:"Peces, sobre todo sardinas y lisas, que atrapa con la bolsa del pico después de zambullirse.",
   habitat:"Costas, bahías, manglares y bocas de ríos y canales.",
@@ -54,7 +55,7 @@ const BIRDS = [
 },
 {
   id:"nannopterum-brasilianum", common:"Pato cuervo", alt:"Cormorán neotropical · Neotropic Cormorant", sci:"Nannopterum brasilianum", family:"Phalacrocoracidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.nannopterum, date:"", place:CM, ind:"Silueta en la orilla de la laguna"},{img:IMG.nannopterum2, date:"", place:CM, ind:"Grupo descansando en un playón, con una garza real al fondo"}],
+  photos:[{img:IMG.nannopterum, date:"", place:CM, ind:"Silueta en la orilla de la laguna: la cola larga es de pato cuervo, pero no se ve el plumaje"},{img:IMG.nannopterum2, date:"", place:CM, ind:"Grupo descansando en un playón; al fondo, una garza blanca"}],
   desc:"Negro, de cuello largo, cola larga y pico ganchudo con piel amarilla en la base. Sus plumas no son del todo impermeables: eso le ayuda a hundirse al bucear, pero después tiene que posarse con las alas abiertas para secarlas al sol.",
   diet:"Peces que persigue buceando, impulsándose con las patas palmeadas.",
   habitat:"Ciénagas, ríos, lagunas, manglares y costas.",
@@ -70,7 +71,7 @@ const BIRDS = [
 },
 {
   id:"ardea-alba", common:"Garza real", alt:"Garceta grande · Great Egret", sci:"Ardea alba", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.albaPL, date:"", place:PL, ind:"En la orilla de piedras del río, frente a un tronco varado"},{img:IMG.albaPL2, date:"", place:PL, ind:"Volando bajo sobre el río"}],
+  photos:[{img:IMG.albaPL, date:"", place:PL, ind:"En la orilla de piedras del río, frente a un tronco varado"},{img:IMG.albaPL2, date:"", place:PL, ind:"Volando bajo sobre el río. Por confirmar: el pico se ve oscuro y no se ven las patas, así que la garza patiamarilla (E. thula) no se descarta"}],
   desc:"Garza blanca grande, de pico amarillo y patas negras, mucho más grande que la garza patiamarilla y la garcita del ganado. En época de cría le crecen plumas largas y finas en la espalda; por ellas casi desaparece hacia 1900, cuando se usaban en los sombreros de moda.",
   diet:"Peces, ranas, cangrejos e insectos grandes; caza caminando despacio o esperando inmóvil.",
   habitat:"Ciénagas, ríos, manglares, arrozales y potreros inundados.",
@@ -78,7 +79,7 @@ const BIRDS = [
 },
 {
   id:"egretta-thula", common:"Garza patiamarilla", alt:"Garceta nívea · Snowy Egret", sci:"Egretta thula", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.thulaPL, date:"", place:PL, ind:"Pescando en la orilla, entre hojas de palma secas"},{img:IMG.thulaPL3, date:"", place:PL, ind:"En vuelo sobre el río: patas negras y dedos amarillos"},{img:IMG.thulaPL2, date:"", place:PL, ind:"Abriendo las alas entre la vegetación de la orilla"}],
+  photos:[{img:IMG.thulaPL, date:"", place:PL, ind:"Pescando en la orilla, entre hojas de palma secas"},{img:IMG.thulaPL3, date:"", place:PL, ind:"En vuelo sobre el río: patas negras y dedos amarillos"},{img:IMG.thulaPL2, date:"", place:PL, ind:"Garza blanca abriendo las alas entre la vegetación. No se ven el pico ni las patas: podría ser otra garza blanca"}],
   desc:"Garza blanca mediana con pico negro, piel amarilla entre el pico y el ojo y patas negras con «zapatos» amarillos. Hacia 1900 casi se extingue: sus plumas de cría se usaban en sombreros de moda. La indignación por esa cacería dio origen a las primeras leyes de protección de aves.",
   diet:"Peces pequeños, camarones e insectos. Agita el agua con las patas amarillas para espantar a sus presas.",
   habitat:"Ciénagas, lagunas, manglares y orillas de caños.",

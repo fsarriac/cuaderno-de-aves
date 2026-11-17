@@ -45,8 +45,7 @@ const BIRDS = [
 },
 {
   id:"tigrisoma-lineatum", common:"Vaco colorado", alt:"Garza tigre · Rufescent Tiger-Heron",
-  sci:"Tigrisoma lineatum", family:"Ardeidae", iucn:"LC", conf:"media",
-  confNote:"Es un juvenil: los jóvenes de las garzas tigre se parecen mucho entre sí. El vaco colorado es el más común en las ciénagas de tierras bajas del Caribe.",
+  sci:"Tigrisoma lineatum", family:"Ardeidae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.tigrisoma, date:"", place:PJ, ind:"Juvenil, con el barrado de «tigre»"},{img:IMG.tigrisomaLD, date:"", place:GU, ind:"Adulto entre la vegetación de la orilla: cabeza y cuello castaños"}],
   desc:"El juvenil, como el de la foto, es canela con barras negras, un camuflaje perfecto entre juncos y hojas secas. El adulto tiene la cabeza y el cuello castaño rojizo. Ante el peligro se queda inmóvil con el pico apuntando al cielo para confundirse con la vegetación.",
   diet:"Peces, ranas, cangrejos e insectos acuáticos que acecha inmóvil en la orilla.",
@@ -65,7 +64,7 @@ const BIRDS = [
 {
   id:"ardea-alba", common:"Garza real", alt:"Garceta grande · Great Egret",
   sci:"Ardea alba", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.alba2, date:"", place:PJ, ind:"Asomada sobre la vegetación de la orilla, con el pico amarillo"},{img:IMG.alba, date:"", place:PJ, ind:"En vuelo al atardecer"},{img:IMG.albaLD, date:"", place:GU, ind:"En la orilla, entre el pasto y los buchones"},{img:IMG.albaLD2, date:"", place:GU, ind:"Posada sobre la polisombra de una casa junto a la charca"},{img:IMG.cd_alba2, date:"", place:CD, ind:"En vuelo, con las patas negras extendidas"},{img:IMG.cd_alba, date:"", place:CD, ind:"En la orilla, junto a un maizal"},{img:IMG.cd_alba3, date:"", place:CD, ind:"Volando bajo sobre el canal"},{img:IMG.cd_albaCD, date:"", place:CD, ind:"Al acecho en la orilla, contra un muro de eneas"}],
+  photos:[{img:IMG.alba2, date:"", place:PJ, ind:"Asomada sobre la vegetación de la orilla, con el pico amarillo"},{img:IMG.alba, date:"", place:PJ, ind:"En vuelo al atardecer"},{img:IMG.albaLD, date:"", place:GU, ind:"En la orilla, entre el pasto y los buchones"},{img:IMG.albaLD2, date:"", place:GU, ind:"Posada sobre la polisombra de una casa junto a la charca"},{img:IMG.cd_alba2, date:"", place:CD, ind:"En vuelo, con las patas negras extendidas; está lejos"},{img:IMG.cd_alba, date:"", place:CD, ind:"En la orilla, junto a un maizal; muy lejos"},{img:IMG.cd_albaCD, date:"", place:CD, ind:"Al acecho en la orilla, contra un muro de eneas"}],
   desc:"Garza blanca grande, de pico amarillo y patas negras. En época de cría le crecen plumas largas y finas en la espalda; por ellas casi desaparece hacia 1900, cuando se usaban en los sombreros de moda.",
   diet:"Peces, ranas, cangrejos e insectos grandes; caza caminando despacio o esperando inmóvil.",
   habitat:"Ciénagas, ríos, manglares, arrozales y potreros inundados.",
@@ -92,14 +91,14 @@ const BIRDS = [
 {
   id:"chloroceryle-amazona", common:"Martín pescador amazónico", alt:"Amazon Kingfisher",
   sci:"Chloroceryle amazona", family:"Alcedinidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.amazona2, date:"", place:PJ, ind:"A contraluz al amanecer"},{img:IMG.amazona, date:"", place:PJ, ind:"Posado sobre el agua, con la cresta levantada"}],
+  photos:[{img:IMG.amazona2, date:"", place:PJ, ind:"A contraluz al amanecer. Es casi una silueta: el martín pescador verde (C. americana) no se descarta del todo"},{img:IMG.amazona, date:"", place:PJ, ind:"Posado entre ramas secas, con la cresta levantada"}],
   desc:"Verde oscuro brillante por encima, con collar blanco y un pico largo y pesado. El macho tiene una banda castaña en el pecho; la hembra, verde. Es el más grande de los martines pescadores verdes.",
   diet:"Peces pequeños y medianos que caza zambulléndose desde ramas bajas.",
   habitat:"Orillas de ciénagas, caños y ríos con ramas sobre el agua.",
   migration:null
 },
 {
-  id:"fluvicola-pica", common:"Viudita", alt:"Viudita acuática · Pied Water-Tyrant",
+  id:"fluvicola-pica", common:"Viudita blanca", alt:"Viudita acuática · Pied Water-Tyrant",
   sci:"Fluvicola pica", family:"Tyrannidae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.fluvicola, date:"", place:PJ, ind:"Adulto, blanco y negro"},{img:IMG.fluvicolaLD, date:"", place:GU, ind:"Sobre una hoja de buchón: blanca con la espalda y las alas negras"},{img:IMG.fluvicolaLD2, date:"", place:GU, ind:"Caminando sobre los buchones"}],
   desc:"Pequeño atrapamoscas blanco con la nuca, la espalda y las alas negras, como un traje de viuda. Mueve la cola continuamente.",
@@ -199,7 +198,7 @@ const BIRDS = [
 },
 {
   id:"chauna-chavaria", common:"Chavarría", alt:"Aruco · Northern Screamer", sci:"Chauna chavaria", family:"Anhimidae", iucn:"NT", conf:"alta",
-  photos:[{img:IMG.chauna, date:"", place:GU, ind:"Sobre la copa de un arbusto: cara roja, cuello negro y patas rosadas"},{img:IMG.chauna2, date:"", place:GU, ind:"De espaldas, mirando hacia atrás, con el copete de plumas finas en la nuca"}],
+  photos:[{img:IMG.chauna, date:"", place:GU, ind:"Sobre la copa de un arbusto: cara blanca con piel roja alrededor del ojo, cuello negro y patas rosadas"},{img:IMG.chauna2, date:"", place:GU, ind:"De espaldas, mirando hacia atrás, con el copete de plumas finas en la nuca"}],
   desc:"Ave enorme, del tamaño de un pavo, gris oscuro, con la cara blanca y roja alrededor del ojo, el cuello negro y un copete fino en la nuca. Aunque parece una gallina zancuda, su pariente más cercano son los patos. Tiene dos espolones afilados en cada ala y una capa de aire bajo la piel que cruje al tocarla. Su grito, que se oye a kilómetros, le da el nombre en inglés.",
   diet:"Plantas acuáticas, hojas, tallos tiernos y semillas de las orillas de ciénagas y charcas.",
   habitat:"Ciénagas, charcas y pantanos con mucha vegetación flotante del norte de Colombia y el oeste de Venezuela; vive casi solo en esa región.",
@@ -208,7 +207,7 @@ const BIRDS = [
 },
 {
   id:"anhinga-anhinga", common:"Pato aguja", alt:"Anhinga · Anhinga", sci:"Anhinga anhinga", family:"Anhingidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.anhinga, date:"", place:GU, ind:"Macho secándose: plumas plateadas en la espalda y cola con punta clara"},{img:IMG.anhinga2, date:"", place:GU, ind:"Macho de espaldas: las plumas plateadas de la espalda"},{img:IMG.anhingaF, date:"", place:GU, ind:"Hembra, con la cabeza y el cuello canela pálido"},{img:IMG.anhingaF2, date:"", place:GU, ind:"Hembra con las alas y la cola abiertas, secándose"},{img:IMG.anhingaF3, date:"", place:GU, ind:"Hembra a contraluz: cuello canela y patas anaranjadas"},{img:IMG.anhingaF4, date:"", place:GU, ind:"Nadando con solo el cuello afuera, como una serpiente"}],
+  photos:[{img:IMG.anhinga, date:"", place:GU, ind:"Macho secándose: plumas plateadas en la espalda y cola con punta clara"},{img:IMG.anhinga2, date:"", place:GU, ind:"De espaldas: las plumas plateadas de la espalda; probablemente un macho"},{img:IMG.anhingaF, date:"", place:GU, ind:"Hembra, con la cabeza y el cuello canela pálido"},{img:IMG.anhingaF2, date:"", place:GU, ind:"Hembra con las alas y la cola abiertas, secándose"},{img:IMG.anhingaF3, date:"", place:GU, ind:"Hembra a contraluz: cuello canela y patas anaranjadas"},{img:IMG.anhingaF4, date:"", place:GU, ind:"Nadando con solo el cuello afuera, como una serpiente"}],
   desc:"Ave acuática negra, de cuello largo y delgado como una serpiente, pico amarillo en forma de daga y cola larga en abanico con la punta clara. El macho tiene la espalda y las alas cubiertas de plumas plateadas; la hembra tiene la cabeza y el cuello canela. Nada con el cuerpo sumergido y solo el cuello afuera.",
   diet:"Peces que ensarta con el pico bajo el agua, como con un arpón; los lanza al aire y se los traga de cabeza.",
   habitat:"Ciénagas, charcas, caños y ríos de aguas tranquilas con árboles en la orilla.",
@@ -216,7 +215,7 @@ const BIRDS = [
 },
 {
   id:"ardea-cocoi", common:"Garzón azul", alt:"Garza cuca · Cocoi Heron", sci:"Ardea cocoi", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.cocoiLD, date:"", place:GU, ind:"Entre los buchones, con la corona negra y el hombro negro"},{img:IMG.cocoiLD2, date:"", place:GU, ind:"Cabeza y cuello asomados entre los buchones"},{img:IMG.cocoiLD3, date:"", place:GU, ind:"En vuelo sobre la charca"},{img:IMG.cocoiLD4, date:"", place:GU, ind:"Escondido entre los buchones de la orilla"},{img:IMG.cocoiLD5, date:"", place:GU, ind:"Caminando por la orilla, frente a una piedra"},{img:IMG.cocoiLD6, date:"", place:GU, ind:"Entre los buchones, con las plumas largas del pecho"},{img:IMG.cd_cocoi, date:"", place:CD, ind:"Adulto pescando en la orilla"},{img:IMG.cd_cocoi2, date:"", place:CD, ind:"Entre los mangles, con el pico abierto"},{img:IMG.cd_cocoi3, date:"", place:CD, ind:"En vuelo sobre el canal"},{img:IMG.cd_cocoi4, date:"", place:CD, ind:"Vigilando desde lo alto de un arbusto"},{img:IMG.cd_cocoi5, date:"", place:CD, ind:"Vuelo rasante sobre el agua"},{img:IMG.cd_cocoiVuelo, date:"", place:CD, ind:"En vuelo alto, con el cuello recogido y las alas blancas y negras"},{img:IMG.cd_cocoi6, date:"", place:CD, ind:"De pie en el agua, al acecho"}],
+  photos:[{img:IMG.cd_alba3, date:"", place:CD, ind:"Volando bajo sobre el canal: alas grises con las puntas negras"},{img:IMG.cocoiLD, date:"", place:GU, ind:"Entre los buchones, con la corona negra y el hombro negro"},{img:IMG.cocoiLD2, date:"", place:GU, ind:"Cabeza y cuello asomados entre los buchones"},{img:IMG.cocoiLD3, date:"", place:GU, ind:"En vuelo sobre la charca"},{img:IMG.cocoiLD4, date:"", place:GU, ind:"Escondido entre los buchones de la orilla"},{img:IMG.cocoiLD5, date:"", place:GU, ind:"Caminando por la orilla, frente a una piedra"},{img:IMG.cocoiLD6, date:"", place:GU, ind:"Entre los buchones, con las plumas largas del pecho"},{img:IMG.cd_cocoi, date:"", place:CD, ind:"Adulto pescando en la orilla"},{img:IMG.cd_cocoi2, date:"", place:CD, ind:"Entre los mangles, con el pico abierto"},{img:IMG.cd_cocoi3, date:"", place:CD, ind:"En vuelo sobre el canal"},{img:IMG.cd_cocoi4, date:"", place:CD, ind:"Vigilando desde lo alto de un arbusto"},{img:IMG.cd_cocoi5, date:"", place:CD, ind:"Vuelo rasante sobre el agua. No se ve el cuello: la garza azulada migratoria (A. herodias) no se descarta del todo"},{img:IMG.cd_cocoiVuelo, date:"", place:CD, ind:"En vuelo alto, con el cuello recogido y las alas grises y negras"},{img:IMG.cd_cocoi6, date:"", place:CD, ind:"Posado sobre un tronco en el agua, al acecho; está lejos"}],
   desc:"La garza más grande de Suramérica, de casi 1,3 m de alto. Cuello blanco, corona negra, dorso gris azulado, pico amarillo y largo. En vuelo recoge el cuello en forma de S y bate las alas despacio.",
   diet:"Peces grandes, que atrapa de un picotazo rápido después de esperar inmóvil; también cangrejos, ranas y culebras de agua.",
   habitat:"Ríos anchos, canales, ciénagas y manglares de tierras bajas.",
@@ -256,8 +255,8 @@ const BIRDS = [
   migration:null
 },
 {
-  id:"arundinicola-leucocephala", common:"Viudita", alt:"Monjita · White-headed Marsh Tyrant", sci:"Arundinicola leucocephala", family:"Tyrannidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.arundinicola, date:"", place:GU, ind:"Macho de cabeza blanca, con una hembra al fondo"},{img:IMG.arundinicolaF, date:"", place:GU, ind:"Hembra sobre una hoja de buchón"},{img:IMG.arundinicola2, date:"", place:GU, ind:"Macho sobre un palo: cabeza blanca y base del pico amarilla"}],
+  id:"arundinicola-leucocephala", common:"Viudita de cabeza blanca", alt:"Monjita · White-headed Marsh Tyrant", sci:"Arundinicola leucocephala", family:"Tyrannidae", iucn:"LC", conf:"alta",
+  photos:[{img:IMG.arundinicola, date:"", place:GU, ind:"Macho de cabeza blanca, con una hembra al fondo"},{img:IMG.arundinicolaF, date:"", place:GU, ind:"Hembra sobre una hoja de buchón"},{img:IMG.arundinicola2, date:"", place:GU, ind:"Hembra o macho joven sobre un palo: cabeza blanca, cuerpo pardo grisáceo y base del pico amarilla"}],
   desc:"Atrapamoscas pequeño de los pantanos. El macho es negro con la cabeza entera blanca, como con una capucha; la hembra es gris parda por encima y blanca por debajo, con la frente y la cara blancas. Los dos tienen la base del pico amarilla.",
   diet:"Insectos que caza con salidas cortas desde una percha baja sobre el agua.",
   habitat:"Ciénagas, charcas y potreros inundados con vegetación flotante y juncos, en tierras bajas.",
@@ -265,7 +264,7 @@ const BIRDS = [
 },
 {
   id:"chrysomus-icterocephalus", common:"Monjita", alt:"Turpial de agua · Yellow-hooded Blackbird", sci:"Chrysomus icterocephalus", family:"Icteridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.chrysomusLD, date:"", place:GU, ind:"Macho sobre los buchones de agua"},{img:IMG.chrysomusLD2, date:"", place:GU, ind:"Macho volando sobre los buchones"},{img:IMG.chrysomusLDF, date:"", place:GU, ind:"Hembra entre los buchones: parda, con la cara y la garganta amarillas"},{img:IMG.chrysomusLDF2, date:"", place:GU, ind:"Grupo de hembras y jóvenes en las ramas de la orilla"}],
+  photos:[{img:IMG.chrysomusLD, date:"", place:GU, ind:"Macho sobre los buchones de agua"},{img:IMG.chrysomusLD2, date:"", place:GU, ind:"Macho volando sobre los buchones"},{img:IMG.chrysomusLDF, date:"", place:GU, ind:"Hembra entre los buchones: parda, con la cara y la garganta amarillas"},{img:IMG.chrysomusLDF2, date:"", place:GU, ind:"Grupo de hembras y jóvenes en las ramas de la orilla; no hay machos en la foto"}],
   desc:"El macho es negro brillante con una capucha amarillo intenso y un pequeño antifaz negro entre el pico y el ojo. La hembra es parda oliva con la garganta y la ceja amarillentas.",
   diet:"Insectos y semillas que busca entre juncos, eneas y pastos altos.",
   habitat:"Ciénagas, juncales, arrozales y canales. Anida en colonias sobre la vegetación del agua.",
@@ -298,7 +297,7 @@ const BIRDS = [
 },
 {
   id:"nannopterum-brasilianum", common:"Pato cuervo", alt:"Cormorán neotropical · Neotropic Cormorant", sci:"Nannopterum brasilianum", family:"Phalacrocoracidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.nannopterumLD, date:"", place:GU, ind:"Joven posado en una rama sobre la charca"},{img:IMG.nannopterumLD2, date:"", place:GU, ind:"Nadando con solo el cuello afuera"},{img:IMG.nannopterumLD3, date:"", place:GU, ind:"Grupo en vuelo sobre la charca"},{img:IMG.cd_nannopterum, date:"", place:CD, ind:"Tres posados en ramas secas sobre el agua"},{img:IMG.cd_nannopterum2, date:"", place:CD, ind:"En vuelo"},{img:IMG.cd_nannopterum3, date:"", place:CD, ind:"Grupo en la copa de un árbol: uno seca las alas abiertas al sol y otro despega"}],
+  photos:[{img:IMG.nannopterumLD, date:"", place:GU, ind:"Joven posado en una rama sobre la charca"},{img:IMG.nannopterumLD2, date:"", place:GU, ind:"Nadando con solo el cuello afuera"},{img:IMG.nannopterumLD3, date:"", place:GU, ind:"Grupo en vuelo sobre la charca; son siluetas"},{img:IMG.cd_nannopterum, date:"", place:CD, ind:"Tres posados en ramas secas sobre el agua"},{img:IMG.cd_nannopterum2, date:"", place:CD, ind:"En vuelo, muy lejos. Por confirmar: la silueta podría ser también de un pato aguja"},{img:IMG.cd_nannopterum3, date:"", place:CD, ind:"Grupo en la copa de un árbol: uno seca las alas abiertas al sol y otro despega"}],
   desc:"Negro, de cuello largo, cola larga y pico ganchudo con piel amarilla en la base. Sus plumas no son del todo impermeables: eso le ayuda a hundirse al bucear, pero después tiene que posarse con las alas abiertas para secarlas al sol.",
   diet:"Peces que persigue buceando, impulsándose con las patas palmeadas.",
   habitat:"Ciénagas, ríos, lagunas, manglares y costas.",
@@ -356,7 +355,7 @@ const BIRDS = [
 {
   id:"thalasseus-maximus", common:"Gaviotín real", alt:"Charrán real · Royal Tern", sci:"Thalasseus maximus", family:"Laridae", iucn:"LC", conf:"media",
   confNote:"El grupo es mixto: los de pico anaranjado son gaviotines reales, y algunos de pico negro con punta amarilla parecen gaviotines patinegros (Thalasseus sandvicensis). A esta distancia no se pueden separar todos.",
-  photos:[{img:IMG.cd_thalasseus, date:"", place:CD, ind:"Grupo descansando sobre un tronco, junto a patos cuervo"}],
+  photos:[{img:IMG.cd_thalasseus, date:"", place:CD, ind:"Grupo descansando sobre un tronco, junto a patos cuervo. Es un grupo mixto: solo uno o dos tienen el pico anaranjado del gaviotín real; los de pico oscuro son gaviotines patinegros"}],
   desc:"Ave marina blanca y gris perla, con una cresta negra despeinada en la nuca y pico grueso anaranjado. Muchos de los que se ven en el Caribe colombiano llegan desde las costas de Norteamérica fuera de su época de cría.",
   diet:"Peces pequeños que atrapa lanzándose en picada al agua.",
   habitat:"Costas, playas, bahías y desembocaduras; descansa en grupos sobre troncos, bancos de arena y muelles.",

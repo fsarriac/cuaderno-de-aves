@@ -69,8 +69,9 @@ const BIRDS = [
 },
 {
   id:"cathartes-aura", common:"Gallinazo cabecirrojo", alt:"Guala · Turkey Vulture",
-  sci:"Cathartes aura", family:"Cathartidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.cathartesMG, date:"", place:MG, ind:"Planeando: alas en V con la mitad plateada"}],
+  sci:"Cathartes aura", family:"Cathartidae", iucn:"LC", conf:"media",
+  confNote:"En la foto de Manga está lejos y a contraluz: la guala cabeciamarilla no se descarta del todo.",
+  photos:[{img:IMG.cathartesMG, date:"", place:MG, ind:"Planeando: alas en V con la mitad plateada. Está lejos y a contraluz: la guala cabeciamarilla no se descarta del todo"}],
   desc:"Ave grande y negra con la cabeza desnuda y roja. En vuelo se reconoce por las alas en V abierta, con la mitad posterior plateada, y un balanceo de lado a lado sin casi aletear.",
   diet:"Carroña, que encuentra por el olfato, algo raro entre las aves.",
   habitat:"Cielos abiertos sobre costas, potreros y ciudades. En el invierno del norte llegan además aves migratorias de Norteamérica.",
@@ -79,7 +80,7 @@ const BIRDS = [
 {
   id:"fregata-magnificens", common:"Fragata", alt:"Tijereta de mar · Magnificent Frigatebird",
   sci:"Fregata magnificens", family:"Fregatidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.fregataIR, date:"", place:IR, ind:"Inmaduro pasando muy cerca: cabeza moteada de blanco y una mancha roja en la garganta"},{img:IMG.fregata, date:"", place:IR, ind:"Hembra, con el pecho blanco"},{img:IMG.fregata2, date:"", place:IR, ind:"Silueta con la cola en tijera"},{img:IMG.fregataJuv, date:"", place:MG, ind:"Juvenil, con la cabeza y el pecho blancos, sobre la bahía"},{img:IMG.fregataIR2, date:"", place:IR, ind:"Juvenil de cabeza blanca planeando sobre el muelle, con un adulto detrás"},{img:IMG.fregataMG2, date:"", place:MG, ind:"Macho a contraluz frente a un crucero, con la bolsa roja de la garganta"},{img:IMG.fregataMG3, date:"", place:MG, ind:"Planeando con las alas en ángulo y la cola en tijera, a la luz del atardecer"}],
+  photos:[{img:IMG.fregataIR, date:"", place:IR, ind:"Macho subadulto pasando muy cerca: cabeza moteada de blanco y una mancha roja en la garganta"},{img:IMG.fregata, date:"", place:IR, ind:"Hembra, con el pecho blanco"},{img:IMG.fregata2, date:"", place:IR, ind:"Silueta con la cola en tijera"},{img:IMG.fregataJuv, date:"", place:MG, ind:"Sobre la bahía; parece un juvenil, pero la foto está borrosa y lejana"},{img:IMG.fregataIR2, date:"", place:IR, ind:"Juvenil de cabeza blanca planeando sobre el muelle, con un adulto detrás"},{img:IMG.fregataMG2, date:"", place:MG, ind:"Macho a contraluz frente a un crucero, con la bolsa roja de la garganta"},{img:IMG.fregataMG3, date:"", place:MG, ind:"Planeando con las alas en ángulo y la cola en tijera, a la luz del atardecer"}],
   desc:"Los juveniles tienen la cabeza y el pecho blancos. Ave marina negra, de alas larguísimas y angulosas (más de 2 m de envergadura) y cola profundamente ahorquillada en forma de tijera. El macho infla en época de cría una enorme bolsa roja en la garganta; la hembra, como la de la primera foto, tiene el pecho blanco. Pesa muy poco para su tamaño: puede pasar días en el aire sin posarse.",
   diet:"Peces voladores y otros peces que atrapa de la superficie sin mojarse, y comida que roba en vuelo a pelícanos, gaviotines y piqueros, persiguiéndolos hasta que la sueltan. No puede posarse en el agua: sus plumas no son impermeables.",
   habitat:"Costas, islas y mar abierto del Caribe y el Pacífico; anida en colonias sobre manglares y arbustos de islas.",
@@ -88,7 +89,7 @@ const BIRDS = [
 {
   id:"pitangus-sulphuratus", common:"Bichofué", alt:"Bienteveo grande · Great Kiskadee",
   sci:"Pitangus sulphuratus", family:"Tyrannidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.pitangusIR, date:"", place:IR, ind:"Primer plano sobre un muro de piedra: antifaz negro, ceja blanca y pico ganchudo"},{img:IMG.pitangus, date:"", place:MG, ind:"Adulto posado al atardecer"},{img:IMG.pitangus2, date:"", place:MG, ind:"En vuelo, con las alas rojizas abiertas"},{img:IMG.pitangus3, date:"", place:MG, ind:"Lanzándose sobre el andén"},{img:IMG.pitangus4, date:"", place:MG, ind:"En vuelo, visto desde arriba"},{img:"fotos/pitangusVidP.jpg", video:"fotos/pitangusVid.mp4", date:"", place:MG, ind:"Despegando de los cables de la luz: en cámara lenta se ven las alas rojizas"}],
+  photos:[{img:IMG.pitangusIR, date:"", place:IR, ind:"Primer plano sobre un muro de piedra: antifaz negro, ceja blanca y pico ganchudo"},{img:IMG.pitangus, date:"", place:MG, ind:"Adulto posado al atardecer"},{img:IMG.pitangus2, date:"", place:MG, ind:"En vuelo, con las alas rojizas abiertas"},{img:IMG.pitangus3, date:"", place:MG, ind:"Lanzándose sobre el andén; se ve diminuto en la foto"},{img:IMG.pitangus4, date:"", place:MG, ind:"En vuelo, visto desde arriba: bordes rufos en las alas y la cabeza listada"},{img:"fotos/pitangusVidP.jpg", video:"fotos/pitangusVid.mp4", date:"", place:MG, ind:"Despegando de los cables de la luz: en cámara lenta se ven las alas rojizas"}],
   desc:"Atrapamoscas grande y llamativo: cabeza negra con una banda blanca ancha sobre el ojo, garganta blanca, vientre amarillo intenso y alas y cola rojizas. Su nombre es la imitación de su grito: «bi-cho-fué».",
   diet:"De todo: insectos que caza al vuelo, lagartijas, pececitos que saca del agua como un martín pescador, frutos y hasta comida que encuentra en la ciudad.",
   habitat:"Pueblos, parques, orillas de agua, potreros y bordes de bosque de tierras bajas y medias.",
@@ -117,7 +118,7 @@ const BIRDS = [
 {
   id:"ardea-cocoi", common:"Garzón azul", alt:"Garza cuca · Cocoi Heron",
   sci:"Ardea cocoi", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.cocoi, date:"", place:CD, ind:"Adulto pescando en la orilla"},{img:IMG.cocoi2, date:"", place:CD, ind:"Entre los mangles, con el pico abierto"},{img:IMG.cocoi3, date:"", place:CD, ind:"En vuelo sobre el canal"},{img:IMG.cocoi4, date:"", place:CD, ind:"Vigilando desde lo alto de un arbusto"},{img:IMG.cocoi5, date:"", place:CD, ind:"Vuelo rasante sobre el agua"},{img:IMG.cocoiVuelo, date:"", place:CD, ind:"En vuelo alto, con el cuello recogido y las alas blancas y negras"},{img:IMG.cocoi6, date:"", place:CD, ind:"De pie en el agua, al acecho"}],
+  photos:[{img:IMG.alba3, date:"", place:CD, ind:"Volando bajo sobre el canal: alas grises con las puntas negras"},{img:IMG.cocoi, date:"", place:CD, ind:"Adulto pescando en la orilla"},{img:IMG.cocoi2, date:"", place:CD, ind:"Entre los mangles, con el pico abierto"},{img:IMG.cocoi3, date:"", place:CD, ind:"En vuelo sobre el canal"},{img:IMG.cocoi4, date:"", place:CD, ind:"Vigilando desde lo alto de un arbusto"},{img:IMG.cocoi5, date:"", place:CD, ind:"Vuelo rasante sobre el agua. No se ve el cuello: la garza azulada migratoria (A. herodias) no se descarta del todo"},{img:IMG.cocoiVuelo, date:"", place:CD, ind:"En vuelo alto, con el cuello recogido y las alas grises y negras"},{img:IMG.cocoi6, date:"", place:CD, ind:"Posado sobre un tronco en el agua, al acecho; está lejos"}],
   desc:"La garza más grande de Suramérica, de casi 1,3 m de alto. Cuello blanco, corona negra, dorso gris azulado, pico amarillo y largo. En vuelo recoge el cuello en forma de S y bate las alas despacio.",
   diet:"Peces grandes, que atrapa de un picotazo rápido después de esperar inmóvil; también cangrejos, ranas y culebras de agua.",
   habitat:"Ríos anchos, canales, ciénagas y manglares de tierras bajas.",
@@ -126,7 +127,7 @@ const BIRDS = [
 {
   id:"ardea-alba", common:"Garza real", alt:"Garceta grande · Great Egret",
   sci:"Ardea alba", family:"Ardeidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.albaCD, date:"", place:CD, ind:"Al acecho en la orilla, contra un muro de eneas"},{img:IMG.alba2, date:"", place:CD, ind:"En vuelo, con las patas negras extendidas"},{img:IMG.alba, date:"", place:CD, ind:"En la orilla, junto a un maizal"},{img:IMG.alba3, date:"", place:CD, ind:"Volando bajo sobre el canal"},{img:IMG.albaMG, date:"", place:MG, ind:"En vuelo sobre la bahía, con el cuello recogido y las patas negras estiradas"}],
+  photos:[{img:IMG.albaCD, date:"", place:CD, ind:"Al acecho en la orilla, contra un muro de eneas"},{img:IMG.alba2, date:"", place:CD, ind:"En vuelo, con las patas negras extendidas; está lejos"},{img:IMG.alba, date:"", place:CD, ind:"En la orilla, junto a un maizal; muy lejos"},{img:IMG.albaMG, date:"", place:MG, ind:"En vuelo sobre la bahía, con el cuello recogido y las patas negras estiradas"}],
   desc:"Garza blanca grande, de pico amarillo y patas negras, mucho más grande que la garza patiamarilla y la garcita del ganado. En época de cría le crecen plumas largas y finas en la espalda; por ellas casi desaparece hacia 1900, cuando se usaban en los sombreros de moda.",
   diet:"Peces, ranas, cangrejos e insectos grandes; caza caminando despacio o esperando inmóvil.",
   habitat:"Ciénagas, ríos, manglares, arrozales y potreros inundados.",
@@ -135,7 +136,7 @@ const BIRDS = [
 {
   id:"nannopterum-brasilianum", common:"Pato cuervo", alt:"Cormorán neotropical · Neotropic Cormorant",
   sci:"Nannopterum brasilianum", family:"Phalacrocoracidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.nannopterum, date:"", place:CD, ind:"Tres posados en ramas secas sobre el agua"},{img:IMG.nannopterum2, date:"", place:CD, ind:"En vuelo"},{img:IMG.nannopterum3, date:"", place:CD, ind:"Grupo en la copa de un árbol: uno seca las alas abiertas al sol y otro despega"}],
+  photos:[{img:IMG.nannopterum, date:"", place:CD, ind:"Tres posados en ramas secas sobre el agua"},{img:IMG.nannopterum2, date:"", place:CD, ind:"En vuelo, lejos: la silueta es de pato cuervo"},{img:IMG.nannopterum3, date:"", place:CD, ind:"Grupo en la copa de un árbol: uno seca las alas abiertas al sol y otro despega"}],
   desc:"Negro, de cuello largo, cola larga y pico ganchudo con piel amarilla en la base. Sus plumas no son del todo impermeables: eso le ayuda a hundirse al bucear, pero después tiene que posarse con las alas abiertas para secarlas al sol.",
   diet:"Peces que persigue buceando, impulsándose con las patas palmeadas.",
   habitat:"Ciénagas, ríos, lagunas, manglares y costas.",
@@ -144,7 +145,7 @@ const BIRDS = [
 {
   id:"pelecanus-occidentalis", common:"Pelícano pardo", alt:"Alcatraz · Brown Pelican",
   sci:"Pelecanus occidentalis", family:"Pelecanidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.pelecanusIR4, date:"", place:IR, ind:"Tres adultos posados en el manglar, con la cabeza amarillenta y el cuello blanco"},{img:IMG.pelecanusIR, date:"", place:IR, ind:"Adulto en vuelo sobre el mar"},{img:IMG.pelecanusIR2, date:"", place:IR, ind:"Despegando del agua"},{img:IMG.pelecanus2, date:"", place:MG, ind:"Joven en vuelo, pardo de cabeza a cola"},{img:IMG.pelecanus, date:"", place:CD, ind:"Adulto en aguas someras"},{img:IMG.pelecanus3, date:"", place:MG, ind:"Planeando a ras de la bahía"},{img:IMG.pelecanusPicada, date:"", place:MG, ind:"En picada, con las alas recogidas"},{img:IMG.pelecanusZ2, date:"", place:MG, ind:"Bajando al agua para lanzarse"},{img:IMG.pelecanusZ, date:"", place:MG, ind:"Zambullida: entra al agua con las alas hacia atrás"},{img:IMG.pelecanusIR3, date:"", place:IR, ind:"Posado en el techo de paja de una cabaña"},{img:IMG.pelecanusIR5, date:"", place:IR, ind:"Planeando sobre el mar picado, junto a un pato cuervo"}],
+  photos:[{img:IMG.pelecanusIR4, date:"", place:IR, ind:"Tres adultos posados en el manglar, con la cabeza amarillenta y el cuello blanco"},{img:IMG.pelecanusIR, date:"", place:IR, ind:"Adulto en vuelo sobre el mar"},{img:IMG.pelecanusIR2, date:"", place:IR, ind:"Despegando del agua"},{img:IMG.pelecanus2, date:"", place:MG, ind:"Joven en vuelo, pardo con el vientre blanquecino"},{img:IMG.pelecanus, date:"", place:CD, ind:"Adulto en aguas someras"},{img:IMG.pelecanus3, date:"", place:MG, ind:"Planeando a ras de la bahía"},{img:IMG.pelecanusPicada, date:"", place:MG, ind:"En picada, con las alas recogidas"},{img:IMG.pelecanusZ2, date:"", place:MG, ind:"Bajando al agua para lanzarse"},{img:IMG.pelecanusZ, date:"", place:MG, ind:"Zambullida: entra al agua con las alas hacia atrás. Solo se ven las puntas de las alas; es el mismo de las fotos anteriores"},{img:IMG.pelecanusIR3, date:"", place:IR, ind:"Posado en el techo de paja de una cabaña"},{img:IMG.pelecanusIR5, date:"", place:IR, ind:"Planeando sobre el mar picado"}],
   desc:"Ave marina enorme, gris y parda, con la cabeza blanca amarillenta y una bolsa bajo el pico que se estira para atrapar peces. Es el único pelícano que pesca lanzándose en picada desde el aire.",
   diet:"Peces, sobre todo sardinas y lisas, que atrapa con la bolsa del pico después de zambullirse.",
   habitat:"Costas, bahías, manglares y bocas de ríos y canales.",
@@ -152,8 +153,7 @@ const BIRDS = [
 },
 {
   id:"thalasseus-maximus", common:"Gaviotín real", alt:"Charrán real · Royal Tern",
-  sci:"Thalasseus maximus", family:"Laridae", iucn:"LC", conf:"media",
-  confNote:"El grupo es mixto: los de pico anaranjado son gaviotines reales, y algunos de pico negro con punta amarilla parecen gaviotines patinegros (Thalasseus sandvicensis). A esta distancia no se pueden separar todos.",
+  sci:"Thalasseus maximus", family:"Laridae", iucn:"LC", conf:"alta",
   photos:[{img:IMG.thalasseusMG, date:"", place:MG, ind:"Adulto en plumaje de invierno sobre la bahía: frente blanca, cola ahorquillada"},{img:IMG.thalasseusIR, date:"", place:IR, ind:"En vuelo, con el pico anaranjado y la cresta negra"},{img:IMG.thalasseus, date:"", place:CD, ind:"Grupo descansando sobre un tronco, junto a patos cuervo"}],
   desc:"Ave marina blanca y gris perla, con una cresta negra despeinada en la nuca y pico grueso anaranjado. Muchos de los que se ven en el Caribe colombiano llegan desde las costas de Norteamérica fuera de su época de cría.",
   diet:"Peces pequeños que atrapa lanzándose en picada al agua.",
@@ -172,7 +172,7 @@ const BIRDS = [
 {
   id:"rostrhamus-sociabilis", common:"Gavilán caracolero", alt:"Caracolero · Snail Kite",
   sci:"Rostrhamus sociabilis", family:"Accipitridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.rostrhamus, date:"", place:AR, ind:"Juvenil, pardo y rayado, con ceja blanca"}],
+  photos:[{img:IMG.rostrhamus, date:"", place:AR, ind:"Hembra o juvenil, pardo y rayado, con ceja blanca"}],
   desc:"El juvenil, como el de la foto, es pardo con rayas blancas y una ceja clara. El macho adulto es gris pizarra oscuro, con la cara y las patas rojas. Su pico delgado y muy ganchudo es una herramienta especializada para sacar al caracol de su concha.",
   diet:"Casi exclusivamente caracoles de agua dulce del género Pomacea, que caza en vuelo bajo sobre la ciénaga.",
   habitat:"Ciénagas y humedales de agua dulce con caracoles. Si el humedal se seca o se contamina, desaparece.",
@@ -181,7 +181,7 @@ const BIRDS = [
 {
   id:"dendrocygna-autumnalis", common:"Pisingo", alt:"Iguasa común · Black-bellied Whistling-Duck",
   sci:"Dendrocygna autumnalis", family:"Anatidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.dendro, date:"", place:AR, ind:"Pareja entre el pasto"},{img:IMG.dendro2, date:"", place:AR, ind:"Dos en vuelo, con la franja blanca del ala"}],
+  photos:[{img:IMG.dendro, date:"", place:AR, ind:"Pareja entre el pasto"},{img:IMG.dendro2, date:"", place:AR, ind:"Dos peleando, uno en el aire y otro en el suelo: se ve la franja blanca del ala"}],
   desc:"Pato de cuello largo, castaño, con la cara gris, el vientre negro, el pico rojo coral y las patas rosadas. En vuelo muestra una franja blanca ancha en el ala. Su llamado es un silbido agudo, de ahí lo de «pato silbador». A diferencia de otros patos, se posa en árboles y anida en huecos de troncos.",
   diet:"Semillas, granos (sobre todo arroz) y plantas acuáticas; come mucho de noche.",
   habitat:"Ciénagas, arrozales, potreros inundables y lagunas de tierras bajas.",
@@ -226,7 +226,7 @@ const BIRDS = [
 {
   id:"caracara-cheriway", common:"Caracara copetón", alt:"Carancho · Crested Caracara",
   sci:"Caracara cheriway", family:"Falconidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.caracara, date:"", place:MG, ind:"En vuelo visto desde abajo: cara anaranjada, cuello barrado y puntas de las alas claras"}],
+  photos:[{img:IMG.caracara, date:"", place:MG, ind:"En vuelo visto desde abajo: cara anaranjada y puntas de las alas claras"}],
   desc:"Halcón grande y de patas largas, con capucha negra, cara roja o anaranjada desnuda, cuello blanco y pecho barrado. En vuelo muestra un parche claro en la punta de cada ala y la cola blanca con una banda negra.",
   diet:"Carroña, peces moribundos, tortugas pequeñas, insectos y lo que encuentre; también roba presas a otras aves.",
   habitat:"Sabanas, potreros, playas y orillas abiertas de tierras bajas.",
@@ -243,8 +243,9 @@ const BIRDS = [
 },
 {
   id:"leistes-militaris", common:"Soldadito", alt:"Pecho colorado · Red-breasted Meadowlark",
-  sci:"Leistes militaris", family:"Icteridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.leistes, date:"", place:AR, ind:"Macho posado sobre la maleza"}],
+  sci:"Leistes militaris", family:"Icteridae", iucn:"LC", conf:"media",
+  confNote:"La foto es pequeña y no muestra la cara, que lo separa del soldadito de ceja blanca (L. superciliaris).",
+  photos:[{img:IMG.leistes, date:"", place:AR, ind:"Macho posado sobre la maleza. No se ve la cara, que lo separa del soldadito de ceja blanca"}],
   desc:"El macho es negro con la garganta y el pecho rojo escarlata, como un uniforme militar. La hembra es parda y rayada, con un tinte rosado en el pecho.",
   diet:"Insectos y semillas que busca en el suelo, entre el pasto.",
   habitat:"Potreros húmedos, pastizales y arrozales.",
@@ -262,7 +263,7 @@ const BIRDS = [
 {
   id:"quiscalus-mexicanus", common:"María mulata", alt:"Zanate mayor · Great-tailed Grackle",
   sci:"Quiscalus mexicanus", family:"Icteridae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.quiscalus2, date:"", place:MG, ind:"Macho con la cola larga desplegada"},{img:IMG.quiscalusMG4, date:"", place:MG, ind:"Macho con la cola abierta en abanico, sacudiendo un ala"},{img:IMG.quiscalus3, date:"", place:MG, ind:"Hembra, parda y de ojo claro"},{img:IMG.quiscalusF, date:"", place:MG, ind:"Hembra entre ramas con flores"},{img:IMG.quiscalusMG3, date:"", place:MG, ind:"Dos jóvenes en un flamboyán; uno pide comida con el pico abierto"},{img:IMG.quiscalusMG, date:"", place:MG, ind:"Hembra de ojo claro en las hojas de un flamboyán"},{img:IMG.quiscalusMG2, date:"", place:MG, ind:"Joven con el pecho canela"},{img:IMG.quiscalus, date:"", place:AR, ind:"Macho cantando desde un tronco"},{img:IMG.quiscalusIR, date:"", place:IR, ind:"Macho a contraluz en un árbol de playa"},{img:"fotos/quiscalusVidP.jpg", video:"fotos/quiscalusVid.mp4", date:"", place:MG, ind:"Macho despegando de un árbol, con la cola larga abierta, en cámara lenta"},{img:"fotos/quiscalusVid2P.jpg", video:"fotos/quiscalusVid2.mp4", date:"", place:MG, ind:"Hembra despegando de la calle con la cola abierta en abanico, en cámara lenta"}],
+  photos:[{img:IMG.quiscalus2, date:"", place:MG, ind:"Macho con la cola larga desplegada"},{img:IMG.quiscalusMG4, date:"", place:MG, ind:"Macho con la cola abierta en abanico, sacudiendo un ala"},{img:IMG.quiscalus3, date:"", place:MG, ind:"Hembra, parda y de ojo claro"},{img:IMG.brotogerisMG2, date:"", place:MG, ind:"Dos jóvenes en un flamboyán; uno pide comida con el pico abierto"},{img:IMG.quiscalusMG, date:"", place:MG, ind:"Hembra de ojo claro en las hojas de un flamboyán"},{img:IMG.quiscalusMG2, date:"", place:MG, ind:"Joven con el pecho canela"},{img:IMG.quiscalus, date:"", place:AR, ind:"Cantando desde un tronco; por el color negro, un macho, aunque está lejos"},{img:IMG.quiscalusIR, date:"", place:IR, ind:"A contraluz en un árbol de playa; por la silueta y la cola larga, probablemente un macho"},{img:"fotos/quiscalusVidP.jpg", video:"fotos/quiscalusVid.mp4", date:"", place:MG, ind:"Macho despegando de un árbol, con la cola larga abierta, en cámara lenta"},{img:"fotos/quiscalusVid2P.jpg", video:"fotos/quiscalusVid2.mp4", date:"", place:MG, ind:"Hembra despegando de la calle con la cola abierta en abanico, en cámara lenta"}],
   desc:"El macho es negro con brillo violeta, ojo amarillo pálido y una cola muy larga que pliega en forma de quilla de barco. La hembra es parda y más pequeña. Es el ave emblema de Cartagena, inmortalizada en las esculturas de Enrique Grau.",
   diet:"Omnívora: insectos, frutos, semillas, cangrejos, huevos y restos de comida.",
   habitat:"Costas, pueblos, potreros, manglares y orillas de ciénagas.",
@@ -270,9 +271,9 @@ const BIRDS = [
 },
 {
   id:"crotophaga-ani", common:"Garrapatero piquiliso", alt:"Garrapatero · Smooth-billed Ani",
-  sci:"Crotophaga ani", family:"Cuculidae", iucn:"LC", conf:"media",
-  confNote:"En esta foto, nítida y de perfil, el pico se ve liso y arqueado por encima de la frente, sin los surcos del garrapatero de pico estriado (Crotophaga sulcirostris), que también vive en la región. Eso apunta al piquiliso.",
-  photos:[{img:IMG.crotophaga, date:"", place:AR, ind:"Adulto en la copa de un arbusto"}],
+  sci:"Crotophaga ani", family:"Cuculidae", iucn:"LC", conf:"baja",
+  confNote:"El pico no muestra la joroba alta del piquiliso y los surcos no se ven: podría ser un garrapatero de pico estriado.",
+  photos:[{img:IMG.crotophaga, date:"", place:AR, ind:"Adulto en la copa de un arbusto. Por confirmar: el pico no tiene la joroba alta del piquiliso y podría ser un garrapatero de pico estriado; los surcos no se alcanzan a ver"}],
   desc:"Negro, con aspecto escamado y desaliñado, cola larga y un pico alto, liso y comprimido, con una joroba arriba. Vive en grupos que comparten un solo nido, donde varias hembras ponen sus huevos y todos ayudan a criar.",
   diet:"Saltamontes y otros insectos, a menudo los que espanta el ganado; algunos frutos.",
   habitat:"Potreros, rastrojos y matorrales de tierras bajas.",
@@ -290,7 +291,7 @@ const BIRDS = [
 {
   id:"brotogeris-jugularis", common:"Periquito bronceado", alt:"Perico barbinaranja · Orange-chinned Parakeet",
   sci:"Brotogeris jugularis", family:"Psittacidae", iucn:"LC", conf:"alta",
-  photos:[{img:IMG.brotogeris, date:"", place:AR, ind:"Adulto en una rama seca"},{img:IMG.brotogeris2, date:"", place:AR, ind:"Pareja"},{img:IMG.brotogerisMG2, date:"", place:MG, ind:"Entre las hojas de un almendro, con el hombro pardo"},{img:IMG.brotogerisMG, date:"", place:MG, ind:"En ramas secas, con la mancha naranja del mentón"}],
+  photos:[{img:IMG.brotogeris, date:"", place:AR, ind:"Adulto en una rama seca"},{img:IMG.brotogeris2, date:"", place:AR, ind:"Pareja"},{img:IMG.quiscalusMG3, date:"", place:MG, ind:"Entre las hojas de un almendro, con el hombro pardo"},{img:IMG.brotogerisMG, date:"", place:MG, ind:"En ramas secas, con la mancha naranja del mentón"}],
   desc:"Periquito verde, pequeño, con una mancha naranja en la barbilla, hombros color bronce, pico pálido y anillo blanco alrededor del ojo. Anda en parejas y grupos ruidosos.",
   diet:"Frutos, semillas, flores y néctar de árboles como el ceibo y el guamo.",
   habitat:"Bosque seco, potreros arbolados, pueblos y jardines.",
@@ -313,7 +314,7 @@ const BIRDS = [
   sci:"Ara ararauna", family:"Psittacidae", iucn:"LC", conf:"alta", domestic:true, feral:true,
   confNote:"La de la izquierda es una guacamaya azul y amarilla. La de la derecha, con la frente roja y el dorso verde, parece un híbrido con otra especie de guacamaya, algo común en aves que provienen del cautiverio.",
   statusNote:"Vive libre: tiene su casa en los terrenos de la Sociedad Portuaria de Cartagena y vuela a diario sobre la bahía y el barrio Manga. Proviene del cautiverio; la especie es nativa de selvas y palmares de tierras bajas de Colombia, no de la ciudad.",
-  photos:[{img:IMG.araMG2, date:"", place:MG, ind:"Pareja en vuelo sobre la bahía de Manga, frente a los veleros"},{img:IMG.ara, date:"", place:MG, ind:"Pareja en un balcón"},{img:IMG.araMG, date:"", place:MG, ind:"En vuelo sobre Manga junto a otra guacamaya de plumaje verde y azul, probablemente un híbrido también escapado de cautiverio"}],
+  photos:[{img:IMG.araMG2, date:"", place:MG, ind:"Dos en vuelo sobre la bahía de Manga, frente a los veleros. Las guacamayas de Manga son aves liberadas o escapadas, no silvestres"},{img:IMG.ara, date:"", place:MG, ind:"Dos en un balcón: la de la derecha, con la corona y el dorso verdes, parece un híbrido"},{img:IMG.araMG, date:"", place:MG, ind:"En vuelo sobre Manga junto a otra guacamaya de plumaje verde y azul, probablemente un híbrido también escapado de cautiverio"}],
   desc:"Guacamaya grande, de casi 90 cm con la cola: azul turquesa por encima, amarillo dorado por debajo, cara blanca con finas líneas negras y un pico negro enorme capaz de partir nueces muy duras.",
   diet:"Semillas, nueces, frutos de palmas y flores. En la ciudad come frutos de almendros, mangos y palmas ornamentales.",
   habitat:"En estado silvestre, selvas húmedas, palmares de moriche y bordes de ríos de tierras bajas. En Cartagena, el grupo asilvestrado vive en la zona del puerto y se mueve por Manga y la bahía.",
