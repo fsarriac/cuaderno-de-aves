@@ -78,3 +78,44 @@
   if(document.readyState==="complete") setTimeout(go,120); else addEventListener("load",function(){setTimeout(go,120);});
   addEventListener("hashchange",go);
 })();
+/* sitios-portada: en los lugares con varios sitios (LUGAR.sitiosFoto), tarjetas debajo de la portada para escoger
+   a cuál entrar; al tocar una, se filtra el cuaderno a ese sitio y se baja a las especies */
+(function(){
+  if(typeof LUGAR==="undefined"||!LUGAR.sitiosFoto) return;
+  function build(){
+    var chips=[].slice.call(document.querySelectorAll(".pchip[data-s]")).filter(function(c){return c.dataset.s;});
+    if(!chips.length) return;
+    var EN=window.LANG==="en";
+    var st=document.createElement("style");
+    st.textContent=".sitios-pick{padding-block:40px 4px}.sp-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}"+
+      ".sp-card{display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;text-align:left;border:0;padding:0;border-radius:12px;overflow:hidden;background:var(--card,#fff);box-shadow:0 1px 0 var(--line);cursor:pointer;font:inherit;color:inherit;transition:transform 220ms cubic-bezier(.23,1,.32,1),box-shadow 220ms ease}"+
+      ".sp-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--line)}"+
+      ".sp-card .t{padding:12px 14px 14px}.sp-card b{display:block;font-family:var(--serif,Newsreader,serif);font-size:19px;line-height:1.15}"+
+      ".sp-card small{display:block;margin-top:4px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}"+
+      "@media (max-width:560px){.sp-grid{grid-template-columns:1fr 1fr;gap:10px}.sp-card b{font-size:16px}.sp-card .t{padding:10px 10px 12px}}"+
+      "@media (hover:hover) and (pointer:fine){.sp-card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.12)}}"+
+      ".sp-card:active{transform:scale(.985)}.sp-card[aria-pressed=true]{outline:2px solid var(--accent,#E0623E);outline-offset:2px}";
+    document.head.appendChild(st);
+    var sec=document.createElement("section"); sec.className="wrap sitios-pick";
+    sec.innerHTML='<p class="eyebrow">'+(EN?"Sites":"Sitios")+'</p><h2 class="display" style="font-size:clamp(26px,3.4vw,34px);line-height:1.1;font-weight:600;margin-top:6px">'+
+      (EN?"Choose where to start":"Escoge por dónde entrar")+'</h2><div class="sp-grid"></div>';
+    var grid=sec.querySelector(".sp-grid");
+    chips.forEach(function(c){
+      var s=c.dataset.s, foto=LUGAR.sitiosFoto[s]; if(!foto) return;
+      var n=(c.querySelector("small")||{}).textContent||"";
+      var parts=s.split(","), name=parts[0], where=(parts[1]||"").trim();
+      var b=document.createElement("button"); b.className="sp-card"; b.type="button"; b.setAttribute("aria-pressed","false");
+      b.innerHTML='<img src="'+foto+'" alt="" loading="lazy"><span class="t"><b>'+name+'</b><small>'+(where?where+" · ":"")+n+" "+(EN?"species":"especies")+'</small></span>';
+      b.addEventListener("click",function(){
+        c.click();
+        grid.querySelectorAll(".sp-card").forEach(function(x){x.setAttribute("aria-pressed",x===b);});
+        var g=document.getElementById("grid"); if(g) g.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+      });
+      grid.appendChild(b);
+    });
+    /* si se vuelve a "Todos" en los filtros, se desmarcan las tarjetas */
+    document.addEventListener("click",function(e){if(e.target.closest&&e.target.closest(".pchip[data-s]")) grid.querySelectorAll(".sp-card").forEach(function(x){x.setAttribute("aria-pressed","false");});},true);
+    var hero=document.querySelector("section.hero"); if(hero) hero.after(sec);
+  }
+  if(document.readyState==="complete") setTimeout(build,60); else addEventListener("load",function(){setTimeout(build,60);});
+})();

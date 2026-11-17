@@ -4,7 +4,9 @@
 const LUGAR = {
   nombre: "Riberas del Magdalena", corto: "las riberas del Magdalena",
   region: "las riberas del Magdalena", hero: "fotos/chauna.jpg",
-  sitios: ["Charca de Guarinocito, La Dorada", "Conjunto Campestre Palma Real, La Dorada", "Ciénaga de Pijiño, Magdalena", "Canal del Dique, Bolívar"]
+  sitios: ["Charca de Guarinocito, La Dorada", "Conjunto Campestre Palma Real, La Dorada", "Ciénaga de Pijiño, Magdalena", "Canal del Dique, Bolívar"],
+  sitiosFoto: {"Charca de Guarinocito, La Dorada": "fotos/mini/chauna.jpg", "Conjunto Campestre Palma Real, La Dorada": "fotos/mini/brotogerisLD.jpg",
+               "Ciénaga de Pijiño, Magdalena": "fotos/mini/pandion.jpg", "Canal del Dique, Bolívar": "fotos/mini/cd_albaCD.jpg"}
 };
 const IMG = {}; for (const k of ["amazonaLD","tyrannusLD","tyrannusLD2","sulcirostris","sulcirostris2","burrovianus","caracaraLD","brotogerisLD","chalybea","coragypsLD","sicalisLD","pandionLD","chauna","chauna2","chrysomusLD","chrysomusLD2","chrysomusLDF","dendrocygnaLD","amazonaLD2","sternula","anhinga","tachycineta","cocoiLD","cocoiLD2","cocoiLD3","patagioenas","arundinicola","arundinicolaF","jacanaLD","butoridesLD","auraLD","crotophagaMj","crotophagaMj2","butoridesLD2","chrysomusLDF2","certhiaxis","certhiaxis2","anhinga2","anhingaF","anhingaF2","tachycineta2","busarellus","busarellus2","cocoiLD4","porphyrioLD","nannopterumLD","nannopterumLD2","nannopterumLD3","albaLD","albaLD2","arundinicola2","tachycineta3","cocoiLD5","cocoiLD6","anhingaF3","anhingaF4","butoridesLD3","donacobius","tigrisomaLD","fluvicolaLD","fluvicolaLD2","cd_cocoi","cd_cocoi2","cd_cocoi3","cd_cocoi4","cd_cocoi5","cd_cocoiVuelo","cd_cocoi6","cd_alba2","cd_alba","cd_alba3","cd_albaCD","cd_nannopterum","cd_nannopterum2","cd_nannopterum3","cd_pelecanus","cd_thalasseus"]) IMG[k]="fotos/"+k+".jpg"; for (const k of ["amazona","amazona2","pandion","pandion2","caracara","fluvicola","jacana","jacanaJuv","milvago","milvago2","milvagoJuv","nycticorax","nycticorax2","torquata","torquata2","aramus","crotophaga","alba","alba2","tigrisoma","alba2"]) IMG[k]="fotos/"+k+".jpg";
 const PJ = "Ciénaga de Pijiño, Magdalena";
