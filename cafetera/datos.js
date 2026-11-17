@@ -2,7 +2,7 @@
    Cuando se sepa el sitio exacto de cada foto, cámbielo en "place" (p. ej. "Valle de Cocora, Quindío").
    Si hay fotos de varios sitios, aparece solo el filtro "Sitio". */
 const LUGAR = { nombre:"Zona Cafetera", corto:"la Zona Cafetera", region:"la Zona Cafetera", hero:"fotos/flammigerusM.jpg" };
-const IMG = {}; for (const k of ["aglaeactis","atlapetes","anisognathus","zonotrichia","piaya","episcopus","dimidiatus","dimidiatus2","turdus","stilpnia","stilpnia2","icterus","forpus","phimosus","flammigerusM","flammigerusF","flammigerusF2","euphonia","euphonia2","melanerpes","stilpnia3","sicalis","episcopus2","episcopus3","episcopus4","ignobilis","cyanicollis","flammigerusF3","euphonia3","aglaeactis2","anisognathus2","ortalis","sporophila","ignobilis2","euphonia4","melanerpes2","florisuga","saltator","atlapetes2","eriocnemis","ignobilis3","amazilia"]) IMG[k]="fotos/"+k+".jpg";
+const IMG = {"cyanea":"fotos/cyanea.jpg"}; for (const k of ["aglaeactis","atlapetes","anisognathus","zonotrichia","piaya","episcopus","dimidiatus","dimidiatus2","turdus","stilpnia","stilpnia2","icterus","forpus","phimosus","flammigerusM","flammigerusF","flammigerusF2","euphonia","euphonia2","melanerpes","stilpnia3","sicalis","episcopus2","episcopus3","episcopus4","ignobilis","cyanicollis","flammigerusF3","euphonia3","aglaeactis2","anisognathus2","ortalis","sporophila","ignobilis2","euphonia4","melanerpes2","florisuga","saltator","atlapetes2","eriocnemis","ignobilis3","amazilia"]) IMG[k]="fotos/"+k+".jpg";
 const ZC = "Zona Cafetera";
 const VN = "Hacienda Venecia";
 const RZ = "Nevado del Ruiz";
@@ -25,6 +25,15 @@ const BIRDS = [
   desc:"El macho es rojo sangre oscuro, con alas y cola negras y una base del pico plateada brillante. La hembra es parda rojiza, más apagada. Anda en grupos pequeños y ruidosos.",
   diet:"Frutos, banano y papaya en comederos, e insectos.",
   habitat:"Bordes de bosque, cafetales, rastrojos y jardines de tierras bajas y medias.",
+  migration:null
+},
+{
+  id:"diglossa-cyanea", common:"Picaflor enmascarado", alt:"Diglosa de antifaz · Masked Flowerpiercer", sci:"Diglossa cyanea", family:"Thraupidae", iucn:"LC", conf:"media",
+  confNote:"La forma, el azul intenso, el antifaz negro y el brillo celeste de la frente encajan con el picaflor enmascarado. Lo que lo confirmaría, el ojo rojo y el gancho de la punta del pico, no se alcanza a ver en esta foto de espaldas.",
+  photos:[{img:IMG.cyanea, date:"", place:RZ, ind:"Entre ramas con líquenes y barbas de viejo, de espaldas: azul intenso, antifaz negro y frente celeste"}],
+  desc:"Ave mediana, toda azul intenso, con un antifaz negro que le cubre la cara, una línea celeste brillante sobre la frente y ojos rojos. Su pico, fino y con un gancho en la punta, le sirve para perforar la base de las flores y robar el néctar sin polinizarlas, de ahí el nombre de picaflor.",
+  diet:"Néctar que roba perforando la base de las flores tubulares, insectos pequeños y algunos frutos.",
+  habitat:"Bosques altoandinos, sus bordes y el subpáramo, entre unos 2.500 y 3.600 m.",
   migration:null
 },
 {
@@ -238,6 +247,7 @@ const BIRDS = [
 
 const XTRA={
  "euphonia-xanthogaster":{"sw": [["#1E2A5A", "Dorso y garganta"], ["#F2B83A", "Vientre"], ["#E8D23A", "Frente"]]},
+ "diglossa-cyanea":{"sw": [["#3A4AB8", "Plumaje"], ["#141418", "Antifaz"], ["#8AC8F0", "Frente"]]},
  "stilpnia-cyanicollis":{sw:[["#3CB4E0","Cabeza"],["#141418","Cuerpo"],["#9CC86A","Hombro"]]},
  "sicalis-flaveola":{sw:[["#F2C21A","Cuerpo"],["#F08A1C","Corona"]]},
  "turdus-ignobilis":{sw:[["#6A5E4A","Dorso"],["#A89A84","Pecho"],["#151515","Pico"]]},
@@ -265,6 +275,7 @@ const XTRA={
 };
 const HAB={
  "euphonia-xanthogaster":["Anda en parejas o grupitos que recorren las copas buscando frutos de muérdago, a menudo con bandadas mixtas de tangaras.", "Comederos de banano y árboles con muérdago."],
+ "diglossa-cyanea":["Inquieto: se mueve de flor en flor por los arbustos y las copas bajas, a menudo con bandadas mixtas de tangaras de montaña.", "Arbustos en flor y bordes del bosque altoandino."],
  "stilpnia-cyanicollis":["En parejas o con bandadas mixtas de tangaras que recorren las copas; revisa ramas y hojas por debajo.","Yarumos y árboles frutales en bordes de cafetal."],
  "sicalis-flaveola":["En grupos que comen en el suelo; el macho canta desde ramas altas.","Potreros, patios y cercas."],
  "turdus-ignobilis":["Camina por el suelo picando lombrices y sube a los frutales; canta un trino variado al amanecer.","Papayos, comederos y prados."],
@@ -292,6 +303,7 @@ const HAB={
 };
 const PLACES={
  "euphonia-xanthogaster":["comedero", "arboles"],
+ "diglossa-cyanea":["arboles"],
  "stilpnia-cyanicollis":["arboles"],"sicalis-flaveola":["prado"],"turdus-ignobilis":["arboles","prado","comedero"],
  "ramphocelus-flammigerus":["comedero","arboles"],"ramphocelus-dimidiatus":["comedero","arboles"],"anisognathus-igniventris":["arboles"],
  "aglaeactis-cupripennis":["arboles"],"atlapetes-pallidinucha":["arboles"],"zonotrichia-capensis":["prado"],"piaya-cayana":["arboles"],
